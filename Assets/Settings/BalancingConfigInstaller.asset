@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21db2216df8b49e1af3437e52693b906, type: 3}
+  m_Name: BalancingConfigInstaller
+  m_EditorClassIdentifier: 
+  BalancingConfig: {fileID: 11400000, guid: 83e3c5de3c2dada4180acb604b0d052b, type: 2}
