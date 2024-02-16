@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public void OnMovement(InputValue value)
     {
-        Vector2 movement = value.Get<Vector2>();
+        var movement = value.Get<Vector2>();
         gameObject.transform.position += new Vector3(movement.x, 0, movement.y);
     }
 
