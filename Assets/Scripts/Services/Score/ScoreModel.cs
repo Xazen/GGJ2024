@@ -4,6 +4,6 @@ namespace DefaultNamespace
 {
     public class ScoreModel
     {
-        public Dictionary<int, int> ScoreByPlayerIndex = new ();
+        public readonly Dictionary<int, int> ScoreByPlayerIndex = new ();
     }
 }

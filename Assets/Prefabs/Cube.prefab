@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 1428787083924008671}
   - component: {fileID: 7474620021639648770}
   - component: {fileID: 9062693909841036337}
+  - component: {fileID: 3199514702332762220}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -273,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 63bae5371187e9249903b4c92769bdce,
     type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -312,6 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model: {fileID: 8188080352116526960}
   hitBox: {fileID: 674040290091968566}
+  gamePlayerInput: {fileID: 3199514702332762220}
 --- !u!54 &7474620021639648770
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -360,6 +362,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3199514702332762220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260196033637934396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f595ba988c234532a5f490535c8a7b5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 7642854573906802276}
 --- !u!1 &8188080352116526960
 GameObject:
   m_ObjectHideFlags: 0

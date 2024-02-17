@@ -14,7 +14,7 @@ public class BalancingConfig : ScriptableObject
     public float HitCooldown = 0.5f;
 
     [Header("Knockback")]
-    public float StraggleDuration = 0.3f;
+    public float StaggeredDuration = 0.3f;
     public float KnockbackStrength = 0.2f;
     public float KnockbackMoveSpeed = 0.1f;
 }

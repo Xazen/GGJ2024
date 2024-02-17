@@ -189,7 +189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d8e167f64fa4f0eb582b72ee05be3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1097466043}
   timerService: {fileID: 1097466045}
+  gamePlayerManagerController: {fileID: 440008705}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 833b032c46101c74da43707e7dfef003, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInputManager: {fileID: 440008706}
 --- !u!114 &440008706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 3
   m_MaxPlayerCount: 4
   m_AllowJoining: 1
   m_JoinBehavior: 0

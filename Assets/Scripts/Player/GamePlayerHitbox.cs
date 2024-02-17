@@ -2,9 +2,9 @@ using System;
 using Constants;
 using UnityEngine;
 
-public class Hitbox : MonoBehaviour
+public class GamePlayerHitbox : MonoBehaviour
 {
-    public Action<PlayerController> OnAttackHit;
+    public Action<GamePlayerController> OnAttackHit;
 
     private void Start()
     {
@@ -15,7 +15,7 @@ public class Hitbox : MonoBehaviour
     {
         if (other.gameObject.CompareTag(Tags.Player))
         {
-            var playerController = other.GetComponent<PlayerController>();
+            var playerController = other.GetComponent<GamePlayerController>();
             OnAttackHit?.Invoke(playerController);
         }
     }
