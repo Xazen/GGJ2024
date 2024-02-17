@@ -10,6 +10,9 @@ using Zenject;
 public class GamePlayerActorController : MonoBehaviour
 {
     [SerializeField]
+    private Rigidbody rigidBody;
+
+    [SerializeField]
     private GameObject model;
 
     [SerializeField]
@@ -24,12 +27,14 @@ public class GamePlayerActorController : MonoBehaviour
     private ScoreService _scoreService;
     private PlayerModel _playerModel;
     private InputUser _inputUser;
+    private GameService _gameService;
 
     [Inject]
     [UsedImplicitly]
     public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService,
-        BattlefieldService battlefieldService)
+        BattlefieldService battlefieldService, GameService gameService)
     {
+        _gameService = gameService;
         _scoreService = scoreService;
         _balancingConfig = balancingConfig;
 
@@ -99,17 +104,22 @@ public class GamePlayerActorController : MonoBehaviour
 
     private void Move()
     {
-        if (_playerModel.IsStaggered || _playerModel.IsAttacking)
+        if (_playerModel.IsStaggered || _playerModel.IsAttacking || !_gameService.IsGameRunning())
         {
             return;
         }
-
-        gameObject.transform.position += _moveVector * Time.deltaTime * _balancingConfig.PlayerMovementSpeed;
 
         if (_moveVector != Vector3.zero)
         {
             LookAtDirection(_moveVector);
         }
+
+        if (!IsBlocked(_moveVector))
+        {
+            var newPosition = rigidBody.position + _moveVector * Time.deltaTime * _balancingConfig.PlayerMovementSpeed;
+            rigidBody.MovePosition(newPosition);
+        }
+
     }
 
     private void LookAtDirection(Vector3 direction)
@@ -130,5 +140,15 @@ public class GamePlayerActorController : MonoBehaviour
     public void SetInputUser(InputUser playerInputUser)
     {
         _inputUser = playerInputUser;
+    }
+
+    private bool IsBlocked(Vector3 direction)
+    {
+        if (Physics.Raycast(rigidBody.position, direction, out _, _balancingConfig.CollisionThreshold))
+        {
+            return true;
+        }
+
+        return false;
     }
 }
