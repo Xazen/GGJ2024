@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
     private SetupPanel _setupPanel;
     private InGameHUD _inGameHUD;
 
+    private UIMonoBehaviour _inGameHudInstance;
+    private UIMonoBehaviour _setupPanelInstance;
+
     [Inject]
     [UsedImplicitly]
     public void Inject(TimerService timerService, BalancingConfig balancingConfig, GamePlayerManagerController gamePlayerManagerController,
@@ -38,7 +41,7 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
 
     private void Start()
     {
-        _uiService.ShowUI(_setupPanel);
+        _setupPanelInstance = _uiService.ShowUI(_setupPanel);
         LoadLevel((scene, _) =>
         {
             foreach (var environmentGameObject in scene.GetRootGameObjects())
@@ -73,8 +76,8 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
         Debug.Log("Game Started");
         timerService.OnTimerEnd += OnTimerEnd;
         timerService.StartTimer(balancingConfig.GameDuration);
-        _uiService.HideUI(_setupPanel);
-        _uiService.ShowUI(_inGameHUD);
+        _uiService.HideUI(_setupPanelInstance);
+        _inGameHudInstance = _uiService.ShowUI(_inGameHUD);
     }
 
     private void LoadLevel(UnityAction<Scene,LoadSceneMode> OnSceneLoaded)

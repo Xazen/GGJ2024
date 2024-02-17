@@ -19,7 +19,7 @@ namespace DefaultNamespace
 
         public void HideUI(UIMonoBehaviour ui)
         {
-            UnityEngine.Object.DestroyImmediate(ui.gameObject);
+            UnityEngine.Object.Destroy(ui.gameObject);
         }
     }
 }
