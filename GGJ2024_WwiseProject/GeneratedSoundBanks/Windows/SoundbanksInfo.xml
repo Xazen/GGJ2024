@@ -9,10 +9,14 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{BDA97BFD-332C-16B5-3297-137DBDE38ED7}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{2C35EC96-C9E5-A9FF-8703-E7A9F2C98B2E}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
+				<File Id="6189032" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BasicSwing 2.wav</ShortName>
+					<CachePath>SFX/BasicSwing 2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="24123608" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 1.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 1_818F3B66.wem</CachePath>
@@ -25,9 +29,17 @@
 					<ShortName>Kitchen Work_POS_ 12.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 12_818F3B66.wem</CachePath>
 				</File>
+				<File Id="88214754" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hits 2.wav</ShortName>
+					<CachePath>SFX/Hits 2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="100806986" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 2.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="137229546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slice Punch 3.wav</ShortName>
+					<CachePath>SFX/Slice Punch 3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="142182528" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 11.wav</ShortName>
@@ -37,9 +49,49 @@
 					<ShortName>Music_Metal.wav</ShortName>
 					<CachePath>SFX/Music_Metal_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="150116584" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slice Punch 1.wav</ShortName>
+					<CachePath>SFX/Slice Punch 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="166057783" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Veggie Hits 1.wav</ShortName>
+					<CachePath>SFX/Veggie Hits 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="209115331" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Slice 2.wav</ShortName>
+					<CachePath>SFX/Knife Slice 2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="215770798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 5.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="227408532" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpoonSwingLayer 1.wav</ShortName>
+					<CachePath>SFX/SpoonSwingLayer 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="230836363" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Swings 3.wav</ShortName>
+					<CachePath>SFX/Knife Swings 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="261915536" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slice Gore 3.wav</ShortName>
+					<CachePath>SFX/Slice Gore 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="264445141" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpoonSwingLayer 2.wav</ShortName>
+					<CachePath>SFX/SpoonSwingLayer 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="272903579" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BasicSwing 7.wav</ShortName>
+					<CachePath>SFX/BasicSwing 7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="282821679" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BasicSwing 5.wav</ShortName>
+					<CachePath>SFX/BasicSwing 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="305209632" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpoonSwingLayer 3.wav</ShortName>
+					<CachePath>SFX/SpoonSwingLayer 3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="314805838" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cooking_Gas.wav</ShortName>
@@ -57,13 +109,29 @@
 					<ShortName>Kitchen Work_POS_ 4.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 4_818F3B66.wem</CachePath>
 				</File>
+				<File Id="377992892" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Veggie Hits 3.wav</ShortName>
+					<CachePath>SFX/Veggie Hits 3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="381795405" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 9.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 9_818F3B66.wem</CachePath>
 				</File>
+				<File Id="383175845" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Swings 5.wav</ShortName>
+					<CachePath>SFX/Knife Swings 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="391833410" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VeggieSlices 3.wav</ShortName>
+					<CachePath>SFX/VeggieSlices 3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="394956205" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 13.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 13_818F3B66.wem</CachePath>
+				</File>
+				<File Id="416225711" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Swings 8.wav</ShortName>
+					<CachePath>SFX/Knife Swings 8_818F3B66.wem</CachePath>
 				</File>
 				<File Id="416771849" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Fluid_2.wav</ShortName>
@@ -73,40 +141,216 @@
 					<ShortName>Kitchen Work_POS_ 6.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 6_818F3B66.wem</CachePath>
 				</File>
+				<File Id="446948816" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slice Punch 2.wav</ShortName>
+					<CachePath>SFX/Slice Punch 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="465637869" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Slice 5.wav</ShortName>
+					<CachePath>SFX/Knife Slice 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="481650952" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VeggieSlices 1.wav</ShortName>
+					<CachePath>SFX/VeggieSlices 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="526958082" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VeggieSlices 5.wav</ShortName>
+					<CachePath>SFX/VeggieSlices 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="551918523" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit Gore 3.wav</ShortName>
+					<CachePath>SFX/Hit Gore 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="581836822" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VeggieSlices 2.wav</ShortName>
+					<CachePath>SFX/VeggieSlices 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="589887342" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hits 3.wav</ShortName>
+					<CachePath>SFX/Hits 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="607401170" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Veggie Hits 2.wav</ShortName>
+					<CachePath>SFX/Veggie Hits 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="614381106" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Slice 3.wav</ShortName>
+					<CachePath>SFX/Knife Slice 3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="638763515" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_Cute Score.wav</ShortName>
 					<CachePath>SFX/Music_Cute Score_8C7190AC.wem</CachePath>
+				</File>
+				<File Id="667684970" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Slice 1.wav</ShortName>
+					<CachePath>SFX/Knife Slice 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="668956226" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 3.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 3_818F3B66.wem</CachePath>
 				</File>
+				<File Id="711500054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Swings 4.wav</ShortName>
+					<CachePath>SFX/Knife Swings 4_818F3B66.wem</CachePath>
+				</File>
 				<File Id="752221801" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 7.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="760649509" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hits 1.wav</ShortName>
+					<CachePath>SFX/Hits 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="762068009" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpoonSwingLayer 7.wav</ShortName>
+					<CachePath>SFX/SpoonSwingLayer 7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="766967025" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Slice 4.wav</ShortName>
+					<CachePath>SFX/Knife Slice 4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="768062468" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit Gore 2.wav</ShortName>
+					<CachePath>SFX/Hit Gore 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="769556448" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Swings 1.wav</ShortName>
+					<CachePath>SFX/Knife Swings 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="771124036" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BasicSwing 3.wav</ShortName>
+					<CachePath>SFX/BasicSwing 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="800814977" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpoonSwingLayer 4.wav</ShortName>
+					<CachePath>SFX/SpoonSwingLayer 4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="828196758" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Swings 6.wav</ShortName>
+					<CachePath>SFX/Knife Swings 6_818F3B66.wem</CachePath>
+				</File>
+				<File Id="830696659" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Swings 7.wav</ShortName>
+					<CachePath>SFX/Knife Swings 7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="833185748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slice Gore 4.wav</ShortName>
+					<CachePath>SFX/Slice Gore 4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="860232383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_End Fanfare.wav</ShortName>
 					<CachePath>SFX/Music_End Fanfare_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="899287765" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BasicSwing 6.wav</ShortName>
+					<CachePath>SFX/BasicSwing 6_818F3B66.wem</CachePath>
+				</File>
+				<File Id="912427310" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BasicSwing 4.wav</ShortName>
+					<CachePath>SFX/BasicSwing 4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="914262038" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slice Gore 1.wav</ShortName>
+					<CachePath>SFX/Slice Gore 1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="937493976" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 10.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1001677442" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Knife Swings 2.wav</ShortName>
+					<CachePath>SFX/Knife Swings 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1004986158" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit Gore 1.wav</ShortName>
+					<CachePath>SFX/Hit Gore 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1010866600" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpoonSwingLayer 6.wav</ShortName>
+					<CachePath>SFX/SpoonSwingLayer 6_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1012106575" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>BasicSwing 1.wav</ShortName>
+					<CachePath>SFX/BasicSwing 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1013995139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cooking_Pot.wav</ShortName>
 					<CachePath>SFX/Cooking_Pot_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="1034212319" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>VeggieSlices 4.wav</ShortName>
+					<CachePath>SFX/VeggieSlices 4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1046232497" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpoonSwingLayer 5.wav</ShortName>
+					<CachePath>SFX/SpoonSwingLayer 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1047295760" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slice Gore 2.wav</ShortName>
+					<CachePath>SFX/Slice Gore 2_818F3B66.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<Custom>
 					<Plugin Id="261580113" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+					<Plugin Id="283309472" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="372414170" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="557973414" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 					<Plugin Id="717672928" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 					<Plugin Id="776625351" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="3232033907" Name="Hits" DurationType="OneShot" DurationMin="0.2016875" DurationMax="0.6">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="137229546"/>
+								<MediaRef Id="150116584"/>
+								<MediaRef Id="209115331"/>
+								<MediaRef Id="261915536"/>
+								<MediaRef Id="391833410"/>
+								<MediaRef Id="446948816"/>
+								<MediaRef Id="465637869"/>
+								<MediaRef Id="481650952"/>
+								<MediaRef Id="526958082"/>
+								<MediaRef Id="581836822"/>
+								<MediaRef Id="614381106"/>
+								<MediaRef Id="667684970"/>
+								<MediaRef Id="766967025"/>
+								<MediaRef Id="833185748"/>
+								<MediaRef Id="914262038"/>
+								<MediaRef Id="1034212319"/>
+								<MediaRef Id="1047295760"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="372414170"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+							<MediaRefs>
+								<MediaRef Id="88214754"/>
+								<MediaRef Id="166057783"/>
+								<MediaRef Id="377992892"/>
+								<MediaRef Id="551918523"/>
+								<MediaRef Id="589887342"/>
+								<MediaRef Id="607401170"/>
+								<MediaRef Id="760649509"/>
+								<MediaRef Id="768062468"/>
+								<MediaRef Id="1004986158"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="283309472"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1121580774" Name="Play_EnvironmentSound" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="24123608"/>
@@ -167,12 +411,233 @@
 				<Event Id="1416616592" Name="Stop_EnvironmentSound" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="764565769" Name="StopAudioCapture" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1917263390" Name="StopMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2386519981" Name="Swing" DurationType="OneShot" DurationMin="0.20318317" DurationMax="0.3747892">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="230836363"/>
+								<MediaRef Id="383175845"/>
+								<MediaRef Id="416225711"/>
+								<MediaRef Id="711500054"/>
+								<MediaRef Id="769556448"/>
+								<MediaRef Id="828196758"/>
+								<MediaRef Id="830696659"/>
+								<MediaRef Id="1001677442"/>
+							</MediaRefs>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="1012106575"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="227408532"/>
+										<MediaRef Id="1012106575"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="6189032"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="6189032"/>
+										<MediaRef Id="264445141"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="771124036"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="305209632"/>
+										<MediaRef Id="771124036"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="912427310"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="800814977"/>
+										<MediaRef Id="912427310"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="282821679"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="282821679"/>
+										<MediaRef Id="1046232497"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="899287765"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="899287765"/>
+										<MediaRef Id="1010866600"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="272903579"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="272903579"/>
+										<MediaRef Id="762068009"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="1012106575"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="227408532"/>
+										<MediaRef Id="1012106575"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="6189032"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="6189032"/>
+										<MediaRef Id="264445141"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="771124036"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="305209632"/>
+										<MediaRef Id="771124036"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="912427310"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="800814977"/>
+										<MediaRef Id="912427310"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="282821679"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="282821679"/>
+										<MediaRef Id="1046232497"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="899287765"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="899287765"/>
+										<MediaRef Id="1010866600"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="272903579"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="3893417221" Id="4230374780"/>
+									<MediaRefs>
+										<MediaRef Id="272903579"/>
+										<MediaRef Id="762068009"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1240670792" Name="Distance"/>
+				<GameParameter Id="1820302072" Name="Panning"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3893417221" Name="Weapon">
+					<Switches>
+						<Switch Id="3312069844" Name="Knife"/>
+						<Switch Id="4230374780" Name="Spoon"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2F0BFA15-AE51-0CEF-2220-6782B8178239}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{61D64825-8A38-4906-8FB4-1ECE39731878}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="424296318" Name="Peak Limiter (Custom)" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -183,9 +648,19 @@
 				<Bus Id="2981377429" Name="Ambiance"/>
 				<Bus Id="3081396824" Name="Sounddesign"/>
 				<Bus Id="3170124113" Name="Voice"/>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="424296318"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="1240670792" Name="Distance"/>
+				<GameParameter Id="1820302072" Name="Panning"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="2036047442" Name="Screaming">
 					<States>
@@ -195,7 +670,15 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3893417221" Name="Weapon">
+					<Switches>
+						<Switch Id="3312069844" Name="Knife"/>
+						<Switch Id="4230374780" Name="Spoon"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{37E4FBFC-9F73-0017-B330-231377B84062}</FileHash>
+	<FileHash>{D45A975E-9C3B-48F1-4D8C-8BC725968A14}</FileHash>
 </SoundBanksInfo>

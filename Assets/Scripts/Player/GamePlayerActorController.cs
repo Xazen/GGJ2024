@@ -56,6 +56,7 @@ public class GamePlayerActorController : MonoBehaviour
     public void OnAttack()
     {
         StartCoroutine(Attack());
+        GetComponent<PlayerAudio>().PlayAttack();
         Debug.Log("Attack");
     }
 

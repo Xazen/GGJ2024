@@ -122,6 +122,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Character" ID="{ADFFFA93-4C12-4A1D-A0F6-3AF8B0E9567F}" ShortID="57519631">
+					<ChildrenList>
+						<Event Name="Swing" ID="{68BD9C39-288B-4CD5-BA39-DAD91C38F59D}">
+							<ChildrenList>
+								<Action Name="" ID="{128506AE-27BB-4006-B040-BDF7CC68D155}" ShortID="257444546">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Swings" ID="{A9AD6167-5EC6-4F77-9736-02189E3A1C85}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Hits" ID="{E4347E80-9CA7-49BF-996D-8DE88209155A}">
+							<ChildrenList>
+								<Action Name="" ID="{20A68645-0CB8-4AF6-AF5C-8916FC8AE028}" ShortID="874338585">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hits" ID="{AD379FCA-A0C3-4236-9F89-9D4F1176F412}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

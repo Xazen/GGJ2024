@@ -237,6 +237,8 @@ GameObject:
   - component: {fileID: 7474620021639648770}
   - component: {fileID: 9062693909841036337}
   - component: {fileID: 3199514702332762220}
+  - component: {fileID: 6294844370560178837}
+  - component: {fileID: 4847120858081254638}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -375,6 +377,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 7642854573906802276}
+--- !u!114 &6294844370560178837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260196033637934396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8761b84618cd0428199b99ed883211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4847120858081254638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260196033637934396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ca9b593674850f4bb07bc539f45d505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &8188080352116526960
 GameObject:
   m_ObjectHideFlags: 0

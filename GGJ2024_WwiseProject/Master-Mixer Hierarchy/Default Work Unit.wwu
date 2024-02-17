@@ -27,6 +27,23 @@
 						</Bus>
 						<Bus Name="Voice" ID="{71F2730A-F066-47E2-8F94-581AE97DC857}"/>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{B003C545-BE79-4E81-B6B2-4EAFAB93FA4B}" ShortID="350940850">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Peak Limiter (Custom)" ID="{DEB66EF4-ABD4-46CC-9EFC-659BE5F970CA}" ShortID="424296318" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3"/>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
