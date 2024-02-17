@@ -1,7 +1,9 @@
 using System;
+using Constants;
 using DefaultNamespace;
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using Zenject;
@@ -12,12 +14,14 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
     private BalancingConfig balancingConfig;
     private GamePlayerManagerController gamePlayerManagerController;
     private GameService gameService;
+    private DiContainer diContainer;
 
     [Inject]
     [UsedImplicitly]
     public void Inject(TimerService timerService, BalancingConfig balancingConfig, GamePlayerManagerController gamePlayerManagerController,
-        GameService gameService)
+        GameService gameService, DiContainer diContainer)
     {
+        this.diContainer = diContainer;
         this.gameService = gameService;
         this.gamePlayerManagerController = gamePlayerManagerController;
         this.balancingConfig = balancingConfig;
@@ -26,9 +30,15 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
 
     private void Start()
     {
-        LoadLevel();
-        EnablePlayerManager();
-        StartGame();
+        LoadLevel((scene, _) =>
+        {
+            foreach (var environmentGameObject in scene.GetRootGameObjects())
+            {
+                diContainer.InjectGameObject(environmentGameObject);
+            }
+            EnablePlayerManager();
+            StartGame();
+        });
     }
 
     private void OnPlayerJoined(PlayerInput playerInput)
@@ -47,9 +57,10 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
         timerService.StartTimer(balancingConfig.GameDuration);
     }
 
-    private static void LoadLevel()
+    private void LoadLevel(UnityAction<Scene,LoadSceneMode> OnSceneLoaded)
     {
-        SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.LoadScene(SceneBuildIndex.GameEnvironment, LoadSceneMode.Additive);
     }
 
     private void OnTimerEnd()

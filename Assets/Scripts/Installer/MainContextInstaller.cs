@@ -28,6 +28,9 @@ namespace Installer
             Container.Bind<GamePlayerService>().AsSingle();
             Container.Bind<GamePlayerModel>().AsSingle();
 
+            Container.Bind<BattlefieldModel>().AsSingle();
+            Container.Bind<BattlefieldService>().AsSingle();
+
             Container.BindInterfacesAndSelfTo<GameManager>().FromInstance(gameManager).AsSingle();
 
         }
