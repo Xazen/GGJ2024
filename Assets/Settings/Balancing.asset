@@ -18,5 +18,6 @@ MonoBehaviour:
   HitboxDuration: 0.1
   HitCooldown: 0.5
   StaggeredDuration: 0.3
-  KnockbackStrength: 2
+  KnockbackStrength: 1
   KnockbackMoveSpeed: 0.1
+  CollisionThreshold: 1.2

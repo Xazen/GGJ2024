@@ -84,6 +84,17 @@ public class GamePlayerActorController : MonoBehaviour
         var knockbackDirection = transform.position - gamePlayerActorController.transform.position;
         knockbackDirection.y = 0;
         knockbackDirection.Normalize();
+
+        DOTween.To(() => rigidBody.position, x =>
+            {
+                var lookDirection = (rigidBody.position - x) * -1;
+                if (!IsBlocked(lookDirection))
+                {
+                    rigidBody.MovePosition(x);
+                }
+            },
+            gameObject.transform.position + knockbackDirection * _balancingConfig.KnockbackStrength, _balancingConfig.KnockbackMoveSpeed).SetEase(Ease.OutBack);
+
         gameObject.transform
             .DOMove(gameObject.transform.position + knockbackDirection * _balancingConfig.KnockbackStrength,
                 _balancingConfig.KnockbackMoveSpeed).SetEase(Ease.OutBack);
