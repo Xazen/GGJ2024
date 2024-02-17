@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Audio Capture" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" ShortID="644282044">
+				<Sound Name="Audio Capture_1" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" ShortID="644282044">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -31,7 +31,7 @@
 													<Effect Name="Recorder (Custom)" ID="{B193C62F-9472-445B-9A57-A6E96351A23F}" ShortID="57319723" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
 														<PropertyList>
 															<Property Name="AuthoringFilename" Type="string" Value=""/>
-															<Property Name="GameFilename" Type="string" Value="ScreamRecording_%s.wav"/>
+															<Property Name="GameFilename" Type="string" Value="ScreamRecording_1.wav"/>
 														</PropertyList>
 													</Effect>
 												</Custom>
@@ -44,6 +44,153 @@
 					</ObjectLists>
 					<ActiveSourceList>
 						<ActiveSource Name="Sine" ID="{ED7E1C1A-D953-4574-BCB3-D41D28007FDA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Audio Input" ID="{8978A246-D75B-4DC3-8512-E8BD233458D3}" ShortID="750053930">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Audio Input" ID="{1620798A-AA3B-4D24-861F-4538E2F2F01F}" ShortID="707998602" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Audio Input" ID="{1620798A-AA3B-4D24-861F-4538E2F2F01F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Audio Capture_2" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" ShortID="836687970">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Sine" ID="{0DED892D-05A0-4366-B940-96204E400D28}" ShortID="776625351" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+							<PropertyList>
+								<Property Name="SineDuration" Type="Real32" Value="3"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{394A1FC9-5665-4228-AA89-4F707B2BB50F}" ShortID="77956824">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Recorder (Custom)" ID="{A8FCF2F0-2FF9-4229-B3C4-1D196412D2DD}" ShortID="390270984" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+														<PropertyList>
+															<Property Name="AuthoringFilename" Type="string" Value=""/>
+															<Property Name="GameFilename" Type="string" Value="ScreamRecording_2.wav"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Sine" ID="{0DED892D-05A0-4366-B940-96204E400D28}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Audio Capture_3" ID="{C160C64B-8BD0-4169-8D38-729AC4A53B6A}" ShortID="779150027">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Sine" ID="{0503508D-4A37-484A-ADB1-C25F4E3B8036}" ShortID="261580113" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+							<PropertyList>
+								<Property Name="SineDuration" Type="Real32" Value="3"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{73B8DCD1-827C-4298-AED9-D9328E4B8EC1}" ShortID="528985318">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Recorder (Custom)" ID="{6D27BC1A-A735-4BBF-88D8-B19AEB718EC9}" ShortID="736715034" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+														<PropertyList>
+															<Property Name="AuthoringFilename" Type="string" Value=""/>
+															<Property Name="GameFilename" Type="string" Value="ScreamRecording_3.wav"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Sine" ID="{0503508D-4A37-484A-ADB1-C25F4E3B8036}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Audio Capture_4" ID="{392B8AE9-25D6-4CED-9580-C8B49F12CA4C}" ShortID="609582141">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Sine" ID="{8BED11AC-FF62-4075-90AF-CE01FBAFD9DF}" ShortID="717672928" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+							<PropertyList>
+								<Property Name="SineDuration" Type="Real32" Value="3"/>
+							</PropertyList>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<Reference>
+								<Local>
+									<EffectSlot Name="" ID="{610A25FC-D1AF-480E-8544-A692408473F2}" ShortID="329101498">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Recorder (Custom)" ID="{9CFE1FAF-EFB9-4407-8995-2A89242CDA0F}" ShortID="131251178" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+														<PropertyList>
+															<Property Name="AuthoringFilename" Type="string" Value=""/>
+															<Property Name="GameFilename" Type="string" Value="ScreamRecording_4.wav"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Sine" ID="{8BED11AC-FF62-4075-90AF-CE01FBAFD9DF}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
