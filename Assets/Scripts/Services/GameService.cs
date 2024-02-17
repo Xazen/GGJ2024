@@ -6,9 +6,14 @@ namespace DefaultNamespace
     {
         private ScoreService scoreService;
         private GamePlayerService gamePlayerService;
+        private GamePlayerManagerController gamePlayerManagerController;
+        private TimerService timerService;
 
-        public GameService(ScoreService scoreService, GamePlayerService gamePlayerService)
+        public GameService(ScoreService scoreService, GamePlayerService gamePlayerService, GamePlayerManagerController gamePlayerManagerController,
+            TimerService timerService)
         {
+            this.timerService = timerService;
+            this.gamePlayerManagerController = gamePlayerManagerController;
             this.gamePlayerService = gamePlayerService;
             this.scoreService = scoreService;
         }
@@ -19,5 +24,14 @@ namespace DefaultNamespace
             gamePlayerService.RegisterPlayer(inputUser);
         }
 
+        public int GetPlayerCount()
+        {
+            return gamePlayerManagerController.GetPlayerCount();
+        }
+
+        public bool IsGameRunning()
+        {
+            return timerService.IsRunning();
+        }
     }
 }

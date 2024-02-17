@@ -26,5 +26,10 @@ namespace DefaultNamespace
                 OnTimerEnd?.Invoke();
             }
         }
+
+        public bool IsRunning()
+        {
+            return isRunning;
+        }
     }
 }
