@@ -32,6 +32,11 @@ public class PlayerAudio : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Hits", gameObject);
     }
+
+    public void PlayScream()
+    {
+
+    }
     
     private void SetPosition()
     {
