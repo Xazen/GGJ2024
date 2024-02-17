@@ -1,8 +1,10 @@
 using System.Collections;
+using DefaultNamespace;
 using DG.Tweening;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Users;
 using Zenject;
 
 public class PlayerController : MonoBehaviour
@@ -18,12 +20,15 @@ public class PlayerController : MonoBehaviour
 
     private float currentHitCooldown;
     private float currentStraggleDuration;
+    private ScoreService scoreService;
+    private InputUser inputUser;
     private bool isStraggled => currentStraggleDuration > 0;
 
     [Inject]
     [UsedImplicitly]
-    public void Inject(BalancingConfig balancingConfig)
+    public void Inject(BalancingConfig balancingConfig, ScoreService scoreService)
     {
+        this.scoreService = scoreService;
         this.balancingConfig = balancingConfig;
     }
 
@@ -34,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnAttackHit(PlayerController playerController)
     {
+        scoreService.AddScore(inputUser.index, 1);
         playerController.OnGotHit(this);
     }
 
@@ -100,5 +106,10 @@ public class PlayerController : MonoBehaviour
         hitBox.gameObject.SetActive(true);
         yield return new WaitForSeconds(balancingConfig.HitboxDuration);
         hitBox.gameObject.SetActive(false);
+    }
+
+    public void SetInputUser(InputUser inputUser)
+    {
+        this.inputUser = inputUser;
     }
 }

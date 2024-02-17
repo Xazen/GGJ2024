@@ -8,10 +8,4 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(1, LoadSceneMode.Additive);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
