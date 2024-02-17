@@ -18,4 +18,5 @@ public class BalancingConfig : ScriptableObject
     public float StaggeredDuration = 0.3f;
     public float KnockbackStrength = 0.2f;
     public float KnockbackMoveSpeed = 0.1f;
+    public float CollisionThreshold = 0.8f;
 }
