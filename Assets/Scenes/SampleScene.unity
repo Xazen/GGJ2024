@@ -192,6 +192,7 @@ MonoBehaviour:
   gameManager: {fileID: 1097466043}
   timerService: {fileID: 1097466045}
   gamePlayerManagerController: {fileID: 440008705}
+  audioService: {fileID: 1493460267533850959}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +665,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f28792244fba7c94b884a58f9a2bafe3, type: 3}
+--- !u!114 &1493460267533850959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8476078336065424088, guid: f28792244fba7c94b884a58f9a2bafe3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1493460267533850958}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766672e48ac044e2a68d1aed22be4afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

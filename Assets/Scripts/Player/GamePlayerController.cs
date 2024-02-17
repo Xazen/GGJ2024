@@ -27,12 +27,16 @@ public class GamePlayerController : MonoBehaviour
 
     [Inject]
     [UsedImplicitly]
-    public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService)
+    public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService,
+        BattlefieldService battlefieldService)
     {
         _scoreService = scoreService;
         _balancingConfig = balancingConfig;
 
         _playerModel = gamePlayerService.GetPlayerModel(_inputUser.index);
+        var location = battlefieldService.GetAndRegisterFreeSpawnLocation(_inputUser.index);
+        gameObject.transform.position = location;
+        LookTowards(Vector3.zero);
     }
 
     private void Start()
@@ -78,8 +82,13 @@ public class GamePlayerController : MonoBehaviour
             .DOMove(gameObject.transform.position + knockbackDirection * _balancingConfig.KnockbackStrength,
                 _balancingConfig.KnockbackMoveSpeed).SetEase(Ease.OutBack);
 
-        Quaternion newRotation = Quaternion.LookRotation(knockbackDirection * -1);
-        model.transform.rotation = newRotation;
+        LookTowards(gamePlayerController.transform.position);
+    }
+
+    private void LookTowards(Vector3 location)
+    {
+        var lookDirection = (transform.position - location) * -1;
+        LookAtDirection(lookDirection);
     }
 
     private void Update()
@@ -99,9 +108,13 @@ public class GamePlayerController : MonoBehaviour
 
         if (_moveVector != Vector3.zero)
         {
-            Quaternion newRotation = Quaternion.LookRotation(_moveVector);
-            model.transform.rotation = newRotation;
+            LookAtDirection(_moveVector);
         }
+    }
+
+    private void LookAtDirection(Vector3 direction)
+    {
+        model.transform.rotation = Quaternion.LookRotation(direction);
     }
 
 

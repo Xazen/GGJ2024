@@ -22,5 +22,12 @@ namespace DefaultNamespace
                 });
             }
         }
+
+        public Vector3 GetAndRegisterFreeSpawnLocation(int inputUserIndex)
+        {
+            var freeSpawnLocation = _battlefieldModel.SpawnPositions.Find(spawnLocation => spawnLocation.PlayerIndex == -1);
+            freeSpawnLocation.PlayerIndex = inputUserIndex;
+            return freeSpawnLocation.Position;
+        }
     }
 }
