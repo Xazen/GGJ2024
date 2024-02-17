@@ -76,6 +76,13 @@
 									<Reference>
 										<Local>
 											<EffectSlot Name="" ID="{414D29EE-14AF-4B40-9575-E9596D36AA77}" ShortID="424210845">
+												<PropertyList>
+													<Property Name="Render" Type="bool">
+														<ValueList>
+															<Value>True</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
 												<ReferenceList>
 													<Reference Name="Effect">
 														<Custom>
@@ -99,6 +106,46 @@
 														<CustomState>
 															<StateRef Name="Idle" ID="{8F843FDA-6944-4F68-AD8D-30439F6D269D}"/>
 															<CustomState Name="" ID="{95D67872-FDE1-4CBF-9F29-3469E62FC3D9}" ShortID="4882001"/>
+														</CustomState>
+													</CustomStateList>
+												</StateInfo>
+											</EffectSlot>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{35765301-F993-44F5-9D1C-3D8B148D776C}" ShortID="677029603">
+												<PropertyList>
+													<Property Name="Render" Type="bool">
+														<ValueList>
+															<Value>True</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Compressor (Custom)" ID="{7708D60E-6295-4AE3-BD84-7F2F7B80A7CD}" ShortID="896075497" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																<PropertyList>
+																	<Property Name="AttackTime" Type="Real32" Value="0.62"/>
+																	<Property Name="OutputGain" Type="Real32" Value="2"/>
+																	<Property Name="Ratio" Type="Real32" Value="7.4"/>
+																	<Property Name="ReleaseTime" Type="Real32" Value="1.35"/>
+																	<Property Name="Threshold" Type="Real32" Value="-26.4"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+												<StateInfo>
+													<CustomStateList>
+														<CustomState>
+															<StateRef Name="Scream" ID="{E870AA98-DD4A-4AF7-B22F-30B031A834E8}"/>
+															<CustomState Name="" ID="{0C73E10A-DAEC-4C95-B172-FF0DB43568D5}" ShortID="121303603"/>
+														</CustomState>
+														<CustomState>
+															<StateRef Name="Idle" ID="{8F843FDA-6944-4F68-AD8D-30439F6D269D}"/>
+															<CustomState Name="" ID="{2C3EC94F-638C-41E4-AB98-7E7CC148FBB1}" ShortID="632572009"/>
 														</CustomState>
 													</CustomStateList>
 												</StateInfo>

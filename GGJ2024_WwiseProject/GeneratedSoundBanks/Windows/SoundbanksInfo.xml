@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{A5E83F98-E091-A52B-DE3D-90C4B5AA461E}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{BDA97BFD-332C-16B5-3297-137DBDE38ED7}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -75,7 +75,7 @@
 				</File>
 				<File Id="638763515" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_Cute Score.wav</ShortName>
-					<CachePath>SFX/Music_Cute Score_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Music_Cute Score_8C7190AC.wem</CachePath>
 				</File>
 				<File Id="668956226" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 3.wav</ShortName>
@@ -100,7 +100,6 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="23390808" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="261580113" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 					<Plugin Id="557973414" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 					<Plugin Id="717672928" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
@@ -136,11 +135,6 @@
 						<MediaRef Id="638763515"/>
 						<MediaRef Id="860232383"/>
 					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="23390808"/>
-						</Custom>
-					</PluginRefs>
 				</Event>
 				<Event Id="573871067" Name="StartAudioCapture_01" DurationType="OneShot" DurationMin="3" DurationMax="3">
 					<PluginRefs>
@@ -175,7 +169,7 @@
 				<Event Id="1917263390" Name="StopMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AAA48E59-F844-5AA0-71BD-A45593A422EB}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2F0BFA15-AE51-0CEF-2220-6782B8178239}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -203,5 +197,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5AA5582F-6D64-D3D7-2DA2-CFA6717350DD}</FileHash>
+	<FileHash>{37E4FBFC-9F73-0017-B330-231377B84062}</FileHash>
 </SoundBanksInfo>
