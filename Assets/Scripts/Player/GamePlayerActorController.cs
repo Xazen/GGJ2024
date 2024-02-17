@@ -10,6 +10,9 @@ using Zenject;
 public class GamePlayerActorController : MonoBehaviour
 {
     [SerializeField]
+    private GameObject stuffingPrefab;
+
+    [SerializeField]
     private Rigidbody rigidBody;
 
     [SerializeField]
@@ -28,12 +31,14 @@ public class GamePlayerActorController : MonoBehaviour
     private PlayerModel _playerModel;
     private InputUser _inputUser;
     private GameService _gameService;
+    private DiContainer _diContainer;
 
     [Inject]
     [UsedImplicitly]
     public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService,
-        BattlefieldService battlefieldService, GameService gameService)
+        BattlefieldService battlefieldService, GameService gameService, DiContainer diContainer)
     {
+        _diContainer = diContainer;
         _gameService = gameService;
         _scoreService = scoreService;
         _balancingConfig = balancingConfig;
@@ -76,30 +81,51 @@ public class GamePlayerActorController : MonoBehaviour
         gamePlayerActorController.OnGotHit(this);
     }
 
-    private void OnGotHit(GamePlayerActorController gamePlayerActorController)
+    private void OnGotHit(GamePlayerActorController attacker)
     {
-        Debug.Log(gameObject.name +  " got Hit by " + gamePlayerActorController.gameObject.name);
+        Debug.Log(gameObject.name +  " got Hit by " + attacker.gameObject.name);
         _playerModel.CurrentStaggeredDuration = _balancingConfig.StaggeredDuration;
 
-        var knockbackDirection = transform.position - gamePlayerActorController.transform.position;
+        Knockback(attacker);
+        LookTowards(attacker.transform.position);
+        SpawnStuffing(attacker);
+    }
+
+    private void SpawnStuffing(GamePlayerActorController attacker)
+    {
+        float stuffingCount = Random.Range(_balancingConfig.StuffingCountMin, _balancingConfig.StuffingCountMax);
+        for (int i = 0; i < stuffingCount; i++)
+        {
+            var stuffingDirection = transform.position - attacker.transform.position;
+            stuffingDirection.y = 0;
+            stuffingDirection.Normalize();
+
+            float randomRotationAngle = Random.Range(-_balancingConfig.StuffingDirectionVariance, _balancingConfig.StuffingDirectionVariance);
+            Quaternion randomYRotation = Quaternion.Euler(0f, randomRotationAngle, 0f);
+            stuffingDirection = randomYRotation * stuffingDirection;
+
+
+            var stuffing = _diContainer.InstantiatePrefab(stuffingPrefab);
+            stuffing.transform.position = transform.position + stuffingDirection * 1.1f;
+            stuffing.transform.localScale = Vector3.one * Random.Range(_balancingConfig.StuffingScaleMin, _balancingConfig.StuffingScaleMax);
+
+            float stuffingFlyDistance = Random.Range(_balancingConfig.StuffingFlyDistanceMin, _balancingConfig.StuffingFlyDistanceMax);
+            float stuffingFlyDuration = Random.Range(_balancingConfig.StuffingFlyDurationMin, _balancingConfig.StuffingFlyDurationMax);
+            stuffing.transform
+                .DOMove(stuffing.transform.position + stuffingDirection * stuffingFlyDistance,
+                    stuffingFlyDuration).SetEase(Ease.OutQuint);
+        }
+    }
+
+    private void Knockback(GamePlayerActorController attacker)
+    {
+        var knockbackDirection = transform.position - attacker.transform.position;
         knockbackDirection.y = 0;
         knockbackDirection.Normalize();
-
-        DOTween.To(() => rigidBody.position, x =>
-            {
-                var lookDirection = (rigidBody.position - x) * -1;
-                if (!IsBlocked(lookDirection))
-                {
-                    rigidBody.MovePosition(x);
-                }
-            },
-            gameObject.transform.position + knockbackDirection * _balancingConfig.KnockbackStrength, _balancingConfig.KnockbackMoveSpeed).SetEase(Ease.OutBack);
 
         gameObject.transform
             .DOMove(gameObject.transform.position + knockbackDirection * _balancingConfig.KnockbackStrength,
                 _balancingConfig.KnockbackMoveSpeed).SetEase(Ease.OutBack);
-
-        LookTowards(gamePlayerActorController.transform.position);
     }
 
     private void LookTowards(Vector3 location)
