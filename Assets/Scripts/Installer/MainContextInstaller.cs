@@ -15,10 +15,14 @@ namespace Installer
         [SerializeField]
         private GamePlayerManagerController gamePlayerManagerController;
 
+        [SerializeField]
+        private AudioService audioService;
+
         public override void InstallBindings()
         {
             Container.Bind<TimerService>().FromInstance(timerService).AsSingle();
             Container.Bind<GamePlayerManagerController>().FromInstance(gamePlayerManagerController).AsSingle();
+            Container.Bind<AudioService>().FromInstance(audioService).AsSingle();
 
             Container.Bind<GameService>().AsSingle();
 
