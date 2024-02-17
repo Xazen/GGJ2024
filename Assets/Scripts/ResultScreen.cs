@@ -8,6 +8,7 @@ using UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Zenject;
 
@@ -41,6 +42,7 @@ public class ResultScreen : UIMonoBehaviour
 
     private void OnRestart()
     {
+        Debug.Log("Restart");
     }
 
     private void UpdateScore()
