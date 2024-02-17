@@ -41,6 +41,11 @@ namespace Player
 
         private void OnAction(InputAction.CallbackContext context)
         {
+            if (!context.started)
+            {
+                return;
+            }
+
             if (context.action.name == "Movement")
             {
                 OnMovement(context.ReadValue<Vector2>());

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GamePlayerHitbox : MonoBehaviour
 {
-    public Action<GamePlayerController> OnAttackHit;
+    public event Action<GamePlayerActorController> OnAttackHit;
 
     private void Start()
     {
@@ -15,7 +15,7 @@ public class GamePlayerHitbox : MonoBehaviour
     {
         if (other.gameObject.CompareTag(Tags.Player))
         {
-            var playerController = other.GetComponent<GamePlayerController>();
+            var playerController = other.GetComponent<GamePlayerActorController>();
             OnAttackHit?.Invoke(playerController);
         }
     }

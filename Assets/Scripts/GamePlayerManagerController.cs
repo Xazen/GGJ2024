@@ -42,7 +42,7 @@ public class GamePlayerManagerController : MonoBehaviour
     {
         Debug.Log("Player Joined");
         playerInput.gameObject.name = "Player " + (playerInput.user.index + 1);
-        playerInput.gameObject.GetComponent<GamePlayerController>().SetInputUser(playerInput.user);
+        playerInput.gameObject.GetComponent<GamePlayerActorController>().SetInputUser(playerInput.user);
         PlayerJoined?.Invoke(playerInput);
         container.InjectGameObject(playerInput.gameObject);
     }

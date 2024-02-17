@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.Users;
 using Zenject;
 
-public class GamePlayerController : MonoBehaviour
+public class GamePlayerActorController : MonoBehaviour
 {
     [SerializeField]
     private GameObject model;
@@ -64,25 +64,25 @@ public class GamePlayerController : MonoBehaviour
         _moveVector = new Vector3(movement.x, 0, movement.y);
     }
 
-    private void OnAttackHit(GamePlayerController gamePlayerController)
+    private void OnAttackHit(GamePlayerActorController gamePlayerActorController)
     {
         _scoreService.AddScore(_inputUser.index, 1);
-        gamePlayerController.OnGotHit(this);
+        gamePlayerActorController.OnGotHit(this);
     }
 
-    private void OnGotHit(GamePlayerController gamePlayerController)
+    private void OnGotHit(GamePlayerActorController gamePlayerActorController)
     {
-        Debug.Log(gameObject.name +  " got Hit by " + gamePlayerController.gameObject.name);
+        Debug.Log(gameObject.name +  " got Hit by " + gamePlayerActorController.gameObject.name);
         _playerModel.CurrentStaggeredDuration = _balancingConfig.StaggeredDuration;
 
-        var knockbackDirection = transform.position - gamePlayerController.transform.position;
+        var knockbackDirection = transform.position - gamePlayerActorController.transform.position;
         knockbackDirection.y = 0;
         knockbackDirection.Normalize();
         gameObject.transform
             .DOMove(gameObject.transform.position + knockbackDirection * _balancingConfig.KnockbackStrength,
                 _balancingConfig.KnockbackMoveSpeed).SetEase(Ease.OutBack);
 
-        LookTowards(gamePlayerController.transform.position);
+        LookTowards(gamePlayerActorController.transform.position);
     }
 
     private void LookTowards(Vector3 location)

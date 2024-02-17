@@ -18,8 +18,8 @@ namespace DefaultNamespace
 
         private void OnDestroy()
         {
-            stopMusic.Post(gameObject);
-            stopAmbience.Post(gameObject);
+            // stopMusic.Post(gameObject);
+            // stopAmbience.Post(gameObject);
         }
     }
 }

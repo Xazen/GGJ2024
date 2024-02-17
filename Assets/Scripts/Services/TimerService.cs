@@ -21,7 +21,7 @@ namespace DefaultNamespace
             if (!isRunning) return;
 
             gameDuration -= TimeSpan.FromSeconds(Time.deltaTime);
-            if (gameDuration.Milliseconds <= 0)
+            if (gameDuration.TotalMilliseconds <= 0)
             {
                 isRunning = false;
                 OnTimerEnd?.Invoke();

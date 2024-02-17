@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using DefaultNamespace;
 using JetBrains.Annotations;
 using TMPro;
@@ -29,8 +28,18 @@ namespace UI
 
         private void Update()
         {
+            UpdateTimer();
+            UpdateScore();
+        }
+
+        private void UpdateTimer()
+        {
             var timeSpan = _timerService.GetTime();
-            timerCount.text = timeSpan.Minutes + ":" + timeSpan.Seconds;
+            timerCount.text = timeSpan.Minutes + ":" + timeSpan.Seconds.ToString("D2");
+        }
+
+        private void UpdateScore()
+        {
             var playerScoresByIndex = _scoreService.GetScoresByPlayerIndex().Values.ToArray();
             for (var i = 0; i < playerScores.Length; i++)
             {

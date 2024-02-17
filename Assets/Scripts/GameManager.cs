@@ -10,7 +10,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-public class GameManager : MonoBehaviour, IInitializable, IDisposable
+public class GameManager : MonoBehaviour
 {
     private TimerService timerService;
     private BalancingConfig balancingConfig;
@@ -20,15 +20,18 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
     private UIService _uiService;
     private SetupPanel _setupPanel;
     private InGameHUD _inGameHUD;
+    private ResultScreen _ResultScreen;
 
     private UIMonoBehaviour _inGameHudInstance;
     private UIMonoBehaviour _setupPanelInstance;
+    private ResultScreen _resultScreen;
 
     [Inject]
     [UsedImplicitly]
     public void Inject(TimerService timerService, BalancingConfig balancingConfig, GamePlayerManagerController gamePlayerManagerController,
-        GameService gameService, DiContainer diContainer, UIService uiService, SetupPanel setupPanel, InGameHUD inGameHUD)
+        GameService gameService, DiContainer diContainer, UIService uiService, SetupPanel setupPanel, InGameHUD inGameHUD, ResultScreen resultScreen)
     {
+        _resultScreen = resultScreen;
         _inGameHUD = inGameHUD;
         _setupPanel = setupPanel;
         _uiService = uiService;
@@ -37,6 +40,8 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
         this.gamePlayerManagerController = gamePlayerManagerController;
         this.balancingConfig = balancingConfig;
         this.timerService = timerService;
+
+        gamePlayerManagerController.PlayerJoined += OnPlayerJoined;
     }
 
     private void Start()
@@ -73,6 +78,11 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
 
     private void StartGame()
     {
+        foreach (var playerInput in PlayerInput.all)
+        {
+            playerInput.SwitchCurrentActionMap(ActionMaps.InGame);
+        }
+
         Debug.Log("Game Started");
         timerService.OnTimerEnd += OnTimerEnd;
         timerService.StartTimer(balancingConfig.GameDuration);
@@ -88,16 +98,7 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
 
     private void OnTimerEnd()
     {
-        Debug.Log("Game Over");
-    }
-
-    public void Initialize()
-    {
-        gamePlayerManagerController.PlayerJoined += OnPlayerJoined;
-    }
-
-    public void Dispose()
-    {
-        gamePlayerManagerController.PlayerJoined -= OnPlayerJoined;
+        _uiService.HideUI(_inGameHudInstance);
+        _uiService.ShowUI(_resultScreen);
     }
 }
