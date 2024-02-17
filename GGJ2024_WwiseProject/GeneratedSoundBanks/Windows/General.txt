@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	417627684	PlayMusic			\Default Work Unit\PlayMusic	
+	1917263390	StopMusic			\Default Work Unit\StopMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	145278452	Music_Metal	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_Metal_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Music\Music_Metal		23693672
+	638763515	Music_Cute Score	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_Cute Score_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Music\Music_Cute Score		23497980
+	860232383	Music_End Fanfare	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_End Fanfare_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Music\Music_End Fanfare		512100
+

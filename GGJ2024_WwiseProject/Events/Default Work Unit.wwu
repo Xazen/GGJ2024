@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B776CECC-D9B8-4425-80AC-8B31EE6A0223}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{B776CECC-D9B8-4425-80AC-8B31EE6A0223}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayMusic" ID="{45AFD055-0E15-41A0-B96E-570ECCF97305}">
+					<ChildrenList>
+						<Action Name="" ID="{7C10A999-2BAA-440B-A900-AC8124F814F6}" ShortID="308331644">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level_Music" ID="{08F255AD-6CB1-4B0E-BB5B-8E0C9B5617F2}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopMusic" ID="{2C79754F-D724-467D-8245-45A093D8830E}">
+					<ChildrenList>
+						<Action Name="" ID="{745BB16F-15FC-4A1C-8D07-A6D01E7141EB}" ShortID="845923863">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level_Music" ID="{08F255AD-6CB1-4B0E-BB5B-8E0C9B5617F2}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
