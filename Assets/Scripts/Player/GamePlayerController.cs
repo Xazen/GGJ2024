@@ -24,15 +24,20 @@ public class GamePlayerController : MonoBehaviour
     private ScoreService _scoreService;
     private PlayerModel _playerModel;
     private InputUser _inputUser;
+    private BattlefieldService battlefieldService;
 
     [Inject]
     [UsedImplicitly]
-    public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService)
+    public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService,
+        BattlefieldService battlefieldService)
     {
+        this.battlefieldService = battlefieldService;
         _scoreService = scoreService;
         _balancingConfig = balancingConfig;
 
         _playerModel = gamePlayerService.GetPlayerModel(_inputUser.index);
+        var location = battlefieldService.GetAndRegisterFreeSpawnLocation(_inputUser.index);
+        gameObject.transform.position = location;
     }
 
     private void Start()
