@@ -12,6 +12,8 @@ namespace DefaultNamespace
     {
         public float CurrentStaggeredDuration;
         public bool IsStaggered => CurrentStaggeredDuration > 0;
+        public bool IsAttacking;
+
         public InputUser InputUser;
     }
 }

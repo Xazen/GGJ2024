@@ -29,7 +29,8 @@ namespace UI
 
         private void Update()
         {
-            timerCount.text = _timerService.GetTime().ToString();
+            var timeSpan = _timerService.GetTime();
+            timerCount.text = timeSpan.Minutes + ":" + timeSpan.Seconds;
             var playerScoresByIndex = _scoreService.GetScoresByPlayerIndex().Values.ToArray();
             for (var i = 0; i < playerScores.Length; i++)
             {

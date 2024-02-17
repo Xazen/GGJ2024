@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Balancing
   m_EditorClassIdentifier: 
   GameDuration: 120
-  PlayerMovementSpeed: 20
-  HitboxDuration: 0.2
+  MinPlayerCount: 2
+  PlayerMovementSpeed: 15
+  HitboxDuration: 0.1
   HitCooldown: 0.5
-  StraggleDuration: 0.3
+  StaggeredDuration: 0.3
   KnockbackStrength: 2
   KnockbackMoveSpeed: 0.1
