@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace DefaultNamespace
 {
@@ -14,7 +15,8 @@ namespace DefaultNamespace
         [Header("Debug")]
         [SerializeField] private bool Screaming = false;
 
-         private bool previousScreaming = false;                         //DEBUG
+        private bool previousScreaming = false;                         //DEBUG
+        public float timer;
 #endif
 
         private void Start()
@@ -37,11 +39,19 @@ namespace DefaultNamespace
         public void Scream()
         {
             AkSoundEngine.SetState("Screaming", "Scream");
+            StartCoroutine(Timer());
+        }
+
+        private IEnumerator Timer()
+        {
+            yield return new WaitForSecondsRealtime(timer);
+            StopScream();
         }
 
         public void StopScream()
         {
             AkSoundEngine.SetState("Screaming", "Idle");
+            Screaming = false;
         }
 
 #if UNITY_EDITOR
