@@ -99,7 +99,7 @@ public class GamePlayerController : MonoBehaviour
 
     private void Move()
     {
-        if (_playerModel.IsStaggered)
+        if (_playerModel.IsStaggered || _playerModel.IsAttacking)
         {
             return;
         }
@@ -120,9 +120,11 @@ public class GamePlayerController : MonoBehaviour
 
     private IEnumerator Attack()
     {
+        _playerModel.IsAttacking = true;
         hitBox.gameObject.SetActive(true);
         yield return new WaitForSeconds(_balancingConfig.HitboxDuration);
         hitBox.gameObject.SetActive(false);
+        _playerModel.IsAttacking = false;
     }
 
     public void SetInputUser(InputUser playerInputUser)

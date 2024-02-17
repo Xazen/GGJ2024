@@ -33,9 +33,9 @@ namespace DefaultNamespace
             return isRunning;
         }
 
-        public int GetTime()
+        public TimeSpan GetTime()
         {
-            return gameDuration.Seconds;
+            return gameDuration;
         }
     }
 }
