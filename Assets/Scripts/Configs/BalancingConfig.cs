@@ -3,6 +3,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Balancing", menuName = "Configs/Balancing")]
 public class BalancingConfig : ScriptableObject
 {
+    [Header("Game")]
+    public float GameDuration = 120;
+
     [Header("Player")]
     public float PlayerMovementSpeed = 5;
 
