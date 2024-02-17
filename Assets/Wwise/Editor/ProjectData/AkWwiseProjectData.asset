@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8cb61922633e4f45abef376dc83af8a7
     GuidInternal: 
-    m_lastTime: -8584934290609781077
+    m_lastTime: -8584934346097604605
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 457ff181b915e949a13f362102a81aa3
     GuidInternal: 
-    m_lastTime: -8584934290609881810
+    m_lastTime: -8584934346097024111
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5a64f6870470f2429e7517d4e173fa48
     GuidInternal: 
-    m_lastTime: -8584934290609816456
+    m_lastTime: -8584934346097529543
     List:
     - name: General
       guid: 84287eb77840ee4b8ae08610a4941e16
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ccce76b7b8d9254480ac8b31ee6a0223
     GuidInternal: 
-    m_lastTime: -8584934290617449858
+    m_lastTime: -8584934299390280122
     List:
     - name: Audio Capture
       guid: a2677cd8741247429693657fdb996267
@@ -150,9 +150,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 123.41669
       minDuration: 123.41669
-    - name: StartAudioCapture
-      guid: db92253a274c1b4f96fa38e5d9f204d3
-      id: 2102106967
+    - name: StartAudioCapture_01
+      guid: 12af968318e78b488cc9e82fc569795b
+      id: 573871067
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -163,15 +163,75 @@ MonoBehaviour:
       - ElementName: Audio Capture
         ObjectType: 4
         guid: a2677cd8741247429693657fdb996267
-      - ElementName: StartAudioCapture
+      - ElementName: StartAudioCapture_01
+        ObjectType: 3
+        guid: 12af968318e78b488cc9e82fc569795b
+      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartAudioCapture_02
+      guid: 1f70fe546f942741add27d1697101eba
+      id: 573871064
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Audio Capture
+        ObjectType: 4
+        guid: a2677cd8741247429693657fdb996267
+      - ElementName: StartAudioCapture_02
+        ObjectType: 3
+        guid: 1f70fe546f942741add27d1697101eba
+      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartAudioCapture_03
+      guid: 3edcff889a91f74f9e05618bc79d0bdd
+      id: 573871065
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Audio Capture
+        ObjectType: 4
+        guid: a2677cd8741247429693657fdb996267
+      - ElementName: StartAudioCapture_03
+        ObjectType: 3
+        guid: 3edcff889a91f74f9e05618bc79d0bdd
+      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_03
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StartAudioCapture_04
+      guid: db92253a274c1b4f96fa38e5d9f204d3
+      id: 573871070
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Audio Capture
+        ObjectType: 4
+        guid: a2677cd8741247429693657fdb996267
+      - ElementName: StartAudioCapture_04
         ObjectType: 3
         guid: db92253a274c1b4f96fa38e5d9f204d3
-      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture
+      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_04
       maxAttenuation: 0
-      maxDuration: 3
-      minDuration: 3
+      maxDuration: -1
+      minDuration: -1
     - name: StopAudioCapture
-      guid: b04011acd1df394f991ab8bc064d2558
+      guid: 677e776467879b42bc41075d8a770241
       id: 764565769
       PathAndIcons:
       - ElementName: Events
@@ -185,7 +245,7 @@ MonoBehaviour:
         guid: a2677cd8741247429693657fdb996267
       - ElementName: StopAudioCapture
         ObjectType: 3
-        guid: b04011acd1df394f991ab8bc064d2558
+        guid: 677e776467879b42bc41075d8a770241
       Path: Events\Default Work Unit\Audio Capture\StopAudioCapture
       maxAttenuation: 0
       maxDuration: 0
@@ -222,7 +282,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ec7e71d9afa3ae4f81017d073b0169ca
     GuidInternal: 
-    m_lastTime: -8584934290617429856
+    m_lastTime: -8584934346097149225
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -236,7 +296,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c2d706362f82cb4ab974331ff2f0d773
     GuidInternal: 
-    m_lastTime: -8584934290609801237
+    m_lastTime: -8584934346097044136
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -250,7 +310,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: c48fb9d90600a74584644b0ff9f7307b
     GuidInternal: 
-    m_lastTime: -8584934290609791179
+    m_lastTime: -8584934346096818945
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -264,11 +324,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: de98667be87b7042bfa87d616af01e0d
     GuidInternal: 
-    m_lastTime: -8584934290609781077
+    m_lastTime: -8584934346097274326
     List: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 01000000020000000300000004000000
+  ExpandedWaapiItemIds: 010000000500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 
