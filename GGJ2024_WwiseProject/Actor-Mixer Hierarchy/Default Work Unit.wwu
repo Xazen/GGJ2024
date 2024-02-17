@@ -868,6 +868,1842 @@
 						</BlendContainer>
 					</ChildrenList>
 				</BlendContainer>
+				<ActorMixer Name="Character" ID="{EBED3CF4-C88D-41C3-899D-DB28246038EF}" ShortID="128387802">
+					<PropertyList>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Character" ID="{DE2DAE4D-BDA0-4A2A-9246-6871A37362AD}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Swings" ID="{A9AD6167-5EC6-4F77-9736-02189E3A1C85}" ShortID="642014555">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A970D9FB-24E0-4191-904C-38ACED6DB8F1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+													<Property Name="Min" Type="Real64" Value="-5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Knife Swings" ID="{47AE2A15-67D2-4EBD-83E0-C43014049634}" ShortID="164253773">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7180340D-F5BF-4C8B-9277-754E8D619F60}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Knife Swings 1" ID="{17DB776B-27FB-4630-B18A-74E58133A8C8}" ShortID="754919979">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knife Swings 1" ID="{E481BEA2-10B1-43F0-B070-4D6846129AF2}">
+													<Language>SFX</Language>
+													<AudioFile>Knife Swings 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="769556448"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Knife Swings 1" ID="{E481BEA2-10B1-43F0-B070-4D6846129AF2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Knife Swings 2" ID="{55B660B5-6F18-4FEB-B5F0-B34B9FBE4F92}" ShortID="177268142">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knife Swings 2" ID="{CB4BCD20-C035-407F-B96B-35B618739A93}">
+													<Language>SFX</Language>
+													<AudioFile>Knife Swings 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1001677442"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Knife Swings 2" ID="{CB4BCD20-C035-407F-B96B-35B618739A93}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Knife Swings 3" ID="{77E1938A-A56B-421B-BB3D-BE5B7BCD7DFD}" ShortID="188306261">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knife Swings 3" ID="{45B5F957-395C-491A-92BF-E891F3033211}">
+													<Language>SFX</Language>
+													<AudioFile>Knife Swings 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="230836363"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Knife Swings 3" ID="{45B5F957-395C-491A-92BF-E891F3033211}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Knife Swings 4" ID="{C4C9B74A-2F86-46AD-871E-BD75A9FC3D80}" ShortID="936851445">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knife Swings 4" ID="{A6C1F8C6-CCCE-4E28-BBFC-6FE66CC093E1}">
+													<Language>SFX</Language>
+													<AudioFile>Knife Swings 4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="711500054"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Knife Swings 4" ID="{A6C1F8C6-CCCE-4E28-BBFC-6FE66CC093E1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Knife Swings 5" ID="{9617E942-B387-4EE4-AD5D-F054043597D2}" ShortID="637912972">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knife Swings 5" ID="{48E698F8-C506-42EA-BEBF-EBF6C4356DD5}">
+													<Language>SFX</Language>
+													<AudioFile>Knife Swings 5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="383175845"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Knife Swings 5" ID="{48E698F8-C506-42EA-BEBF-EBF6C4356DD5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Knife Swings 6" ID="{C09A8796-CF7D-4CB9-9FCE-2145277B9CFF}" ShortID="758718576">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knife Swings 6" ID="{FA64C2B8-FE7F-454F-BE80-2CC40EBE7A79}">
+													<Language>SFX</Language>
+													<AudioFile>Knife Swings 6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="828196758"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Knife Swings 6" ID="{FA64C2B8-FE7F-454F-BE80-2CC40EBE7A79}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Knife Swings 7" ID="{CF96F718-171A-4018-A633-8A83572DE7D5}" ShortID="1029262609">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knife Swings 7" ID="{043EAF4D-EC75-4202-AFF3-246EE8D1B29B}">
+													<Language>SFX</Language>
+													<AudioFile>Knife Swings 7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="830696659"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Knife Swings 7" ID="{043EAF4D-EC75-4202-AFF3-246EE8D1B29B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Knife Swings 8" ID="{006372E1-F981-49DB-9483-62AFF49E118A}" ShortID="447624966">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Knife Swings 8" ID="{B6790BB4-541C-4CFC-AF6E-2FBF8628377E}">
+													<Language>SFX</Language>
+													<AudioFile>Knife Swings 8.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="416225711"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Knife Swings 8" ID="{B6790BB4-541C-4CFC-AF6E-2FBF8628377E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Swings" ID="{060B2B68-7485-4EC1-B710-AA0893FA8884}" ShortID="155596883">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="01" ID="{A3F1E789-9FCE-419C-A9EF-48CBAFB93672}" ShortID="65564903">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="BasicSwing 1" ID="{C8EAEDF2-48B4-43E9-A9CD-AE7959A5B5EE}" ShortID="562052510">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BasicSwing 1" ID="{832C76EF-E172-440D-B31A-176299C21165}">
+															<Language>SFX</Language>
+															<AudioFile>BasicSwing 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1012106575"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BasicSwing 1" ID="{832C76EF-E172-440D-B31A-176299C21165}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SpoonSwingLayer 1" ID="{A643565C-474A-451D-A941-7EB3C148F47D}" ShortID="971513951">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SpoonSwingLayer 1" ID="{5AC7F671-F522-4C41-8AC2-4E40F663BEA5}">
+															<Language>SFX</Language>
+															<AudioFile>SpoonSwingLayer 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="227408532"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SpoonSwingLayer 1" ID="{5AC7F671-F522-4C41-8AC2-4E40F663BEA5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SpoonSwingLayer 1" ID="{A643565C-474A-451D-A941-7EB3C148F47D}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="BasicSwing 1" ID="{C8EAEDF2-48B4-43E9-A9CD-AE7959A5B5EE}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 1" ID="{C8EAEDF2-48B4-43E9-A9CD-AE7959A5B5EE}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 1" ID="{C8EAEDF2-48B4-43E9-A9CD-AE7959A5B5EE}"/>
+															<ItemRef Name="SpoonSwingLayer 1" ID="{A643565C-474A-451D-A941-7EB3C148F47D}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="02" ID="{8F11D611-1EC3-4353-B0EF-4AFC6C0A9D53}" ShortID="579964763">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="BasicSwing 2" ID="{8645557B-978E-487D-9BAA-A41E996AC3C3}" ShortID="2529841">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BasicSwing 2" ID="{08A682FA-ADEE-4183-91F6-631202650A4C}">
+															<Language>SFX</Language>
+															<AudioFile>BasicSwing 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="6189032"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BasicSwing 2" ID="{08A682FA-ADEE-4183-91F6-631202650A4C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SpoonSwingLayer 2" ID="{B7576878-2113-497E-BC61-43C71F2C7765}" ShortID="402900364">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SpoonSwingLayer 2" ID="{C721A7E4-A2A2-4949-9ED6-9FA7C980537B}">
+															<Language>SFX</Language>
+															<AudioFile>SpoonSwingLayer 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="264445141"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SpoonSwingLayer 2" ID="{C721A7E4-A2A2-4949-9ED6-9FA7C980537B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SpoonSwingLayer 2" ID="{B7576878-2113-497E-BC61-43C71F2C7765}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="BasicSwing 2" ID="{8645557B-978E-487D-9BAA-A41E996AC3C3}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 2" ID="{8645557B-978E-487D-9BAA-A41E996AC3C3}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 2" ID="{8645557B-978E-487D-9BAA-A41E996AC3C3}"/>
+															<ItemRef Name="SpoonSwingLayer 2" ID="{B7576878-2113-497E-BC61-43C71F2C7765}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="03" ID="{555BB295-7286-401F-B631-935824100DDD}" ShortID="242052170">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SpoonSwingLayer 3" ID="{CFA1E839-8C0B-4742-A0AD-861F68F0F744}" ShortID="900838236">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SpoonSwingLayer 3" ID="{1C689116-14E1-4FDC-91AF-0FA901C3DF89}">
+															<Language>SFX</Language>
+															<AudioFile>SpoonSwingLayer 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="305209632"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SpoonSwingLayer 3" ID="{1C689116-14E1-4FDC-91AF-0FA901C3DF89}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BasicSwing 3" ID="{D08E40FB-226F-4F9B-87B4-413C52816003}" ShortID="383151317">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BasicSwing 3" ID="{13CF2738-92ED-4B05-94E0-D2943DE07FEA}">
+															<Language>SFX</Language>
+															<AudioFile>BasicSwing 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="771124036"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BasicSwing 3" ID="{13CF2738-92ED-4B05-94E0-D2943DE07FEA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SpoonSwingLayer 3" ID="{CFA1E839-8C0B-4742-A0AD-861F68F0F744}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="BasicSwing 3" ID="{D08E40FB-226F-4F9B-87B4-413C52816003}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 3" ID="{D08E40FB-226F-4F9B-87B4-413C52816003}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 3" ID="{D08E40FB-226F-4F9B-87B4-413C52816003}"/>
+															<ItemRef Name="SpoonSwingLayer 3" ID="{CFA1E839-8C0B-4742-A0AD-861F68F0F744}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="04" ID="{912AE942-438E-4913-B7D0-A1121E044F4F}" ShortID="263061">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="BasicSwing 4" ID="{1D63BF6A-C487-4CD2-B6EC-1588E98AD0AF}" ShortID="1001892947">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BasicSwing 4" ID="{C9CEC37F-BD84-46D2-844E-AC3BD1395ADF}">
+															<Language>SFX</Language>
+															<AudioFile>BasicSwing 4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="912427310"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BasicSwing 4" ID="{C9CEC37F-BD84-46D2-844E-AC3BD1395ADF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SpoonSwingLayer 4" ID="{1F9BE60A-6BA0-4877-A11D-E9E91B45805A}" ShortID="89435004">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SpoonSwingLayer 4" ID="{67AD5D36-BC9A-4770-AB52-C11CEF51B7FF}">
+															<Language>SFX</Language>
+															<AudioFile>SpoonSwingLayer 4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="800814977"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SpoonSwingLayer 4" ID="{67AD5D36-BC9A-4770-AB52-C11CEF51B7FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SpoonSwingLayer 4" ID="{1F9BE60A-6BA0-4877-A11D-E9E91B45805A}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="BasicSwing 4" ID="{1D63BF6A-C487-4CD2-B6EC-1588E98AD0AF}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 4" ID="{1D63BF6A-C487-4CD2-B6EC-1588E98AD0AF}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 4" ID="{1D63BF6A-C487-4CD2-B6EC-1588E98AD0AF}"/>
+															<ItemRef Name="SpoonSwingLayer 4" ID="{1F9BE60A-6BA0-4877-A11D-E9E91B45805A}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="05" ID="{7CDDEE6D-9E8E-44BB-8BBC-99CD11D527C4}" ShortID="90684819">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="BasicSwing 5" ID="{6D797292-D290-411D-876B-20FE6EBA8930}" ShortID="118136566">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BasicSwing 5" ID="{E6DB9378-1392-4F2E-A20C-94B47B0170A5}">
+															<Language>SFX</Language>
+															<AudioFile>BasicSwing 5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="282821679"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BasicSwing 5" ID="{E6DB9378-1392-4F2E-A20C-94B47B0170A5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SpoonSwingLayer 5" ID="{C9A1778D-8359-49AA-9728-93FF00E39D45}" ShortID="329154100">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SpoonSwingLayer 5" ID="{00CE007A-B784-4F5A-978B-27112E605FFB}">
+															<Language>SFX</Language>
+															<AudioFile>SpoonSwingLayer 5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1046232497"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SpoonSwingLayer 5" ID="{00CE007A-B784-4F5A-978B-27112E605FFB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SpoonSwingLayer 5" ID="{C9A1778D-8359-49AA-9728-93FF00E39D45}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="BasicSwing 5" ID="{6D797292-D290-411D-876B-20FE6EBA8930}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 5" ID="{6D797292-D290-411D-876B-20FE6EBA8930}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+														<ItemList>
+															<ItemRef Name="SpoonSwingLayer 5" ID="{C9A1778D-8359-49AA-9728-93FF00E39D45}"/>
+															<ItemRef Name="BasicSwing 5" ID="{6D797292-D290-411D-876B-20FE6EBA8930}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="06" ID="{450A27A5-D2EA-46E2-9847-C1F51F094F24}" ShortID="929674056">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SpoonSwingLayer 6" ID="{8E7B114C-6B98-48BB-A816-CA3AC962F1D4}" ShortID="974887328">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SpoonSwingLayer 6" ID="{024299BA-CEC1-421C-9DAE-A051738F26A0}">
+															<Language>SFX</Language>
+															<AudioFile>SpoonSwingLayer 6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1010866600"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SpoonSwingLayer 6" ID="{024299BA-CEC1-421C-9DAE-A051738F26A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="BasicSwing 6" ID="{5A61AABF-0D88-4902-B7ED-8EB813E56722}" ShortID="966801601">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BasicSwing 6" ID="{FD897080-490E-44FE-8E94-AC0AD072F254}">
+															<Language>SFX</Language>
+															<AudioFile>BasicSwing 6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="899287765"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BasicSwing 6" ID="{FD897080-490E-44FE-8E94-AC0AD072F254}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SpoonSwingLayer 6" ID="{8E7B114C-6B98-48BB-A816-CA3AC962F1D4}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="BasicSwing 6" ID="{5A61AABF-0D88-4902-B7ED-8EB813E56722}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 6" ID="{5A61AABF-0D88-4902-B7ED-8EB813E56722}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 6" ID="{5A61AABF-0D88-4902-B7ED-8EB813E56722}"/>
+															<ItemRef Name="SpoonSwingLayer 6" ID="{8E7B114C-6B98-48BB-A816-CA3AC962F1D4}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="07" ID="{4622CCB3-1AA3-461E-8382-343E4B6F9526}" ShortID="1027996014">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="BasicSwing 7" ID="{816EEDA9-3FD5-4170-ABDC-B37A5E11A190}" ShortID="474331721">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="BasicSwing 7" ID="{CE7D40FF-8D56-46CB-BF58-5376EDECC37A}">
+															<Language>SFX</Language>
+															<AudioFile>BasicSwing 7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="272903579"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="BasicSwing 7" ID="{CE7D40FF-8D56-46CB-BF58-5376EDECC37A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SpoonSwingLayer 7" ID="{065A5E85-D6FC-484E-8EE7-586348FC11AE}" ShortID="935324283">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SpoonSwingLayer 7" ID="{ED4E57F1-EFD4-4682-B96F-22F8D56BC1EC}">
+															<Language>SFX</Language>
+															<AudioFile>SpoonSwingLayer 7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="762068009"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SpoonSwingLayer 7" ID="{ED4E57F1-EFD4-4682-B96F-22F8D56BC1EC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SpoonSwingLayer 7" ID="{065A5E85-D6FC-484E-8EE7-586348FC11AE}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="BasicSwing 7" ID="{816EEDA9-3FD5-4170-ABDC-B37A5E11A190}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 7" ID="{816EEDA9-3FD5-4170-ABDC-B37A5E11A190}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+														<ItemList>
+															<ItemRef Name="BasicSwing 7" ID="{816EEDA9-3FD5-4170-ABDC-B37A5E11A190}"/>
+															<ItemRef Name="SpoonSwingLayer 7" ID="{065A5E85-D6FC-484E-8EE7-586348FC11AE}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Knife Swings" ID="{47AE2A15-67D2-4EBD-83E0-C43014049634}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Swings" ID="{060B2B68-7485-4EC1-B710-AA0893FA8884}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+										<ItemList>
+											<ItemRef Name="Knife Swings" ID="{47AE2A15-67D2-4EBD-83E0-C43014049634}"/>
+											<ItemRef Name="Swings" ID="{060B2B68-7485-4EC1-B710-AA0893FA8884}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+										<ItemList>
+											<ItemRef Name="Swings" ID="{060B2B68-7485-4EC1-B710-AA0893FA8884}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Hits" ID="{AD379FCA-A0C3-4236-9F89-9D4F1176F412}" ShortID="737711952">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}" WorkUnitID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Knife Hits" ID="{E76BE02B-6B0C-43B7-A305-47A951824812}" ShortID="843097578">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Slicing Veggies" ID="{7F7022E0-B687-479D-99B3-DD3CE8BF7099}" ShortID="11956487">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="VeggieSlices 1" ID="{5CB108E9-062B-43F5-B577-4D0F0700D070}" ShortID="1042995575">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VeggieSlices 1" ID="{419BD266-FC99-401E-AACB-49B9AADF923A}">
+															<Language>SFX</Language>
+															<AudioFile>VeggieSlices 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="481650952"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VeggieSlices 1" ID="{419BD266-FC99-401E-AACB-49B9AADF923A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VeggieSlices 2" ID="{483D4D4A-32EB-4659-95EE-E6059D06C129}" ShortID="963192873">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VeggieSlices 2" ID="{FC798115-31CD-4E4D-B942-112C761FA64F}">
+															<Language>SFX</Language>
+															<AudioFile>VeggieSlices 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="581836822"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VeggieSlices 2" ID="{FC798115-31CD-4E4D-B942-112C761FA64F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VeggieSlices 3" ID="{C101B4F3-9C7A-4DD8-8F59-CDB3C9128E27}" ShortID="737729475">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VeggieSlices 3" ID="{CA48DF5E-7B81-426B-ABAE-406185054B50}">
+															<Language>SFX</Language>
+															<AudioFile>VeggieSlices 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="391833410"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VeggieSlices 3" ID="{CA48DF5E-7B81-426B-ABAE-406185054B50}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VeggieSlices 4" ID="{91BCB25E-4EA2-4E10-A5F6-E4DBAF9C6AF7}" ShortID="82069228">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VeggieSlices 4" ID="{3812EBDC-9090-4987-927C-D5B079D3B531}">
+															<Language>SFX</Language>
+															<AudioFile>VeggieSlices 4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1034212319"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VeggieSlices 4" ID="{3812EBDC-9090-4987-927C-D5B079D3B531}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="VeggieSlices 5" ID="{340F95AD-2BC6-41D1-9BBF-183236CC5ED2}" ShortID="638681726">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="VeggieSlices 5" ID="{D4D11D7B-B926-4431-903B-F7EF099753C3}">
+															<Language>SFX</Language>
+															<AudioFile>VeggieSlices 5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="526958082"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="VeggieSlices 5" ID="{D4D11D7B-B926-4431-903B-F7EF099753C3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Knife Hits" ID="{BBDBF579-AB96-4213-84F1-E91E9486C995}" ShortID="483609779">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Knife Slice 1" ID="{B944D00F-DDF6-40F2-A232-CB3CF9524BBD}" ShortID="105410203">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Knife Slice 1" ID="{7480ADE3-6CD6-45BE-9617-267F09CD9BAA}">
+															<Language>SFX</Language>
+															<AudioFile>Knife Slice 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="667684970"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Knife Slice 1" ID="{7480ADE3-6CD6-45BE-9617-267F09CD9BAA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Knife Slice 2" ID="{0B739A60-002D-45BF-B2F7-CC244748FB6D}" ShortID="854072046">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Knife Slice 2" ID="{F494B6E4-A9F8-47AC-BC8F-117A3491EF06}">
+															<Language>SFX</Language>
+															<AudioFile>Knife Slice 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="209115331"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Knife Slice 2" ID="{F494B6E4-A9F8-47AC-BC8F-117A3491EF06}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Knife Slice 3" ID="{69ACA2AB-D9E4-453B-B821-AA8424E4E0F8}" ShortID="779358922">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Knife Slice 3" ID="{7C3DA966-3B67-4A85-BD80-0D54CEC4B004}">
+															<Language>SFX</Language>
+															<AudioFile>Knife Slice 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="614381106"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Knife Slice 3" ID="{7C3DA966-3B67-4A85-BD80-0D54CEC4B004}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Knife Slice 4" ID="{A7DD9430-EC99-4B38-A8DC-B8E788757A31}" ShortID="808899601">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Knife Slice 4" ID="{5A339215-CAC7-4882-B934-EC40F09FF1F5}">
+															<Language>SFX</Language>
+															<AudioFile>Knife Slice 4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="766967025"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Knife Slice 4" ID="{5A339215-CAC7-4882-B934-EC40F09FF1F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Knife Slice 5" ID="{809D2541-A0CB-4E51-A2EA-B767B749F691}" ShortID="101474383">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Knife Slice 5" ID="{59CC3765-759D-41A6-91E7-A015DD6F9FA8}">
+															<Language>SFX</Language>
+															<AudioFile>Knife Slice 5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="465637869"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Knife Slice 5" ID="{59CC3765-759D-41A6-91E7-A015DD6F9FA8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Slice Punch" ID="{81AF1960-4D07-4782-931F-60D02942EEA6}" ShortID="638394577">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Slice Punch 1" ID="{0F80E0BF-F0F6-47BA-BE85-DCDCA766B1FE}" ShortID="189457243">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Slice Punch 1" ID="{1E88090A-815C-4259-8EC7-12809BBC1E15}">
+															<Language>SFX</Language>
+															<AudioFile>Slice Punch 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="150116584"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Slice Punch 1" ID="{1E88090A-815C-4259-8EC7-12809BBC1E15}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Slice Punch 2" ID="{74E52100-2928-42EA-BF56-9AA482E38A05}" ShortID="203957280">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Slice Punch 2" ID="{8C71F64A-0ED0-4ED6-98AB-974424142C6A}">
+															<Language>SFX</Language>
+															<AudioFile>Slice Punch 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="446948816"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Slice Punch 2" ID="{8C71F64A-0ED0-4ED6-98AB-974424142C6A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Slice Punch 3" ID="{E6EAFDE3-A025-4C0D-A213-A369680AE6F2}" ShortID="349363849">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Slice Punch 3" ID="{099708DD-AAC6-4586-9C95-076590A0439B}">
+															<Language>SFX</Language>
+															<AudioFile>Slice Punch 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="137229546"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Slice Punch 3" ID="{099708DD-AAC6-4586-9C95-076590A0439B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="z_Gory Knife Hits" ID="{294CF9CF-B1C3-4C51-B2A9-F5A0F12E4C64}" ShortID="412995026">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Silence" ID="{FF3B8D2E-9490-4D23-946C-CE7A1583F519}" ShortID="897031069">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Silence" ID="{A60FE666-030A-4DE7-8BAB-3251D210D57B}" ShortID="372414170" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="0.6"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Silence" ID="{A60FE666-030A-4DE7-8BAB-3251D210D57B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Samples" ID="{93228521-649F-47BE-9C93-434ECE0FE440}" ShortID="55827355">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Slice Gore 1" ID="{63C8ABC9-6A1F-41B2-9DE0-811DE0BD8FE5}" ShortID="730861314">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Slice Gore 1" ID="{D38307A8-D618-4EA4-A8DF-4FF8CDE003B0}">
+																	<Language>SFX</Language>
+																	<AudioFile>Slice Gore 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="914262038"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Slice Gore 1" ID="{D38307A8-D618-4EA4-A8DF-4FF8CDE003B0}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Slice Gore 2" ID="{B2A7DCAE-9CF3-44A9-927E-67D932FE331E}" ShortID="653566617">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Slice Gore 2" ID="{659398C0-8AE2-4432-B193-A4E21A8EAC18}">
+																	<Language>SFX</Language>
+																	<AudioFile>Slice Gore 2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1047295760"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Slice Gore 2" ID="{659398C0-8AE2-4432-B193-A4E21A8EAC18}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Slice Gore 3" ID="{6B5F8FA0-C3C4-42F0-946F-155CB487050C}" ShortID="459702932">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Slice Gore 3" ID="{242A315C-36FC-4BDD-B3C6-D32818A4B1C6}">
+																	<Language>SFX</Language>
+																	<AudioFile>Slice Gore 3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="261915536"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Slice Gore 3" ID="{242A315C-36FC-4BDD-B3C6-D32818A4B1C6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Slice Gore 4" ID="{21EB37C2-01AB-43B1-BB85-1E30B63755CE}" ShortID="864995234">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Slice Gore 4" ID="{DCAD0914-3206-4AA8-B5CF-BD7CD5AC07E2}">
+																	<Language>SFX</Language>
+																	<AudioFile>Slice Gore 4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="833185748"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Slice Gore 4" ID="{DCAD0914-3206-4AA8-B5CF-BD7CD5AC07E2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="Spoon Hits" ID="{14B3DE0F-1454-4CFB-A354-87F5D366CE05}" ShortID="705678381">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Hits" ID="{4AC89101-0935-40B5-BB7E-D16D3793EFDD}" ShortID="1057234052">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Hits 1" ID="{AABF270B-9FF9-404D-AC70-79E140B31BD2}" ShortID="380650377">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Hits 1" ID="{C9735AE6-7C71-4247-8A3F-A1834D630DB0}">
+															<Language>SFX</Language>
+															<AudioFile>Hits 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="760649509"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Hits 1" ID="{C9735AE6-7C71-4247-8A3F-A1834D630DB0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Hits 2" ID="{12C00348-6EA6-408A-B517-1BB4F88CDC0E}" ShortID="555119445">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Hits 2" ID="{02E7C563-8F59-4292-9B4E-A18B6060E3CF}">
+															<Language>SFX</Language>
+															<AudioFile>Hits 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="88214754"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Hits 2" ID="{02E7C563-8F59-4292-9B4E-A18B6060E3CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Hits 3" ID="{17B6E80D-81DE-4806-89D5-36540E896007}" ShortID="693188388">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Hits 3" ID="{C1D203AF-BADF-4795-8726-4C3AAD19E0A1}">
+															<Language>SFX</Language>
+															<AudioFile>Hits 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="589887342"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Hits 3" ID="{C1D203AF-BADF-4795-8726-4C3AAD19E0A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Veggie Hits" ID="{48854C4F-7C61-48DE-8047-D8EE2AF09EA4}" ShortID="643108820">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Veggie Hits 1" ID="{84B2B406-EA8E-4949-BDDF-F8549124D886}" ShortID="972129903">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Veggie Hits 1" ID="{9DC58126-9849-4D03-A6D5-21E631D669A6}">
+															<Language>SFX</Language>
+															<AudioFile>Veggie Hits 1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="166057783"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Veggie Hits 1" ID="{9DC58126-9849-4D03-A6D5-21E631D669A6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Veggie Hits 2" ID="{6EC44F22-97E7-4959-AF13-2405B9AB61D4}" ShortID="979243498">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Veggie Hits 2" ID="{852A1A7C-543A-482C-A8CE-1FC6AF476C56}">
+															<Language>SFX</Language>
+															<AudioFile>Veggie Hits 2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="607401170"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Veggie Hits 2" ID="{852A1A7C-543A-482C-A8CE-1FC6AF476C56}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Veggie Hits 3" ID="{49AC9CA5-B9DA-45D8-B03A-9899AD6BEED8}" ShortID="1047051739">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Veggie Hits 3" ID="{E37E9111-1550-4C5A-818F-BA256A55AE7A}">
+															<Language>SFX</Language>
+															<AudioFile>Veggie Hits 3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="377992892"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Veggie Hits 3" ID="{E37E9111-1550-4C5A-818F-BA256A55AE7A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="z_Gory Spoon Hits" ID="{6665BCD4-732E-4906-B8A6-6314B48F9BAE}" ShortID="1005136373">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Silence" ID="{800F021B-3503-4757-81CA-0ACFD1E3FC4C}" ShortID="938784386">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>80</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Silence" ID="{6871A648-8AD2-4738-958B-0F506A0C3D21}" ShortID="283309472" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="0.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Silence" ID="{6871A648-8AD2-4738-958B-0F506A0C3D21}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Samples" ID="{BC55F4DA-388D-43EA-944A-68F7E1F24A96}" ShortID="610469844">
+													<PropertyList>
+														<Property Name="Weight" Type="Real64">
+															<ValueList>
+																<Value>20</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Hit Gore 1" ID="{6A138B98-8B7C-4EC9-9F70-1647E11EE312}" ShortID="359025289">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Hit Gore 1" ID="{A7B10511-23A9-4611-BE08-36779F7B07AA}">
+																	<Language>SFX</Language>
+																	<AudioFile>Hit Gore 1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1004986158"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Hit Gore 1" ID="{A7B10511-23A9-4611-BE08-36779F7B07AA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Hit Gore 2" ID="{C4730F0C-2BFA-41B1-84F2-0B9B721F1F83}" ShortID="824716381">
+															<PropertyList>
+																<Property Name="Weight" Type="Real64">
+																	<ValueList>
+																		<Value>30</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Hit Gore 2" ID="{AF2D908C-DB07-4063-8836-306007BF2095}">
+																	<Language>SFX</Language>
+																	<AudioFile>Hit Gore 2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="768062468"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Hit Gore 2" ID="{AF2D908C-DB07-4063-8836-306007BF2095}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Hit Gore 3" ID="{EE486834-628C-4332-BD21-665CB058A525}" ShortID="957392776">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Hit Gore 3" ID="{48BB4399-383C-449D-9356-837CB448F102}">
+																	<Language>SFX</Language>
+																	<AudioFile>Hit Gore 3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="551918523"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Hit Gore 3" ID="{48BB4399-383C-449D-9356-837CB448F102}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Spoon Hits" ID="{14B3DE0F-1454-4CFB-A354-87F5D366CE05}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Knife Hits" ID="{E76BE02B-6B0C-43B7-A305-47A951824812}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+										<ItemList>
+											<ItemRef Name="Knife Hits" ID="{E76BE02B-6B0C-43B7-A305-47A951824812}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+										<ItemList>
+											<ItemRef Name="Spoon Hits" ID="{14B3DE0F-1454-4CFB-A354-87F5D366CE05}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{F7420D5E-AAEE-4776-B2ED-78495DB4F734}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{AFB75973-7381-4F6E-B61E-E772274966AD}" ShortID="169992655">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="PanX"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Panning" ID="{903B38CA-3A5A-4061-A422-CC642D21BE1A}" WorkUnitID="{D9717EEC-A3AF-4FAE-8101-7D073B0169CA}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{227E9D8C-F000-41A4-BA71-19D909CC8549}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-14</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>14</XPos>
+																		<YPos>200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Panner>
+					</PositioningInfo>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{59F8E6B9-0EBF-4C68-BFE0-B9ABAD3E1F8F}" ShortID="866979869">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Distance" ID="{1CD971C2-7914-4C03-917C-3C54DAF12293}" WorkUnitID="{D9717EEC-A3AF-4FAE-8101-7D073B0169CA}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{79EE1BD6-CB16-4240-9220-BD6A8C00F1CA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>-5</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>9</XPos>
+																<YPos>-6</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

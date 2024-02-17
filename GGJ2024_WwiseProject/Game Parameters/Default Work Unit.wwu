@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D9717EEC-A3AF-4FAE-8101-7D073B0169CA}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{D9717EEC-A3AF-4FAE-8101-7D073B0169CA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D9717EEC-A3AF-4FAE-8101-7D073B0169CA}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Panning" ID="{903B38CA-3A5A-4061-A422-CC642D21BE1A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="14"/>
+						<Property Name="Min" Type="Real64" Value="-14"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Distance" ID="{1CD971C2-7914-4C03-917C-3C54DAF12293}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-5"/>
+						<Property Name="Max" Type="Real64" Value="9"/>
+						<Property Name="Min" Type="Real64" Value="-5"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

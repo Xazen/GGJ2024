@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID HITS = 3232033907U;
         static const AkUniqueID PLAY_ENVIRONMENTSOUND = 1121580774U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
         static const AkUniqueID STARTAUDIOCAPTURE_01 = 573871067U;
@@ -22,6 +23,7 @@ namespace AK
         static const AkUniqueID STOP_ENVIRONMENTSOUND = 1416616592U;
         static const AkUniqueID STOPAUDIOCAPTURE = 764565769U;
         static const AkUniqueID STOPMUSIC = 1917263390U;
+        static const AkUniqueID SWING = 2386519981U;
     } // namespace EVENTS
 
     namespace STATES
@@ -39,6 +41,27 @@ namespace AK
         } // namespace SCREAMING
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace WEAPON
+        {
+            static const AkUniqueID GROUP = 3893417221U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID KNIFE = 3312069844U;
+                static const AkUniqueID SPOON = 4230374780U;
+            } // namespace SWITCH
+        } // namespace WEAPON
+
+    } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID DISTANCE = 1240670792U;
+        static const AkUniqueID PANNING = 1820302072U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

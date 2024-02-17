@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D9B98FC4-0006-45A7-8464-4B0FF9F7307B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Weapon" ID="{0B5D9C26-9865-42A9-B179-CB9E25EE864A}">
+					<ChildrenList>
+						<Switch Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
+						<Switch Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
