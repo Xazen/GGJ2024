@@ -17,6 +17,7 @@ public class PlayerManagerController : MonoBehaviour
     [UsedImplicitly]
     public void OnPlayerJoined(PlayerInput playerInput)
     {
+        playerInput.gameObject.name = "Player " + (playerInput.user.index + 1);
         container.InjectGameObject(playerInput.gameObject);
         Debug.Log("Player Joined");
     }

@@ -13,3 +13,7 @@ MonoBehaviour:
   m_Name: Balancing
   m_EditorClassIdentifier: 
   PlayerMovementSpeed: 20
+  HitboxDuration: 0.2
+  StraggleDuration: 0.3
+  HitCooldown: 0.5
+  KnockbackStrength: 2

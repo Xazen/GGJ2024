@@ -5,4 +5,13 @@ public class BalancingConfig : ScriptableObject
 {
     [Header("Player")]
     public float PlayerMovementSpeed = 5;
+
+    [Header("Attack")]
+    public float HitboxDuration = 0.2f;
+    public float HitCooldown = 0.5f;
+
+    [Header("Knockback")]
+    public float StraggleDuration = 0.3f;
+    public float KnockbackStrength = 0.2f;
+    public float KnockbackMoveSpeed = 0.1f;
 }
