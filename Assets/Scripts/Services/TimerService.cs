@@ -7,20 +7,21 @@ namespace DefaultNamespace
     {
         public Action OnTimerEnd;
 
-        private float gameDuration;
+        private TimeSpan gameDuration;
         private bool isRunning;
 
         public void StartTimer(float gameDuration)
         {
-            this.gameDuration = gameDuration;
+            this.gameDuration = TimeSpan.FromSeconds(gameDuration);
             isRunning = true;
         }
 
         private void Update()
         {
             if (!isRunning) return;
-            gameDuration -= Time.deltaTime;
-            if (gameDuration <= 0)
+
+            gameDuration -= TimeSpan.FromSeconds(Time.deltaTime);
+            if (gameDuration.Milliseconds <= 0)
             {
                 isRunning = false;
                 OnTimerEnd?.Invoke();
@@ -30,6 +31,11 @@ namespace DefaultNamespace
         public bool IsRunning()
         {
             return isRunning;
+        }
+
+        public int GetTime()
+        {
+            return gameDuration.Seconds;
         }
     }
 }

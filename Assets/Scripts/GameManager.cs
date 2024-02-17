@@ -3,6 +3,7 @@ using Constants;
 using DefaultNamespace;
 using JetBrains.Annotations;
 using Player;
+using UI;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -16,12 +17,18 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
     private GamePlayerManagerController gamePlayerManagerController;
     private GameService gameService;
     private DiContainer diContainer;
+    private UIService _uiService;
+    private SetupPanel _setupPanel;
+    private InGameHUD _inGameHUD;
 
     [Inject]
     [UsedImplicitly]
     public void Inject(TimerService timerService, BalancingConfig balancingConfig, GamePlayerManagerController gamePlayerManagerController,
-        GameService gameService, DiContainer diContainer)
+        GameService gameService, DiContainer diContainer, UIService uiService, SetupPanel setupPanel, InGameHUD inGameHUD)
     {
+        _inGameHUD = inGameHUD;
+        _setupPanel = setupPanel;
+        _uiService = uiService;
         this.diContainer = diContainer;
         this.gameService = gameService;
         this.gamePlayerManagerController = gamePlayerManagerController;
@@ -31,6 +38,7 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
 
     private void Start()
     {
+        _uiService.ShowUI(_setupPanel);
         LoadLevel((scene, _) =>
         {
             foreach (var environmentGameObject in scene.GetRootGameObjects())
@@ -65,6 +73,8 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
         Debug.Log("Game Started");
         timerService.OnTimerEnd += OnTimerEnd;
         timerService.StartTimer(balancingConfig.GameDuration);
+        _uiService.HideUI(_setupPanel);
+        _uiService.ShowUI(_inGameHUD);
     }
 
     private void LoadLevel(UnityAction<Scene,LoadSceneMode> OnSceneLoaded)

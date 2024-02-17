@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
@@ -21,6 +22,11 @@ namespace DefaultNamespace
         {
             scoreModel.ScoreByPlayerIndex[inputUserIndex] += score;
             Debug.Log("Player " + inputUserIndex + " score: " + scoreModel.ScoreByPlayerIndex[inputUserIndex]);
+        }
+
+        public Dictionary<int, int> GetScoresByPlayerIndex()
+        {
+            return scoreModel.ScoreByPlayerIndex;
         }
     }
 }
