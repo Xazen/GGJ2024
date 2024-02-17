@@ -40,7 +40,7 @@
 								<Action Name="" ID="{DA8AC5B7-E5B4-4C45-A590-9D3CF3A5185F}" ShortID="37452437">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Audio Capture" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+											<ObjectRef Name="Audio Capture_1" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -55,7 +55,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Audio Capture" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+											<ObjectRef Name="Audio Capture_1" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
