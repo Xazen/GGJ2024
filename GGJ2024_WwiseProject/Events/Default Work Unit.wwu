@@ -3,32 +3,66 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{B776CECC-D9B8-4425-80AC-8B31EE6A0223}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="PlayMusic" ID="{45AFD055-0E15-41A0-B96E-570ECCF97305}">
+				<Folder Name="Music" ID="{8AA990B2-27D4-4B16-94B4-7DCDE3D2D207}" ShortID="381580240">
 					<ChildrenList>
-						<Action Name="" ID="{7C10A999-2BAA-440B-A900-AC8124F814F6}" ShortID="308331644">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Level_Music" ID="{08F255AD-6CB1-4B0E-BB5B-8E0C9B5617F2}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="PlayMusic" ID="{45AFD055-0E15-41A0-B96E-570ECCF97305}">
+							<ChildrenList>
+								<Action Name="" ID="{7C10A999-2BAA-440B-A900-AC8124F814F6}" ShortID="308331644">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_Music" ID="{08F255AD-6CB1-4B0E-BB5B-8E0C9B5617F2}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopMusic" ID="{2C79754F-D724-467D-8245-45A093D8830E}">
+							<ChildrenList>
+								<Action Name="" ID="{745BB16F-15FC-4A1C-8D07-A6D01E7141EB}" ShortID="845923863">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Level_Music" ID="{08F255AD-6CB1-4B0E-BB5B-8E0C9B5617F2}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="StopMusic" ID="{2C79754F-D724-467D-8245-45A093D8830E}">
+				</Folder>
+				<Folder Name="Audio Capture" ID="{D87C67A2-1274-4247-9693-657FDB996267}" ShortID="624657421">
 					<ChildrenList>
-						<Action Name="" ID="{745BB16F-15FC-4A1C-8D07-A6D01E7141EB}" ShortID="845923863">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Level_Music" ID="{08F255AD-6CB1-4B0E-BB5B-8E0C9B5617F2}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="StartAudioCapture" ID="{3A2592DB-4C27-4F1B-96FA-38E5D9F204D3}">
+							<ChildrenList>
+								<Action Name="" ID="{DA8AC5B7-E5B4-4C45-A590-9D3CF3A5185F}" ShortID="37452437">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Audio Capture" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAudioCapture" ID="{AC1140B0-DFD1-4F39-991A-B8BC064D2558}">
+							<ChildrenList>
+								<Action Name="" ID="{7FE074C5-816C-4FCD-8C96-16860F5BF836}" ShortID="1034420771">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Audio Capture" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

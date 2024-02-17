@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{46C98AE3-2ECF-7110-F788-914DC6923B20}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{0C7436AB-377F-B450-A858-80A6FC9A37D3}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -26,6 +26,12 @@
 					<CachePath>SFX/Music_End Fanfare_FBC78EF0.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="57319723" Name="Recorder (Custom)" LibName="Wwise Recorder" LibId="8650755"/>
+					<Plugin Id="557973414" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="417627684" Name="PlayMusic" DurationType="OneShot" DurationMin="123.41669" DurationMax="123.41669">
 					<MediaRefs>
@@ -34,10 +40,19 @@
 						<MediaRef Id="860232383"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2102106967" Name="StartAudioCapture" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="57319723"/>
+							<PluginRef Id="557973414"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="764565769" Name="StopAudioCapture" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1917263390" Name="StopMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B2993F88-93E5-5F20-B507-2F7218F645D3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -51,5 +66,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C096C360-7AAF-82A0-ACCC-A53430E4732C}</FileHash>
+	<FileHash>{C8633DDC-4696-3712-26DD-D6532276E36B}</FileHash>
 </SoundBanksInfo>

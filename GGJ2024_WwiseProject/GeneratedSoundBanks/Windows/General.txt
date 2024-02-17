@@ -1,6 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
-	417627684	PlayMusic			\Default Work Unit\PlayMusic	
-	1917263390	StopMusic			\Default Work Unit\StopMusic	
+	417627684	PlayMusic			\Default Work Unit\Music\PlayMusic	
+	764565769	StopAudioCapture			\Default Work Unit\Audio Capture\StopAudioCapture	
+	1917263390	StopMusic			\Default Work Unit\Music\StopMusic	
+	2102106967	StartAudioCapture			\Default Work Unit\Audio Capture\StartAudioCapture	
+
+Effect plug-ins	ID	Name	Type				Notes
+	57319723	Recorder (Custom)	Wwise Recorder			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	557973414	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Audio Capture\Sine	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	145278452	Music_Metal	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_Metal_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Music\Music_Metal		23693672
