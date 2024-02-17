@@ -94,3 +94,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 766672e48ac044e2a68d1aed22be4afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7e4dcf3245eb0a34681abc0f1b224339,
+      type: 2}
+  stopMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2668860597688d5428f0024accd1d464,
+      type: 2}
+  playAmbience:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c9c2b13bc24ba1543b202b2a47058954,
+      type: 2}
+  stopAmbience:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ff740e823b59a6d4480b6394c5c2783b,
+      type: 2}

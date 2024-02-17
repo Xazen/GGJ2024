@@ -1,17 +1,54 @@
 Event	ID	Name			Wwise Object Path	Notes
 	417627684	PlayMusic			\Default Work Unit\Music\PlayMusic	
+	573871064	StartAudioCapture_02			\Default Work Unit\Audio Capture\StartAudioCapture_02	
+	573871065	StartAudioCapture_03			\Default Work Unit\Audio Capture\StartAudioCapture_03	
+	573871067	StartAudioCapture_01			\Default Work Unit\Audio Capture\StartAudioCapture_01	
+	573871070	StartAudioCapture_04			\Default Work Unit\Audio Capture\StartAudioCapture_04	
 	764565769	StopAudioCapture			\Default Work Unit\Audio Capture\StopAudioCapture	
+	1121580774	Play_EnvironmentSound			\Default Work Unit\Play_EnvironmentSound	
+	1416616592	Stop_EnvironmentSound			\Default Work Unit\Stop_EnvironmentSound	
 	1917263390	StopMusic			\Default Work Unit\Music\StopMusic	
-	2102106967	StartAudioCapture			\Default Work Unit\Audio Capture\StartAudioCapture	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2036047442	Screaming			\Default Work Unit\Screaming	
+
+State	ID	Name	State Group			Notes
+	737767022	Scream	Screaming			
+	748895195	None	Screaming			
+	1874288895	Idle	Screaming			
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	667956875	Modulator LFO (Custom)				
 
 Effect plug-ins	ID	Name	Type				Notes
-	57319723	Recorder (Custom)	Wwise Recorder			
+	23390808	Parametric EQ (Custom)	Wwise Parametric EQ			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	557973414	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Audio Capture\Sine	
+	261580113	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_3\Sine	
+	557973414	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_1\Sine	
+	717672928	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_4\Sine	
+	776625351	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_2\Sine	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	24123608	Kitchen Work_POS_ 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 1		64184
+	63126065	Kitchen Fluid_1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Fluid_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Fluid\Kitchen Fluid_1		1420820
+	76012042	Kitchen Work_POS_ 12	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 12_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 12		417012
+	100806986	Kitchen Work_POS_ 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 2		136788
+	142182528	Kitchen Work_POS_ 11	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 11_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 11		327560
 	145278452	Music_Metal	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_Metal_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Music\Music_Metal		23693672
+	215770798	Kitchen Work_POS_ 5	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 5		147324
+	314805838	Cooking_Gas	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Cooking_Gas_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Cooking Pot\Cooking_Gas		6528304
+	326815038	Kitchen Work_POS_ 8	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 8_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 8		153624
+	328062407	Kitchen_Ambience	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen_Ambience_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Kitchen_Ambience		8640104
+	373249325	Kitchen Work_POS_ 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 4		76780
+	381795405	Kitchen Work_POS_ 9	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 9_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 9		252872
+	394956205	Kitchen Work_POS_ 13	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 13_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 13		653884
+	416771849	Kitchen Fluid_2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Fluid_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Fluid\Kitchen Fluid_2		2318984
+	434679761	Kitchen Work_POS_ 6	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 6		130156
 	638763515	Music_Cute Score	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_Cute Score_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Music\Music_Cute Score		23497980
+	668956226	Kitchen Work_POS_ 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 3		160108
+	752221801	Kitchen Work_POS_ 7	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 7		133756
 	860232383	Music_End Fanfare	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_End Fanfare_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Music\Music_End Fanfare		512100
+	937493976	Kitchen Work_POS_ 10	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 10		225716
+	1013995139	Cooking_Pot	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Cooking_Pot_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Cooking Pot\Cooking_Pot		3639448
 

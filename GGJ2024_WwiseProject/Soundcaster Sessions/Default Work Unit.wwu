@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{73FB7D1D-CD96-40DA-A451-653A44CEBDF9}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{73FB7D1D-CD96-40DA-A451-653A44CEBDF9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{73FB7D1D-CD96-40DA-A451-653A44CEBDF9}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Loops" ID="{13EE2A2A-4ED7-4B42-B973-DC1E41DA1766}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayMusic" ID="{45AFD055-0E15-41A0-B96E-570ECCF97305}" WorkUnitID="{B776CECC-D9B8-4425-80AC-8B31EE6A0223}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_EnvironmentSound" ID="{903A71F1-5036-417D-9BFC-2544098E3385}" WorkUnitID="{B776CECC-D9B8-4425-80AC-8B31EE6A0223}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Idle" ID="{8F843FDA-6944-4F68-AD8D-30439F6D269D}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

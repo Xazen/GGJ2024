@@ -13,11 +13,19 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+							<ObjectRef Name="Music" ID="{2F738F0A-A483-4C95-ACF0-874B9F4F510E}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<MusicTrack Name="Music_Cute Score" ID="{8A7E3AD0-14B0-457C-92D1-C0CCFE22FFF1}" ShortID="1014711551">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
@@ -42,7 +50,62 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Screaming" ID="{4BD960D5-8949-4954-B4B3-025419C20A73}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Scream" ID="{E870AA98-DD4A-4AF7-B22F-30B031A834E8}"/>
+										<CustomState Name="" ID="{E0257FEF-C03F-40E9-A15E-E0F590CF090D}" ShortID="406727177">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Idle" ID="{8F843FDA-6944-4F68-AD8D-30439F6D269D}"/>
+										<CustomState Name="" ID="{E3E920AF-441B-4DF0-9486-551B268D60E7}" ShortID="942798368"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{414D29EE-14AF-4B40-9575-E9596D36AA77}" ShortID="424210845">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Parametric EQ (Custom)" ID="{A1112280-5141-451F-B182-E2BFE12CFC86}" ShortID="23390808" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<PropertyList>
+																	<Property Name="FrequencyBand1" Type="Real32" Value="200"/>
+																	<Property Name="GainBand1" Type="Real32" Value="-3"/>
+																	<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																	<Property Name="OnOffBand3" Type="bool" Value="False"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+												<StateInfo>
+													<CustomStateList>
+														<CustomState>
+															<StateRef Name="Scream" ID="{E870AA98-DD4A-4AF7-B22F-30B031A834E8}"/>
+															<CustomState Name="" ID="{560BC324-40E8-45A6-84F2-E17ED970D342}" ShortID="931458954"/>
+														</CustomState>
+														<CustomState>
+															<StateRef Name="Idle" ID="{8F843FDA-6944-4F68-AD8D-30439F6D269D}"/>
+															<CustomState Name="" ID="{95D67872-FDE1-4CBF-9F29-3469E62FC3D9}" ShortID="4882001"/>
+														</CustomState>
+													</CustomStateList>
+												</StateInfo>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
 								<ObjectList Name="Sequences">
 									<Reference>
 										<Local>
@@ -132,7 +195,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-96</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -160,6 +223,27 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Screaming" ID="{4BD960D5-8949-4954-B4B3-025419C20A73}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Scream" ID="{E870AA98-DD4A-4AF7-B22F-30B031A834E8}"/>
+										<CustomState Name="" ID="{BACF4383-2985-4866-AEDC-95CA5D12A51C}" ShortID="316738606"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Idle" ID="{8F843FDA-6944-4F68-AD8D-30439F6D269D}"/>
+										<CustomState Name="" ID="{CD2B2838-713E-4640-BD78-563E1F390DE3}" ShortID="59483466">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="Sequences">
 									<Reference>

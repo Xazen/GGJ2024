@@ -9,50 +9,173 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{0C7436AB-377F-B450-A858-80A6FC9A37D3}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{A5E83F98-E091-A52B-DE3D-90C4B5AA461E}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
+				<File Id="24123608" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 1.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="63126065" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Fluid_1.wav</ShortName>
+					<CachePath>SFX/Kitchen Fluid_1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="76012042" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 12.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 12_818F3B66.wem</CachePath>
+				</File>
+				<File Id="100806986" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 2.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="142182528" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 11.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 11_818F3B66.wem</CachePath>
+				</File>
 				<File Id="145278452" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_Metal.wav</ShortName>
 					<CachePath>SFX/Music_Metal_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="215770798" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 5.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="314805838" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cooking_Gas.wav</ShortName>
+					<CachePath>SFX/Cooking_Gas_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="326815038" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 8.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 8_818F3B66.wem</CachePath>
+				</File>
+				<File Id="328062407" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen_Ambience.wav</ShortName>
+					<CachePath>SFX/Kitchen_Ambience_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="373249325" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 4.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="381795405" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 9.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 9_818F3B66.wem</CachePath>
+				</File>
+				<File Id="394956205" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 13.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 13_818F3B66.wem</CachePath>
+				</File>
+				<File Id="416771849" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Fluid_2.wav</ShortName>
+					<CachePath>SFX/Kitchen Fluid_2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="434679761" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 6.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 6_818F3B66.wem</CachePath>
 				</File>
 				<File Id="638763515" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_Cute Score.wav</ShortName>
 					<CachePath>SFX/Music_Cute Score_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="668956226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 3.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="752221801" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 7.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 7_818F3B66.wem</CachePath>
+				</File>
 				<File Id="860232383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_End Fanfare.wav</ShortName>
 					<CachePath>SFX/Music_End Fanfare_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="937493976" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Kitchen Work_POS_ 10.wav</ShortName>
+					<CachePath>SFX/Kitchen Work_POS_ 10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1013995139" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cooking_Pot.wav</ShortName>
+					<CachePath>SFX/Cooking_Pot_FBC78EF0.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="57319723" Name="Recorder (Custom)" LibName="Wwise Recorder" LibId="8650755"/>
+					<Plugin Id="23390808" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="261580113" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 					<Plugin Id="557973414" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+					<Plugin Id="717672928" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+					<Plugin Id="776625351" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="1121580774" Name="Play_EnvironmentSound" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="24123608"/>
+						<MediaRef Id="63126065"/>
+						<MediaRef Id="76012042"/>
+						<MediaRef Id="100806986"/>
+						<MediaRef Id="142182528"/>
+						<MediaRef Id="215770798"/>
+						<MediaRef Id="314805838"/>
+						<MediaRef Id="326815038"/>
+						<MediaRef Id="328062407"/>
+						<MediaRef Id="373249325"/>
+						<MediaRef Id="381795405"/>
+						<MediaRef Id="394956205"/>
+						<MediaRef Id="416771849"/>
+						<MediaRef Id="434679761"/>
+						<MediaRef Id="668956226"/>
+						<MediaRef Id="752221801"/>
+						<MediaRef Id="937493976"/>
+						<MediaRef Id="1013995139"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="417627684" Name="PlayMusic" DurationType="OneShot" DurationMin="123.41669" DurationMax="123.41669">
 					<MediaRefs>
 						<MediaRef Id="145278452"/>
 						<MediaRef Id="638763515"/>
 						<MediaRef Id="860232383"/>
 					</MediaRefs>
-				</Event>
-				<Event Id="2102106967" Name="StartAudioCapture" DurationType="OneShot" DurationMin="3" DurationMax="3">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="57319723"/>
+							<PluginRef Id="23390808"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="573871067" Name="StartAudioCapture_01" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<PluginRefs>
+						<Custom>
 							<PluginRef Id="557973414"/>
 						</Custom>
 					</PluginRefs>
 				</Event>
+				<Event Id="573871064" Name="StartAudioCapture_02" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="776625351"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="573871065" Name="StartAudioCapture_03" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="261580113"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="573871070" Name="StartAudioCapture_04" DurationType="OneShot" DurationMin="3" DurationMax="3">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="717672928"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="1416616592" Name="Stop_EnvironmentSound" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="764565769" Name="StopAudioCapture" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1917263390" Name="StopMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B2993F88-93E5-5F20-B507-2F7218F645D3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{AAA48E59-F844-5AA0-71BD-A45593A422EB}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -62,9 +185,23 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="436743010" Name="Character"/>
+				<Bus Id="2981377429" Name="Ambiance"/>
+				<Bus Id="3081396824" Name="Sounddesign"/>
+				<Bus Id="3170124113" Name="Voice"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<StateGroups>
+				<StateGroup Id="2036047442" Name="Screaming">
+					<States>
+						<State Id="737767022" Name="Scream"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1874288895" Name="Idle"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C8633DDC-4696-3712-26DD-D6532276E36B}</FileHash>
+	<FileHash>{5AA5582F-6D64-D3D7-2DA2-CFA6717350DD}</FileHash>
 </SoundBanksInfo>

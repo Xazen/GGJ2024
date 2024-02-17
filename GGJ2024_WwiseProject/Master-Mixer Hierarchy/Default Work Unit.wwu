@@ -9,6 +9,24 @@
 							<ObjectRef Name="System" ID="{4DA01E7C-83A8-4FEC-AD47-71382074AFD9}" WorkUnitID="{14D14F88-C008-40FF-B438-0B40E529E5DE}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{2F738F0A-A483-4C95-ACF0-874B9F4F510E}"/>
+						<Bus Name="Sounddesign" ID="{49F171CA-CFAB-48A3-8565-3A3BEA2B22F0}">
+							<ChildrenList>
+								<Bus Name="Ambiance" ID="{24292C2A-E1EC-4B11-810E-2DF7118F4969}">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Character" ID="{DE2DAE4D-BDA0-4A2A-9246-6871A37362AD}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="Voice" ID="{71F2730A-F066-47E2-8F94-581AE97DC857}"/>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

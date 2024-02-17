@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{29CA0133-CDBC-4D0E-A45D-FB71E5668DB3}" SchemaVersion="119">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{29CA0133-CDBC-4D0E-A45D-FB71E5668DB3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{29CA0133-CDBC-4D0E-A45D-FB71E5668DB3}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Mixing" ID="{630686A1-6298-4B65-ABD6-7DDCC6F893F2}">
+					<ObjectList>
+						<ObjectRef Name="Music" ID="{2F738F0A-A483-4C95-ACF0-874B9F4F510E}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						<ObjectRef Name="Sounddesign" ID="{49F171CA-CFAB-48A3-8565-3A3BEA2B22F0}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						<ObjectRef Name="Ambiance" ID="{24292C2A-E1EC-4B11-810E-2DF7118F4969}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						<ObjectRef Name="Character" ID="{DE2DAE4D-BDA0-4A2A-9246-6871A37362AD}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						<ObjectRef Name="Voice" ID="{71F2730A-F066-47E2-8F94-581AE97DC857}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
