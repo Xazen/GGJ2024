@@ -5,6 +5,7 @@ public class BalancingConfig : ScriptableObject
 {
     [Header("Game")]
     public float GameDuration = 120;
+    public int MinPlayerCount = 2;
 
     [Header("Player")]
     public float PlayerMovementSpeed = 5;

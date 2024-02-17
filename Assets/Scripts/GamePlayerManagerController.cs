@@ -27,6 +27,11 @@ public class GamePlayerManagerController : MonoBehaviour
         playerInputManager.onPlayerLeft += OnPlayerLeft;
     }
 
+    public int GetPlayerCount()
+    {
+        return playerInputManager.playerCount;
+    }
+
     private void OnDestroy()
     {
         playerInputManager.onPlayerJoined -= OnPlayerJoined;

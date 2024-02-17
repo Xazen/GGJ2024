@@ -13,6 +13,7 @@ namespace Player
         private PlayerInput playerInput;
 
         public Action OnAttackInput;
+        public Action OnStartInput;
         public Action<Vector2> OnMovementInput;
 
         private float _currentHitCooldown;
@@ -49,6 +50,16 @@ namespace Player
             {
                 OnAttack();
             }
+
+            if (context.action.name == "Start")
+            {
+                OnStart();
+            }
+        }
+
+        private void OnStart()
+        {
+            OnStartInput?.Invoke();
         }
 
         private void Update()

@@ -2,6 +2,7 @@ using System;
 using Constants;
 using DefaultNamespace;
 using JetBrains.Annotations;
+using Player;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -37,13 +38,21 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
                 diContainer.InjectGameObject(environmentGameObject);
             }
             EnablePlayerManager();
-            StartGame();
         });
     }
 
     private void OnPlayerJoined(PlayerInput playerInput)
     {
+        playerInput.gameObject.GetComponent<GamePlayerInput>().OnStartInput += OnPlayerStart;
         gameService.RegisterPlayer(playerInput.user);
+    }
+
+    private void OnPlayerStart()
+    {
+        if (!gameService.IsGameRunning() && gameService.GetPlayerCount() >= balancingConfig.MinPlayerCount)
+        {
+            StartGame();
+        }
     }
 
     private void EnablePlayerManager()
@@ -53,6 +62,7 @@ public class GameManager : MonoBehaviour, IInitializable, IDisposable
 
     private void StartGame()
     {
+        Debug.Log("Game Started");
         timerService.OnTimerEnd += OnTimerEnd;
         timerService.StartTimer(balancingConfig.GameDuration);
     }
