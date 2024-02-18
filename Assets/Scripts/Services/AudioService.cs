@@ -39,6 +39,11 @@ namespace DefaultNamespace
             AkSoundEngine.PostEvent("Play_CookingPot", gameObject);
         }
 
+        public void EndStartingScreen()
+        {
+
+        }
+
         /// <summary>
         /// Call this on the player script, that wants to scream
         /// </summary>
