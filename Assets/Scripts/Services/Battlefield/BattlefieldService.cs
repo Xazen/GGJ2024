@@ -23,6 +23,11 @@ namespace DefaultNamespace
             }
         }
 
+        public void ResetSpawnPositions()
+        {
+            _battlefieldModel.SpawnPositions.ForEach(spawnLocation => spawnLocation.PlayerIndex = -1);
+        }
+
         public Vector3 GetAndRegisterFreeSpawnLocation(int inputUserIndex)
         {
             var freeSpawnLocation = _battlefieldModel.SpawnPositions.Find(spawnLocation => spawnLocation.PlayerIndex == -1);

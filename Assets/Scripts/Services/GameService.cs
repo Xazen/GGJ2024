@@ -1,4 +1,5 @@
-﻿using UnityEngine.InputSystem.Users;
+﻿using System;
+using UnityEngine.InputSystem.Users;
 
 namespace DefaultNamespace
 {
@@ -8,6 +9,8 @@ namespace DefaultNamespace
         private GamePlayerService gamePlayerService;
         private GamePlayerManagerController gamePlayerManagerController;
         private TimerService timerService;
+
+        public Action OnRestart;
 
         public GameService(ScoreService scoreService, GamePlayerService gamePlayerService, GamePlayerManagerController gamePlayerManagerController,
             TimerService timerService)
@@ -32,6 +35,11 @@ namespace DefaultNamespace
         public bool IsGameRunning()
         {
             return timerService.IsRunning();
+        }
+
+        public void RestartGame()
+        {
+            OnRestart?.Invoke();
         }
     }
 }

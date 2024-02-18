@@ -28,5 +28,10 @@ namespace DefaultNamespace
         {
             return scoreModel.ScoreByPlayerIndex;
         }
+
+        public void ResetScores()
+        {
+            scoreModel.ScoreByPlayerIndex.Clear();
+        }
     }
 }

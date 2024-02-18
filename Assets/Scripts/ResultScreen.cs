@@ -22,11 +22,13 @@ public class ResultScreen : UIMonoBehaviour
     private Button restartButton;
 
     private ScoreService _scoreService;
+    private GameService _gameService;
 
     [Inject]
     [UsedImplicitly]
-    private void Inject(ScoreService scoreService)
+    private void Inject(ScoreService scoreService, GameService gameService)
     {
+        _gameService = gameService;
         _scoreService = scoreService;
     }
 
@@ -43,7 +45,7 @@ public class ResultScreen : UIMonoBehaviour
 
     private void OnRestart()
     {
-        Debug.Log("Restart");
+        _gameService.RestartGame();
     }
 
     private void UpdateScore()

@@ -18,6 +18,7 @@ MonoBehaviour:
   HitboxDuration: 0.1
   HitCooldown: 0.5
   ScreamboxDuration: 0.2
+  ScreamDuration: 0.9
   ScreamCooldown: 1.2
   ScreamFlyMin: 9
   ScreamFlyMax: 13
