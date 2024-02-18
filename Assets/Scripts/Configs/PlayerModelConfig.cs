@@ -6,5 +6,6 @@ namespace Configs
     public class PlayerModelConfig : ScriptableObject
     {
         public GameObject[] PlayerModelByIndex;
+        public GameObject[] PlayerStuffModelByIndex;
     }
 }

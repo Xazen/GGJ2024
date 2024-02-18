@@ -182,7 +182,9 @@ public class GamePlayerActorController : MonoBehaviour
     private GameObject CreateStuff(GamePlayerActorController attacker, Vector3 stuffingDirection)
     {
         var stuffing = _diContainer.InstantiatePrefab(stuffingPrefab);
-        stuffing.GetComponent<Stuffing>().PlayerIndex = attacker.PlayerIndex;
+        var stuffingComp = stuffing.GetComponent<Stuffing>();
+        stuffingComp.InitWithPlayerIndex(PlayerIndex);
+        stuffingComp.PlayerIndex = attacker.PlayerIndex;
         stuffing.transform.position = transform.position + stuffingDirection * 1.1f;
         stuffing.transform.localScale = Vector3.one * Random.Range(_balancingConfig.StuffingScaleMin, _balancingConfig.StuffingScaleMax);
         return stuffing;
