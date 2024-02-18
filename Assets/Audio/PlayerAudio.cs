@@ -28,6 +28,14 @@ public class PlayerAudio : MonoBehaviour
     private void Start()
     {
         playerIndex = GetComponent<PlayerInput>().user.index + 1;
+        if (playerIndex is 1 or 3)
+        {
+            SetWeapon(WEAPON.Knife);
+        }
+        else
+        {
+            SetWeapon(WEAPON.Spoon);
+        }
     }
 
     private void SetPosition()
@@ -38,7 +46,6 @@ public class PlayerAudio : MonoBehaviour
         float x = transform.position.x / 11.6f;
         float z = transform.position.z / (transform.position.z < 0 ? 3.1f : 5.2f);
         AkSoundEngine.SetRTPCValue("WoodPitchMod", Mathf.Abs(x) * (Mathf.Abs(z) * 0.5f + 0.5f), gameObject);
-        Debug.Log(x + "\t" + z + "\t" + Mathf.Abs(x) * (Mathf.Abs(z) * 0.5f + 0.5f));
     }
 
     public void SetWeapon(WEAPON weapon)
@@ -48,7 +55,18 @@ public class PlayerAudio : MonoBehaviour
 
     public void PlayScream()
     {
+        AkSoundEngine.PostEvent("Scream_Player_" + playerIndex, gameObject);
         AudioService.Scream();
+    }
+
+    public void PlayHurt()
+    {
+        AkSoundEngine.PostEvent("Hit_Player_" + playerIndex, gameObject);
+    }
+
+    public void PlayHit()
+    {
+        AkSoundEngine.PostEvent("Hits", gameObject);
     }
 
     private void Update()

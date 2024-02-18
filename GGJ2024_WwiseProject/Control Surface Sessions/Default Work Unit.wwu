@@ -1,28 +1,1111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{AC7E4893-7CE0-4A97-BD06-9FDC99DB3B10}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{D1E1CA07-4667-4AD0-8868-C67B26FCC634}" SchemaVersion="119">
 	<ControlSurfaceSessions>
-		<WorkUnit Name="Default Work Unit" ID="{AC7E4893-7CE0-4A97-BD06-9FDC99DB3B10}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{D1E1CA07-4667-4AD0-8868-C67B26FCC634}" PersistMode="Standalone">
 			<ChildrenList>
-				<ControlSurfaceSession Name="Default Control Surface Session" ID="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}">
+				<ControlSurfaceSession Name="Master Mixing" ID="{5DDE1FFC-CF79-4262-A69C-8D2E96412A9F}">
 					<ChildrenList>
-						<ControlSurfaceBindingGroup Name="Global" ID="{650FEEF8-B3A7-4864-AAA9-A3AAA9860A3C}"/>
-						<ControlSurfaceBindingGroup Name="Current Selection" ID="{79D9CA7C-A637-4733-B249-032D6C68AE30}">
+						<ControlSurfaceBindingGroup Name="Global" ID="{9FF00A84-334B-47D3-9EB3-37FB3DFD883B}">
+							<ChildrenList>
+								<ControlSurfaceBinding Name="Binding" ID="{72758EF7-B634-4F84-96A1-AABDC5CF1152}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~78"/>
+										<Property Name="TargetName" Type="string" Value="ShowMixingDesk"/>
+										<Property Name="TargetType" Type="int16" Value="2"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+							</ChildrenList>
+						</ControlSurfaceBindingGroup>
+						<ControlSurfaceBindingGroup Name="Current Selection" ID="{52E1B7D1-9830-45DC-84A5-AFE7E8D12C41}">
 							<PropertyList>
 								<Property Name="GroupType" Type="int16" Value="4"/>
 							</PropertyList>
 							<ChildrenList>
-								<ControlSurfaceBinding Name="Binding" ID="{0F07CAA6-ECE6-48FB-8EEA-9F14809DA895}">
+								<ControlSurfaceBinding Name="Binding" ID="{F877FA25-B609-4354-B915-C5DAF9882F76}">
 									<PropertyList>
-										<Property Name="TargetName" Type="string" Value="PassMidiNote"/>
+										<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.9~Pitch-Bend"/>
+										<Property Name="TargetName" Type="string" Value="Volume"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{50C2B1FB-95B7-4CA6-B640-95E5FDA2BE26}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~94"/>
+										<Property Name="TargetName" Type="string" Value="TransportPlay"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{C3036BF9-E84A-48D3-861C-C018ADE8D1E1}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~93"/>
+										<Property Name="TargetName" Type="string" Value="TransportStop"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{DE4957E7-8CC0-4D18-B7C0-F75A2B754B90}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~46"/>
+										<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+										<Property Name="TargetType" Type="int16" Value="1"/>
+									</PropertyList>
+								</ControlSurfaceBinding>
+								<ControlSurfaceBinding Name="Binding" ID="{B796C8CE-05F8-452A-A215-29242CF9258B}">
+									<PropertyList>
+										<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~47"/>
+										<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
 										<Property Name="TargetType" Type="int16" Value="1"/>
 									</PropertyList>
 								</ControlSurfaceBinding>
 							</ChildrenList>
 						</ControlSurfaceBindingGroup>
-						<ControlSurfaceBindingGroup Name="View Groups" ID="{E88318A1-DC8D-48C9-A009-D1257F757CF6}">
+						<ControlSurfaceBindingGroup Name="View Groups" ID="{43F30C82-69F3-423B-9D5C-C38814991CE6}">
 							<PropertyList>
 								<Property Name="GroupType" Type="int16" Value="3"/>
 							</PropertyList>
+							<ChildrenList>
+								<ControlSurfaceBindingGroup Name="Mixing_only Xtouch" ID="{EB85B066-2337-44F6-9E68-5687CE009D17}">
+									<PropertyList>
+										<Property Name="GroupType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ChildrenList>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{10AF4E15-D379-42B2-80DC-95B03C0AB819}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~16"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{20F9B318-87BD-4B2D-8BA9-2E6EFF56299E}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~17"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{A3F2312B-FA0E-49D7-80CB-4CCF655BBA7B}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~18"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{79CA1495-B098-4128-B678-023D9C3BD369}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~19"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{0CBA5960-873E-421A-995B-CBFD182A6CD3}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~20"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{C012F9D5-1AA7-4206-8E6B-E8073F8F2326}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~21"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{7BF13A8D-CF9F-4985-8505-710D558482E9}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~22"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{B415B068-BC42-4CC9-9886-189F027A88A7}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~23"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{402139FB-2EDB-45EC-98F5-E0A214E5B4C9}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Pitch-Bend"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{9803332F-1E97-4D8B-A790-EC9A0F9F39D2}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.2~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{21759952-90F9-4731-8A50-94CACF175AEA}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.3~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{40FA1E2E-EAAE-4ADE-8C15-358654941D0C}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.4~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{639E0799-F909-4D2E-8BC6-86A26E7D6676}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.5~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{F08DA187-1AA2-4E33-B1E3-6A45A5AF7AFA}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.6~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{DBB0516E-DAF7-49C0-943F-C53D18678142}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.7~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{CDA895C6-2EF5-4758-840A-DCF0A90E5167}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.8~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{7EFA617E-AD22-4FC8-ADF0-55E3DA03E770}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~16"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{CF22CEA2-00A1-48C1-A065-080FE8CB8CA2}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~17"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{71E4BF93-62F1-452D-A380-07CE779B6B08}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~18"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{2D463B40-C763-40DD-A00B-ED7E95276BB1}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~19"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{F09E119E-3715-4AAF-88E5-FE4E6A91637D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~20"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{3439CF4F-02E1-416F-9D94-C90224E2083D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~21"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{925D4B98-C7B0-4475-ACDE-CCE436D21AA8}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~22"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{C3E6C415-49DB-4444-8A6C-4454EEE25EE0}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~23"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{44C77F10-67C5-4110-BA2D-B7E686521795}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~8"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{C66D8EDF-0C0C-4615-8DEF-4CC1DD18B3A1}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~9"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{D3314E5B-3F07-430D-9D9A-6A9C5079FB8C}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~10"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{9B7485C5-3926-49FE-9E80-CD84DF7D76F3}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~11"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{C7E60671-A5F8-4486-A6BA-264B2D52439D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~12"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{54A52BAC-DAE4-428E-A0BC-2032DF74899C}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~13"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{377B77CF-86FC-4C6B-8724-977B792892CF}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~14"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{9EF0CC1C-EDEE-4C49-9E6C-02AF16E3D9A4}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~15"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{A2F5ED02-E3B5-46DF-96F5-960B295A7C50}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~24"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{391B8F32-96C5-46FE-9C5C-4244BDB0AE4F}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~25"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{74CF0731-3D75-43BA-BA5A-541099B9C4FF}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~26"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{2ACC082E-90B0-4894-A9A3-AC2FB026D02B}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~27"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{ED861B11-3026-47FC-99E8-B6D8D4AC10A8}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~28"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{81CD2BFF-4FFA-434B-86FB-B29A5B1E9AC8}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~29"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{A1F2C244-A831-4AE0-AF69-0F511E3D61E5}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~30"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{8A80FFD1-4B9E-409A-A5F9-96C003D29AB4}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~31"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+									</ChildrenList>
+								</ControlSurfaceBindingGroup>
+								<ControlSurfaceBindingGroup Name="Mixing" ID="{D14371A9-AE8A-491E-B4A9-9D4B22EF2215}">
+									<PropertyList>
+										<Property Name="GroupType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ChildrenList>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{290BDC31-BBD7-4546-B899-1E375C6AD039}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~CC~16"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{1DF963BA-0C3F-403B-975E-B986A421670D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~CC~17"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{6C73C3F6-E4D6-437E-BA74-5C7AA2E90EAE}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~CC~18"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{CC5C5D95-7320-4F3A-AC59-08B14A2377F1}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~CC~19"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{7724DC3B-F5FA-437C-B5BA-42ECC46CD5DE}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~CC~20"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{B8E6AFA6-F510-4BD0-A7F4-909B0AD0D551}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~CC~21"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{3A222B27-D6F4-4E28-828C-C71889D11AD2}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~CC~22"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{3DAC3012-9D5B-45B1-9DC5-EDD1566859EB}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~CC~23"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{BBEF594E-7A3D-4ACB-8F5B-6DBDA913C4DB}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~16"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="9"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{07BE45BE-49D6-42F5-B22C-FFC18A5F51B7}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~17"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="10"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{7C768384-D51F-4AE1-9F34-B67CE3575FC9}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~18"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="11"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{2D41A604-CC40-407A-9E38-62D7D4C7423F}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~19"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="12"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{37A3AD64-8B16-4FFC-8631-1B554C7AB77F}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~20"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="13"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{8A93DA26-EAB2-43B8-899E-F55EC5BF6DE9}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~21"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="14"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{DF6DA364-0C3B-4BDE-BF6C-6CF63D55591A}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~22"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="15"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Voice Volumes" ID="{1B8C75EC-42F0-4DF0-94D5-21DB50894333}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~CC~23"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="16"/>
+												<Property Name="TargetName" Type="string" Value="Volume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{A9E25DF6-40CA-42CA-874C-1562B0756594}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Pitch-Bend"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{44A32277-BA10-4419-860C-231901AF88C3}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.2~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{8E59E915-EF9B-4761-89BA-98A1B2A3B0E7}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.3~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{45277E30-6900-40CF-8023-1B9B3EFB46AA}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.4~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{A6C7EF37-FAA3-4370-AD50-D2A9BEABC4AE}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.5~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{F6114B95-77F3-4387-85B6-784306F1A978}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.6~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{6D186583-5985-4EF3-BDE0-40D2138BC34A}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.7~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{52C2789C-CFC4-4289-B201-90C9B7AB99E1}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.8~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{2E934477-716A-4F1C-9F4E-C75648BF1922}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="9"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{DEA57D14-E255-47B0-B246-92BF0673302D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.2~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="10"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{85E35E82-C9CF-4D9C-8B41-3D26FD9D61DF}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.3~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="12"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{A6419636-A28C-4956-BD4D-41D8B5106F10}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.4~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="11"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{56163EEE-5720-4176-8D31-EF7A31ED6C6A}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.5~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="13"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{41F289D9-F245-4450-AC16-57F78989FCE3}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.6~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="14"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{9AA18BCD-5320-4D38-804E-3AEADC49F9F4}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.7~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="15"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Bus Volumes" ID="{8AE5528E-4A48-4291-B30C-D3304B84B6A4}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.8~Pitch-Bend"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="16"/>
+												<Property Name="TargetName" Type="string" Value="BusVolume"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{8EC840C0-42B9-44A3-94DF-ACE6CAD24A72}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~16"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{FED00B9C-C303-4185-A38C-ECD01E372149}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~17"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{D3D0CA12-1471-40C8-B278-B4BF247CCA1D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~18"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{73EA37ED-FB2C-4A91-B4AC-A7291E97F636}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~19"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{7F641795-683B-431D-A1AB-9F80E62DCE92}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~20"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{08ECEA88-5F6F-400E-9C01-C2C422CF5487}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~21"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{26263632-E17A-4E81-B0ED-385AFD3DC141}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~22"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{79FFE4F7-A4FE-47F8-8DE4-E410CCF2EFB6}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~23"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{C8626E6A-011B-4BE4-8F68-933DE981A67A}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~16"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="9"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{C8C54770-397C-48AE-B6BD-14F5092F9F9C}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~17"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="10"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{8EB59A0E-15FD-4ED3-A588-E10E3003FF41}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~18"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="11"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{ADAA5338-6049-4C8D-B825-24C288E7C2DB}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~19"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="12"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{D55E6C0C-41DD-4833-803B-E7D3ABAAC4EA}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~20"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="13"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{266457A1-C670-445F-A41D-AFF30FEBA7F0}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~21"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="14"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{2F4E4E5B-18C9-4B60-8E67-D01A5ED7CB77}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~22"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="15"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Mutes" ID="{C78F6094-9639-4153-8680-186D36AFF835}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~23"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="16"/>
+												<Property Name="TargetName" Type="string" Value="ToggleMute"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{38694A80-25EE-4A6A-9BCE-F689AE081337}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~8"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{BC7CF733-4F48-4075-9404-991BE72A315A}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~9"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{5815F0AF-1D11-4AE1-A70D-1F77545E4D88}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~10"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{A1AA1B9A-D134-4619-BADA-1A3193876B6B}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~11"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{4B259960-0F1D-4291-8073-BA30344B3CE1}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~12"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{A82526FA-1BDE-4201-B1ED-88A870BEA336}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~13"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{4BB4B528-9A07-4C31-90F1-A66A824AA3AF}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~14"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{2979A482-2980-4866-8DDA-9082663EB97D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~15"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{667EF7F4-D210-4AA1-A598-10D0758B1E26}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~8"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="9"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{4561FE0E-FB7D-4DB8-914D-1CE7526847EE}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~9"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="10"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{37779856-2E97-4A1B-843F-BA2E40962850}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~10"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="11"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{B929DA1C-044A-4F0D-A936-2E076E3C60D5}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~11"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="12"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{534968F4-E08A-4FFE-B136-DD9FC239EAF3}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~12"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="13"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{01A80169-9ABC-4BE2-8E0E-B4910344BC12}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~13"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="14"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{82664BE7-0F15-43A7-9E65-9CF3517DA0D9}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~14"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="15"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Solos" ID="{F96B542A-E802-44D1-94A9-410323CE6795}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~15"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="16"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{0AD29F73-7A4B-493F-83CF-19F659206467}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~24"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{43265EBB-5F4F-4A42-9158-AF40AA33CFFE}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~25"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{2FC473D9-7E1A-495E-A50F-9B1FEE8F389C}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~26"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{A092DB34-760C-429A-9C0A-69243DD0AC29}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~27"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{E235B783-A2D3-40A0-97AB-E88E90ADE930}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~28"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{7169DC8F-BD6F-4B6A-8BBE-7A5E0CF6F32E}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~29"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{AAA1B86A-0B96-4481-ACCD-417BEF67CAB8}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~30"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{FA120D8C-6AE9-4046-94DD-F7A6AB143156}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~31"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{A905EA69-0BE2-4036-A0A1-F526A00EFD3D}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~24"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="9"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{57536311-7EF8-4E2C-84A4-C976554FB050}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~25"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="10"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{14EC750F-CA13-431A-9D7F-BDA78038EEAE}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~26"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="11"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{915BAC3A-8CF5-4747-AE3C-AB9069E338BC}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~27"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="12"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{0B9287B4-995F-4F80-9C34-7DC68CE18318}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~28"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="13"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{36D4655B-B5C6-40BD-9A34-91D57CE29984}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~29"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="14"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{61068528-9661-4A4F-9AA5-2FCD5F6C1B08}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~30"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="15"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{BF94D3B7-0BC9-46D1-AB51-75E802FD0FDA}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~31"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="16"/>
+												<Property Name="TargetName" Type="string" Value="Inspect"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{0F8AFF17-B051-4E2D-8292-376F47340835}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~28"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="5"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{DA2EED49-9EDA-4769-9F5E-3DAD7C4F0211}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~30"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="15"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{FD51CF8A-19C9-4AD5-B4ED-93D87019B600}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~28"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="13"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{EF7EEA32-E7A4-4D0A-A4DF-604C99F60CDA}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~29"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="14"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{A9A8EDB7-875C-4114-9A2B-AF56F683DD52}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~27"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="12"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{26485721-D5F3-48B0-A34E-10877B9467C3}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~27"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="4"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{5F7FCEA2-9AEF-4F9C-8127-9821E3DCBF6A}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~26"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="11"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{371FB082-050E-496E-A031-25326225ADDA}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~24"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{C2533312-D807-4121-A8A1-BFBC8D2F53F0}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~31"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="16"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{1A78F1A7-4E4B-4F6C-8DAF-9457EF9519FB}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~25"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="2"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{3C7075DC-FFBD-40C0-BEC8-6D5FE152DEE0}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~31"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="8"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{FBFDB85A-762C-49F4-B3BF-4E7F00895F59}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~30"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="7"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{CDBB1D9B-16AD-40B8-A8BE-121ED3B3ADA2}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~29"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="6"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{00A050BD-E2F1-44E0-B6C0-FB622D35C68A}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch Ext~Ch.1~Note-On~26"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="3"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{71B71986-8CA5-413F-B1DB-F915A6F17113}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~24"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="9"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+										<ControlSurfaceBinding Name="Selection" ID="{2DF0D674-580A-4475-A74D-8D7F2EDDCF2A}">
+											<PropertyList>
+												<Property Name="HardwareControllerKey" Type="string" Value="X Touch~Ch.1~Note-On~25"/>
+												<Property Name="ObjectIndexInView" Type="int32" Value="10"/>
+												<Property Name="TargetName" Type="string" Value="ToggleSolo"/>
+												<Property Name="TargetType" Type="int16" Value="1"/>
+											</PropertyList>
+										</ControlSurfaceBinding>
+									</ChildrenList>
+								</ControlSurfaceBindingGroup>
+							</ChildrenList>
 						</ControlSurfaceBindingGroup>
 					</ChildrenList>
 				</ControlSurfaceSession>

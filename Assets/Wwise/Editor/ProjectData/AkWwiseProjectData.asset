@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 457ff181b915e949a13f362102a81aa3
     GuidInternal: 
-    m_lastTime: -8584933486737156167
+    m_lastTime: -8584933360974460351
     List:
     - name: Ambiance
       guid: 2a2c2924ece1114b810e2df7118f4969
@@ -219,7 +219,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ccce76b7b8d9254480ac8b31ee6a0223
     GuidInternal: 
-    m_lastTime: -8584933435267596509
+    m_lastTime: -8584933358356459352
     List:
     - name: Character
       guid: 93faffad124c1d4aa0f63af8b0e9567f
@@ -238,6 +238,98 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Hit_Player_1
+      guid: 78fa6f0344e4e741a3b801a1487f8270
+      id: 4038917348
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Character
+        ObjectType: 4
+        guid: 93faffad124c1d4aa0f63af8b0e9567f
+      - ElementName: Hurt
+        ObjectType: 4
+        guid: e1285d787c523e429054a81281e8bd3e
+      - ElementName: Hit_Player_1
+        ObjectType: 3
+        guid: 78fa6f0344e4e741a3b801a1487f8270
+      Path: Events\Default Work Unit\Character\Hurt\Hit_Player_1
+      maxAttenuation: 0
+      maxDuration: 0.44996804
+      minDuration: 0.21597917
+    - name: Hit_Player_2
+      guid: 202d2b093aa02b4484f2546c875aec9b
+      id: 4038917351
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Character
+        ObjectType: 4
+        guid: 93faffad124c1d4aa0f63af8b0e9567f
+      - ElementName: Hurt
+        ObjectType: 4
+        guid: e1285d787c523e429054a81281e8bd3e
+      - ElementName: Hit_Player_2
+        ObjectType: 3
+        guid: 202d2b093aa02b4484f2546c875aec9b
+      Path: Events\Default Work Unit\Character\Hurt\Hit_Player_2
+      maxAttenuation: 0
+      maxDuration: 0.29110417
+      minDuration: 0.13039583
+    - name: Hit_Player_3
+      guid: dd21ab573ae25440a4ea6a7914ab9396
+      id: 4038917350
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Character
+        ObjectType: 4
+        guid: 93faffad124c1d4aa0f63af8b0e9567f
+      - ElementName: Hurt
+        ObjectType: 4
+        guid: e1285d787c523e429054a81281e8bd3e
+      - ElementName: Hit_Player_3
+        ObjectType: 3
+        guid: dd21ab573ae25440a4ea6a7914ab9396
+      Path: Events\Default Work Unit\Character\Hurt\Hit_Player_3
+      maxAttenuation: 0
+      maxDuration: 0.31427082
+      minDuration: 0.25075
+    - name: Hit_Player_4
+      guid: 1ebc84c771f6a84d8574164a82921f7e
+      id: 4038917345
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Character
+        ObjectType: 4
+        guid: 93faffad124c1d4aa0f63af8b0e9567f
+      - ElementName: Hurt
+        ObjectType: 4
+        guid: e1285d787c523e429054a81281e8bd3e
+      - ElementName: Hit_Player_4
+        ObjectType: 3
+        guid: 1ebc84c771f6a84d8574164a82921f7e
+      Path: Events\Default Work Unit\Character\Hurt\Hit_Player_4
+      maxAttenuation: 0
+      maxDuration: 0.27335417
+      minDuration: 0.14285417
     - name: Hits
       guid: 807e34e4a79cbf49996d8de88209155a
       id: 3232033907
@@ -258,6 +350,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.7135243
       minDuration: 0.1695983
+    - name: Hurt
+      guid: e1285d787c523e429054a81281e8bd3e
+      id: 3193947170
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Character
+        ObjectType: 4
+        guid: 93faffad124c1d4aa0f63af8b0e9567f
+      - ElementName: Hurt
+        ObjectType: 4
+        guid: e1285d787c523e429054a81281e8bd3e
+      Path: Events\Default Work Unit\Character\Hurt
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music
       guid: b290a98ad427164b94b47dcde3d2d207
       id: 3991942870
@@ -333,8 +445,8 @@ MonoBehaviour:
         guid: 12af968318e78b488cc9e82fc569795b
       Path: Events\Default Work Unit\Character\Screams\Scream_Player_1
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.78375
+      minDuration: 0.78375
     - name: Scream_Player_2
       guid: 1f70fe546f942741add27d1697101eba
       id: 1163358385
@@ -356,8 +468,8 @@ MonoBehaviour:
         guid: 1f70fe546f942741add27d1697101eba
       Path: Events\Default Work Unit\Character\Screams\Scream_Player_2
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.056625
+      minDuration: 1.056625
     - name: Scream_Player_3
       guid: 3edcff889a91f74f9e05618bc79d0bdd
       id: 1163358384
@@ -379,8 +491,8 @@ MonoBehaviour:
         guid: 3edcff889a91f74f9e05618bc79d0bdd
       Path: Events\Default Work Unit\Character\Screams\Scream_Player_3
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.0522916
+      minDuration: 1.0522916
     - name: Scream_Player_4
       guid: db92253a274c1b4f96fa38e5d9f204d3
       id: 1163358391
@@ -402,8 +514,8 @@ MonoBehaviour:
         guid: db92253a274c1b4f96fa38e5d9f204d3
       Path: Events\Default Work Unit\Character\Screams\Scream_Player_4
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.7535833
+      minDuration: 0.7535833
     - name: Screams
       guid: a2677cd8741247429693657fdb996267
       id: 2812860249

@@ -10,11 +10,31 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Music" ID="{2F738F0A-A483-4C95-ACF0-874B9F4F510E}"/>
+						<Bus Name="Music" ID="{2F738F0A-A483-4C95-ACF0-874B9F4F510E}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-0.0294134590654083</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="Sounddesign" ID="{49F171CA-CFAB-48A3-8565-3A3BEA2B22F0}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-0.00154377048000589</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Ambiance" ID="{24292C2A-E1EC-4B11-810E-2DF7118F4969}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-6.10966539622469</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -22,7 +42,20 @@
 										</Property>
 									</PropertyList>
 								</Bus>
-								<Bus Name="Character" ID="{DE2DAE4D-BDA0-4A2A-9246-6871A37362AD}"/>
+								<Bus Name="Character" ID="{DE2DAE4D-BDA0-4A2A-9246-6871A37362AD}">
+									<PropertyList>
+										<Property Name="UserAuxSendVolume0" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Room" ID="{8F84A183-0512-49F3-8F67-D50AE6DD141B}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="Voice" ID="{71F2730A-F066-47E2-8F94-581AE97DC857}"/>
@@ -37,7 +70,8 @@
 														<Custom>
 															<Effect Name="Matrix Reverb (Custom)" ID="{242D76CD-0B4A-4809-A483-315CB6229EC1}" ShortID="362563408" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 																<PropertyList>
-																	<Property Name="ReverbTime" Type="Real32" Value="3.2"/>
+																	<Property Name="HFRatio" Type="Real32" Value="3.1"/>
+																	<Property Name="ReverbTime" Type="Real32" Value="2.8"/>
 																</PropertyList>
 															</Effect>
 														</Custom>
