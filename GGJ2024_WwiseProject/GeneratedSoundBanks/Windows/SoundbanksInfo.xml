@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{3B1895D3-3ACA-D7E0-4917-C771E9230030}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{92F82EA4-49ED-EA3E-F68E-7FFF1C43CF9C}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -243,7 +243,7 @@
 				</File>
 				<File Id="638763515" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_Cute Score.wav</ShortName>
-					<CachePath>SFX/Music_Cute Score_44640D5C.wem</CachePath>
+					<CachePath>SFX/Music_Cute Score_9ADBACE8.wem</CachePath>
 				</File>
 				<File Id="667684970" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 1.wav</ShortName>
@@ -475,6 +475,12 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3461871211" Name="Play_CookingPot" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="314805838"/>
+						<MediaRef Id="1013995139"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1121580774" Name="Play_EnvironmentSound" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="24123608"/>
@@ -483,7 +489,6 @@
 						<MediaRef Id="100806986"/>
 						<MediaRef Id="142182528"/>
 						<MediaRef Id="215770798"/>
-						<MediaRef Id="314805838"/>
 						<MediaRef Id="326815038"/>
 						<MediaRef Id="328062407"/>
 						<MediaRef Id="373249325"/>
@@ -494,7 +499,6 @@
 						<MediaRef Id="668956226"/>
 						<MediaRef Id="752221801"/>
 						<MediaRef Id="937493976"/>
-						<MediaRef Id="1013995139"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="417627684" Name="PlayMusic" DurationType="OneShot" DurationMin="123.41669" DurationMax="123.41669">
@@ -549,6 +553,7 @@
 						<MediaRef Id="819100976"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3540947541" Name="Stop_CookingPot" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1416616592" Name="Stop_EnvironmentSound" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1917263390" Name="StopMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2386519981" Name="Swing" DurationType="OneShot" DurationMin="0.17135017" DurationMax="0.4444166">
@@ -772,7 +777,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{737F9A72-CAA4-C293-7128-AA81BE437466}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5FD79793-32AD-2FF1-3A3E-F942EE31CBE7}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -833,6 +838,13 @@
 						<State Id="1874288895" Name="Idle"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="3826569560" Name="Music_State">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1125500713" Name="Intro"/>
+						<State Id="2782712965" Name="Level"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="3893417221" Name="Weapon">
@@ -844,5 +856,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0BB1BFF1-F36B-3C50-457A-74B94290FD1A}</FileHash>
+	<FileHash>{1C5EA83E-E1E9-B509-50A9-1F3EEA511AE7}</FileHash>
 </SoundBanksInfo>

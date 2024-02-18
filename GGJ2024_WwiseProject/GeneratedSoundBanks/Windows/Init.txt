@@ -1,10 +1,14 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2036047442	Screaming			\Default Work Unit\Screaming	
+	3826569560	Music_State			\Default Work Unit\Music_State	
 
 State	ID	Name	State Group			Notes
 	737767022	Scream	Screaming			
 	748895195	None	Screaming			
 	1874288895	Idle	Screaming			
+	748895195	None	Music_State			
+	1125500713	Intro	Music_State			
+	2782712965	Level	Music_State			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	436743010	Character			\Default Work Unit\Master Audio Bus\Sounddesign\Character	

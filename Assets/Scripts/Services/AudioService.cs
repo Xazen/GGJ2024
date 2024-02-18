@@ -28,13 +28,15 @@ namespace DefaultNamespace
         private void Start()
         {
             AkSoundEngine.SetState("Screaming", "Idle");
+            AkSoundEngine.SetState("Music_State", "Intro");
             playAmbience.Post(gameObject);
+            playMusic.Post(gameObject);
         }
 
         public void PlayMusic()
         {
-            stopMusic.Post(gameObject);
-            playMusic.Post(gameObject);
+            AkSoundEngine.SetState("Music_State", "Level");
+            AkSoundEngine.PostEvent("Play_CookingPot", gameObject);
         }
 
         /// <summary>

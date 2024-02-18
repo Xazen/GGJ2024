@@ -13,6 +13,13 @@
 						<State Name="Scream" ID="{E870AA98-DD4A-4AF7-B22F-30B031A834E8}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Music_State" ID="{A64990FD-CA37-468E-88B5-0CDD0CDFB920}">
+					<ChildrenList>
+						<State Name="None" ID="{14DE0D47-6EE8-42B5-A9E1-7951CF63357D}"/>
+						<State Name="Intro" ID="{8CC9202C-B39C-4706-95B1-5005C701A177}"/>
+						<State Name="Level" ID="{EBC27508-48A3-4121-9C12-0EC34FE26EAE}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

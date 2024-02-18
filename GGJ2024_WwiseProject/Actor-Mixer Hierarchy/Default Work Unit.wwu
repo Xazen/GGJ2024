@@ -3,672 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}" PersistMode="Standalone">
 			<ChildrenList>
-				<BlendContainer Name="Environment" ID="{2068556D-1719-4C4B-B3AA-6B35FE815975}" ShortID="228636955">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Ambiance" ID="{24292C2A-E1EC-4B11-810E-2DF7118F4969}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<BlendContainer Name="Cooking Pot" ID="{697308FC-2E32-4BB6-AABB-303CBCEEF012}" ShortID="220471850">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Cooking_Gas" ID="{7326289B-412E-4707-B9A7-B4B1E9FFB86B}" ShortID="1040932719">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Cooking_Gas" ID="{1387BADE-03BB-4679-83CA-9FD14AABFA5B}">
-											<Language>SFX</Language>
-											<AudioFile>Cooking_Gas.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="314805838"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{7694E63C-5DC2-40CD-8AA7-B7C3B37A2F65}" ShortID="619284287">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<Custom>
-																	<ModulatorLfo Name="Modulator LFO (Custom)" ID="{2D298051-0C2A-42AB-911A-7E722110A24B}" ShortID="667956875">
-																		<PropertyList>
-																			<Property Name="LfoFrequency" Type="Real64" Value="0.03"/>
-																		</PropertyList>
-																	</ModulatorLfo>
-																</Custom>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{5500499D-1E6C-4433-9635-818DB9EE3CFB}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>21</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>1</XPos>
-																				<YPos>3</YPos>
-																				<Flags>53</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-									<ActiveSourceList>
-										<ActiveSource Name="Cooking_Gas" ID="{1387BADE-03BB-4679-83CA-9FD14AABFA5B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Cooking_Pot" ID="{F8301EA9-19BC-4397-ADC1-A7191D3B7587}" ShortID="292607514">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Cooking_Pot" ID="{6FA960FA-9CC6-4401-BC87-2A182A66E540}">
-											<Language>SFX</Language>
-											<AudioFile>Cooking_Pot.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1013995139"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Cooking_Pot" ID="{6FA960FA-9CC6-4401-BC87-2A182A66E540}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</BlendContainer>
-						<BlendContainer Name="Ambience" ID="{FDD9CD96-042A-4FFC-BD68-6D74F9B678C1}" ShortID="557389769">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Kitchen_Ambience" ID="{B0171FCF-83FE-41C0-B1B0-6F57BF4C45A0}" ShortID="159116948">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Kitchen_Ambience" ID="{B62D8667-F5F7-40CC-955A-08F51A778B96}">
-											<Language>SFX</Language>
-											<AudioFile>Kitchen_Ambience.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="328062407"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Kitchen_Ambience" ID="{B62D8667-F5F7-40CC-955A-08F51A778B96}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="Working" ID="{7B2D45EF-C7BD-4405-8BA4-9AF9C25B3616}" ShortID="997566010">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{C8D80C63-7F5E-4D83-80FB-D966F545897F}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{150681DD-17FA-4E90-92FA-E40BA1B67DFE}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="2"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="77"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Kitchen Work_POS_ 1" ID="{A55D3F99-B135-444C-A692-B82FC5D9CB25}" ShortID="736954202">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 1" ID="{65360EF2-2FC8-4197-823B-B1D79779A613}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="24123608"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 1" ID="{65360EF2-2FC8-4197-823B-B1D79779A613}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 10" ID="{B0DB7978-777A-4B85-B2AF-5CE40EF55548}" ShortID="787541781">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 10" ID="{DE01FD7B-7FF6-4572-89AB-1D97F5CA66FD}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 10.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="937493976"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 10" ID="{DE01FD7B-7FF6-4572-89AB-1D97F5CA66FD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 11" ID="{658F42AA-728E-4299-821D-CB7530585693}" ShortID="25571378">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 11" ID="{11829071-5936-49EC-A576-5CB83298A34D}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 11.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="142182528"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 11" ID="{11829071-5936-49EC-A576-5CB83298A34D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 12" ID="{2A0AAD11-9182-4BE4-BD43-D99607A2F1F6}" ShortID="428184139">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 12" ID="{FE30799B-D2BF-4990-BF21-9A199C045238}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 12.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="76012042"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 12" ID="{FE30799B-D2BF-4990-BF21-9A199C045238}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 13" ID="{B690CEAF-5C31-4AF6-AF42-3DACA6D5C918}" ShortID="1041723939">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 13" ID="{C1AF2807-08B3-4E92-9474-B4758D90CD86}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 13.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="394956205"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 13" ID="{C1AF2807-08B3-4E92-9474-B4758D90CD86}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 2" ID="{D4EDC2E8-C641-4A04-A89F-674FE5C6A775}" ShortID="381334104">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 2" ID="{01D1C434-B994-433B-9F2A-EBE3D46D6C64}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="100806986"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 2" ID="{01D1C434-B994-433B-9F2A-EBE3D46D6C64}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 3" ID="{6A89A21C-7273-46F3-9FAA-1E3D9878301B}" ShortID="990730008">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 3" ID="{7066A3D1-4B3B-4B79-AE73-E7E014729261}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="668956226"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 3" ID="{7066A3D1-4B3B-4B79-AE73-E7E014729261}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 4" ID="{BCAF2F78-8773-42A8-B847-DA76680FE56D}" ShortID="895992076">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 4" ID="{3063D780-E26D-4250-B268-B79EB8748359}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="373249325"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 4" ID="{3063D780-E26D-4250-B268-B79EB8748359}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 5" ID="{D2EE09D3-5841-4550-BB4C-7DE1105F2C18}" ShortID="865577154">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 5" ID="{8DA3312F-E8C2-4FEA-8F8B-FBFE3592EFBC}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="215770798"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 5" ID="{8DA3312F-E8C2-4FEA-8F8B-FBFE3592EFBC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 6" ID="{2E1466F5-9951-46CD-9971-D0BCDC1B3F17}" ShortID="666298987">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 6" ID="{4E0435D1-46C3-4BFE-ACBC-53100274DA69}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="434679761"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 6" ID="{4E0435D1-46C3-4BFE-ACBC-53100274DA69}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 7" ID="{E3A73691-ABCF-4E3E-98F7-DBC28207E789}" ShortID="302210986">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 7" ID="{6A727FEC-F2BB-4A4A-8F32-726E429CEBC1}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 7.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="752221801"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 7" ID="{6A727FEC-F2BB-4A4A-8F32-726E429CEBC1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 8" ID="{98A56324-BDA7-4DCC-A0F7-718835BC21DB}" ShortID="871920887">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 8" ID="{C6F7CC5C-358D-4126-BD12-49E066127081}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 8.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="326815038"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 8" ID="{C6F7CC5C-358D-4126-BD12-49E066127081}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Work_POS_ 9" ID="{6BBC46A4-3222-400A-A203-EA88B543AA57}" ShortID="880730841">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Work_POS_ 9" ID="{883A6789-E27F-4097-B253-7880303B6866}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Work_POS_ 9.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="381795405"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Work_POS_ 9" ID="{883A6789-E27F-4097-B253-7880303B6866}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{5F17377D-38C3-4DB7-8AAF-46DF4E4D228D}"/>
-										<Position Name="" ID="{131D3220-6B8D-4261-9F1E-55D962C225A9}">
-											<PropertyList>
-												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-											</PropertyList>
-											<ChildrenList>
-												<Path2D Name="Working_Path" ID="{B695F15C-AC9F-4A4B-912F-F2D7FEDFF81C}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="40"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Fluid" ID="{B2C47548-CA2C-429E-AB1F-35908467336E}" ShortID="33728983">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>7</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{697DCBCC-3B6E-48CA-BCA8-AC243115046D}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="3"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{1286666B-C2E5-42CD-809B-0F01B73CEAA1}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-8</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Kitchen Fluid_1" ID="{BF90C833-181D-42D8-A570-40C3C75D8F9A}" ShortID="187998610">
-											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Fluid_1" ID="{853D5717-EFD5-4B38-BA7E-F5E1945C27DF}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Fluid_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="63126065"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{A66575BD-58D9-4343-9B48-59786B404138}"/>
-												<Position Name="" ID="{082047E9-E118-4B2D-B2F1-67C16E370CA0}">
-													<PropertyList>
-														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="Kitchen Fluid_1_Path" ID="{016E0C6D-EB81-4782-AEBB-3FCBA18D24CA}">
-															<PropertyList>
-																<Property Name="RandomX" Type="Real64" Value="20"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>50</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Fluid_1" ID="{853D5717-EFD5-4B38-BA7E-F5E1945C27DF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kitchen Fluid_2" ID="{1FA3E8E3-8AAA-470E-9399-585FF9597851}" ShortID="431695826">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kitchen Fluid_2" ID="{96DF2CC7-5F54-4A5F-82E0-9172DE95C43C}">
-													<Language>SFX</Language>
-													<AudioFile>Kitchen Fluid_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="416771849"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kitchen Fluid_2" ID="{96DF2CC7-5F54-4A5F-82E0-9172DE95C43C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</BlendContainer>
-					</ChildrenList>
-				</BlendContainer>
 				<ActorMixer Name="Character" ID="{EBED3CF4-C88D-41C3-899D-DB28246038EF}" ShortID="128387802">
 					<PropertyList>
 						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
@@ -3989,6 +3323,660 @@
 						</ObjectList>
 					</ObjectLists>
 				</ActorMixer>
+				<BlendContainer Name="Cooking Pot" ID="{697308FC-2E32-4BB6-AABB-303CBCEEF012}" ShortID="220471850">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiance" ID="{24292C2A-E1EC-4B11-810E-2DF7118F4969}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Cooking_Gas" ID="{7326289B-412E-4707-B9A7-B4B1E9FFB86B}" ShortID="1040932719">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cooking_Gas" ID="{1387BADE-03BB-4679-83CA-9FD14AABFA5B}">
+									<Language>SFX</Language>
+									<AudioFile>Cooking_Gas.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="314805838"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{7694E63C-5DC2-40CD-8AA7-B7C3B37A2F65}" ShortID="619284287">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="MakeUpGain"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<Custom>
+															<ModulatorLfo Name="Modulator LFO (Custom)" ID="{2D298051-0C2A-42AB-911A-7E722110A24B}" ShortID="667956875">
+																<PropertyList>
+																	<Property Name="LfoFrequency" Type="Real64" Value="0.03"/>
+																</PropertyList>
+															</ModulatorLfo>
+														</Custom>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{5500499D-1E6C-4433-9635-818DB9EE3CFB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>3</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Cooking_Gas" ID="{1387BADE-03BB-4679-83CA-9FD14AABFA5B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Cooking_Pot" ID="{F8301EA9-19BC-4397-ADC1-A7191D3B7587}" ShortID="292607514">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cooking_Pot" ID="{6FA960FA-9CC6-4401-BC87-2A182A66E540}">
+									<Language>SFX</Language>
+									<AudioFile>Cooking_Pot.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1013995139"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cooking_Pot" ID="{6FA960FA-9CC6-4401-BC87-2A182A66E540}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="Ambience" ID="{FDD9CD96-042A-4FFC-BD68-6D74F9B678C1}" ShortID="557389769">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiance" ID="{24292C2A-E1EC-4B11-810E-2DF7118F4969}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Kitchen_Ambience" ID="{B0171FCF-83FE-41C0-B1B0-6F57BF4C45A0}" ShortID="159116948">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Kitchen_Ambience" ID="{B62D8667-F5F7-40CC-955A-08F51A778B96}">
+									<Language>SFX</Language>
+									<AudioFile>Kitchen_Ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="328062407"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Kitchen_Ambience" ID="{B62D8667-F5F7-40CC-955A-08F51A778B96}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Working" ID="{7B2D45EF-C7BD-4405-8BA4-9AF9C25B3616}" ShortID="997566010">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C8D80C63-7F5E-4D83-80FB-D966F545897F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{150681DD-17FA-4E90-92FA-E40BA1B67DFE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="77"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Kitchen Work_POS_ 1" ID="{A55D3F99-B135-444C-A692-B82FC5D9CB25}" ShortID="736954202">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 1" ID="{65360EF2-2FC8-4197-823B-B1D79779A613}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="24123608"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 1" ID="{65360EF2-2FC8-4197-823B-B1D79779A613}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 10" ID="{B0DB7978-777A-4B85-B2AF-5CE40EF55548}" ShortID="787541781">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 10" ID="{DE01FD7B-7FF6-4572-89AB-1D97F5CA66FD}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="937493976"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 10" ID="{DE01FD7B-7FF6-4572-89AB-1D97F5CA66FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 11" ID="{658F42AA-728E-4299-821D-CB7530585693}" ShortID="25571378">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 11" ID="{11829071-5936-49EC-A576-5CB83298A34D}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 11.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="142182528"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 11" ID="{11829071-5936-49EC-A576-5CB83298A34D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 12" ID="{2A0AAD11-9182-4BE4-BD43-D99607A2F1F6}" ShortID="428184139">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 12" ID="{FE30799B-D2BF-4990-BF21-9A199C045238}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="76012042"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 12" ID="{FE30799B-D2BF-4990-BF21-9A199C045238}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 13" ID="{B690CEAF-5C31-4AF6-AF42-3DACA6D5C918}" ShortID="1041723939">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 13" ID="{C1AF2807-08B3-4E92-9474-B4758D90CD86}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="394956205"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 13" ID="{C1AF2807-08B3-4E92-9474-B4758D90CD86}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 2" ID="{D4EDC2E8-C641-4A04-A89F-674FE5C6A775}" ShortID="381334104">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 2" ID="{01D1C434-B994-433B-9F2A-EBE3D46D6C64}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="100806986"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 2" ID="{01D1C434-B994-433B-9F2A-EBE3D46D6C64}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 3" ID="{6A89A21C-7273-46F3-9FAA-1E3D9878301B}" ShortID="990730008">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 3" ID="{7066A3D1-4B3B-4B79-AE73-E7E014729261}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="668956226"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 3" ID="{7066A3D1-4B3B-4B79-AE73-E7E014729261}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 4" ID="{BCAF2F78-8773-42A8-B847-DA76680FE56D}" ShortID="895992076">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 4" ID="{3063D780-E26D-4250-B268-B79EB8748359}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="373249325"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 4" ID="{3063D780-E26D-4250-B268-B79EB8748359}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 5" ID="{D2EE09D3-5841-4550-BB4C-7DE1105F2C18}" ShortID="865577154">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 5" ID="{8DA3312F-E8C2-4FEA-8F8B-FBFE3592EFBC}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="215770798"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 5" ID="{8DA3312F-E8C2-4FEA-8F8B-FBFE3592EFBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 6" ID="{2E1466F5-9951-46CD-9971-D0BCDC1B3F17}" ShortID="666298987">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 6" ID="{4E0435D1-46C3-4BFE-ACBC-53100274DA69}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="434679761"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 6" ID="{4E0435D1-46C3-4BFE-ACBC-53100274DA69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 7" ID="{E3A73691-ABCF-4E3E-98F7-DBC28207E789}" ShortID="302210986">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 7" ID="{6A727FEC-F2BB-4A4A-8F32-726E429CEBC1}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="752221801"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 7" ID="{6A727FEC-F2BB-4A4A-8F32-726E429CEBC1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 8" ID="{98A56324-BDA7-4DCC-A0F7-718835BC21DB}" ShortID="871920887">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 8" ID="{C6F7CC5C-358D-4126-BD12-49E066127081}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="326815038"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 8" ID="{C6F7CC5C-358D-4126-BD12-49E066127081}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Work_POS_ 9" ID="{6BBC46A4-3222-400A-A203-EA88B543AA57}" ShortID="880730841">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Work_POS_ 9" ID="{883A6789-E27F-4097-B253-7880303B6866}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Work_POS_ 9.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381795405"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Work_POS_ 9" ID="{883A6789-E27F-4097-B253-7880303B6866}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{5F17377D-38C3-4DB7-8AAF-46DF4E4D228D}"/>
+								<Position Name="" ID="{131D3220-6B8D-4261-9F1E-55D962C225A9}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Working_Path" ID="{B695F15C-AC9F-4A4B-912F-F2D7FEDFF81C}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="40"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Fluid" ID="{B2C47548-CA2C-429E-AB1F-35908467336E}" ShortID="33728983">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{697DCBCC-3B6E-48CA-BCA8-AC243115046D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1286666B-C2E5-42CD-809B-0F01B73CEAA1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Kitchen Fluid_1" ID="{BF90C833-181D-42D8-A570-40C3C75D8F9A}" ShortID="187998610">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Fluid_1" ID="{853D5717-EFD5-4B38-BA7E-F5E1945C27DF}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Fluid_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="63126065"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{A66575BD-58D9-4343-9B48-59786B404138}"/>
+										<Position Name="" ID="{082047E9-E118-4B2D-B2F1-67C16E370CA0}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Kitchen Fluid_1_Path" ID="{016E0C6D-EB81-4782-AEBB-3FCBA18D24CA}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="20"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Fluid_1" ID="{853D5717-EFD5-4B38-BA7E-F5E1945C27DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kitchen Fluid_2" ID="{1FA3E8E3-8AAA-470E-9399-585FF9597851}" ShortID="431695826">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kitchen Fluid_2" ID="{96DF2CC7-5F54-4A5F-82E0-9172DE95C43C}">
+											<Language>SFX</Language>
+											<AudioFile>Kitchen Fluid_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="416771849"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kitchen Fluid_2" ID="{96DF2CC7-5F54-4A5F-82E0-9172DE95C43C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

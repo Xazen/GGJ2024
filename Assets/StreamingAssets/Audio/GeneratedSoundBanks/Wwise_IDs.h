@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID HIT_PLAYER_3 = 4038917350U;
         static const AkUniqueID HIT_PLAYER_4 = 4038917345U;
         static const AkUniqueID HITS = 3232033907U;
+        static const AkUniqueID PLAY_COOKINGPOT = 3461871211U;
         static const AkUniqueID PLAY_ENVIRONMENTSOUND = 1121580774U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
         static const AkUniqueID SCREAM_PLAYER_1 = 1163358386U;
@@ -25,6 +26,7 @@ namespace AK
         static const AkUniqueID SCREAM_PLAYER_3 = 1163358384U;
         static const AkUniqueID SCREAM_PLAYER_4 = 1163358391U;
         static const AkUniqueID STEPS = 1718617278U;
+        static const AkUniqueID STOP_COOKINGPOT = 3540947541U;
         static const AkUniqueID STOP_ENVIRONMENTSOUND = 1416616592U;
         static const AkUniqueID STOPMUSIC = 1917263390U;
         static const AkUniqueID SWING = 2386519981U;
@@ -32,6 +34,18 @@ namespace AK
 
     namespace STATES
     {
+        namespace MUSIC_STATE
+        {
+            static const AkUniqueID GROUP = 3826569560U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INTRO = 1125500713U;
+                static const AkUniqueID LEVEL = 2782712965U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
+
         namespace SCREAMING
         {
             static const AkUniqueID GROUP = 2036047442U;

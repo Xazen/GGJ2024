@@ -38,7 +38,7 @@
 						<Action Name="" ID="{97C4CE88-6396-44A5-A545-0B8C6A73FE09}" ShortID="934700453">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Environment" ID="{2068556D-1719-4C4B-B3AA-6B35FE815975}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+									<ObjectRef Name="Ambience" ID="{FDD9CD96-042A-4FFC-BD68-6D74F9B678C1}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -53,7 +53,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Environment" ID="{2068556D-1719-4C4B-B3AA-6B35FE815975}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+									<ObjectRef Name="Ambience" ID="{FDD9CD96-042A-4FFC-BD68-6D74F9B678C1}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -192,6 +192,31 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_CookingPot" ID="{E0F16EB9-1BF9-437F-BC43-570EBA14B99B}">
+					<ChildrenList>
+						<Action Name="" ID="{789F2D20-E50B-4B93-8D84-B7135D5CBE39}" ShortID="711757286">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cooking Pot" ID="{697308FC-2E32-4BB6-AABB-303CBCEEF012}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_CookingPot" ID="{EAA1232A-F987-492F-9407-21DC4AB14F77}">
+					<ChildrenList>
+						<Action Name="" ID="{4551D4DB-BA74-42DF-B0B8-2D1C9D9B7B6F}" ShortID="691852381">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cooking Pot" ID="{697308FC-2E32-4BB6-AABB-303CBCEEF012}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
