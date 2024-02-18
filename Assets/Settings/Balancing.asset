@@ -22,7 +22,7 @@ MonoBehaviour:
   ScreamFlyMin: 9
   ScreamFlyMax: 13
   ScreamDistanceMultiplier: 1
-  StaggeredDuration: 0.3
+  StaggeredDuration: 0.5
   KnockbackStrength: 1
   KnockbackMoveSpeed: 0.1
   CollisionThreshold: 1.2
