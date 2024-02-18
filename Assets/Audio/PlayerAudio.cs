@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
+using DefaultNamespace;
 
 public class PlayerAudio : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class PlayerAudio : MonoBehaviour
     }
 
     public float panning;
+    private AudioService AudioService;
 
     public void SetWeapon(WEAPON weapon)
     {
@@ -35,7 +38,13 @@ public class PlayerAudio : MonoBehaviour
 
     public void PlayScream()
     {
+        //AudioService.Scream();
+    }
 
+    [Inject]
+    public void Inject(AudioService audioService)
+    {
+        this.AudioService = audioService;
     }
     
     private void SetPosition()
