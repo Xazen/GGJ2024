@@ -93,13 +93,13 @@ public class GamePlayerActorController : MonoBehaviour
         _animator.SetTrigger(_screamAnimHash);
         StartCoroutine(Scream());
         GetComponent<PlayerAudio>().PlayScream();
-        _moveVector = Vector3.zero;
         Debug.Log("Scream");
     }
 
     private IEnumerator Scream()
     {
         _playerModel.IsScreaming = true;
+        _moveVector = Vector3.zero;
         screamHitbox.gameObject.SetActive(true);
         yield return new WaitForSeconds(_balancingConfig.ScreamboxDuration);
         screamHitbox.gameObject.SetActive(false);
@@ -111,12 +111,15 @@ public class GamePlayerActorController : MonoBehaviour
     {
         _animator.SetTrigger(_attackKnifeAnimHash);
         StartCoroutine(Attack());
-        _moveVector = Vector3.zero;
         Debug.Log("Attack");
     }
 
     public void OnMovement(Vector2 movement)
     {
+        if (_playerModel.IsStaggered || _playerModel.IsAttacking || !_gameService.IsGameRunning() || _playerModel.IsScreaming)
+        {
+            return;
+        }
         _moveVector = new Vector3(movement.x, 0, movement.y);
     }
 
@@ -238,6 +241,7 @@ public class GamePlayerActorController : MonoBehaviour
     private IEnumerator Attack()
     {
         _playerModel.IsAttacking = true;
+        _moveVector = Vector3.zero;
         yield return new WaitForSeconds(7f/30f);
         hitBox.gameObject.SetActive(true);
         yield return new WaitForSeconds(_balancingConfig.HitboxDuration);

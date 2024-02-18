@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Constants;
 using DefaultNamespace;
 using JetBrains.Annotations;
@@ -8,7 +7,6 @@ using UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Zenject;
 
@@ -16,6 +14,9 @@ public class ResultScreen : UIMonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI[] playerScores;
+
+    [SerializeField]
+    private GameObject[] playerContainers;
 
     [SerializeField]
     private Button restartButton;
@@ -56,6 +57,7 @@ public class ResultScreen : UIMonoBehaviour
             }
             else
             {
+                playerContainers[i].SetActive(false);
                 playerScores[i].gameObject.SetActive(false);
             }
         }
