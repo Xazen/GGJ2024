@@ -28,7 +28,7 @@
 						<CurrentStateRef Name="Idle" ID="{8F843FDA-6944-4F68-AD8D-30439F6D269D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Spoon" ID="{1C0015EE-A9CF-495A-A940-71B682F8CE01}"/>
+						<CurrentSwitchRef Name="Knife" ID="{B16ACC5C-14FA-485E-B0D3-35B275975B79}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

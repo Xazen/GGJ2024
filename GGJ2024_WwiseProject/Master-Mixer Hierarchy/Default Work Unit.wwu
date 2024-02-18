@@ -26,6 +26,29 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="Voice" ID="{71F2730A-F066-47E2-8F94-581AE97DC857}"/>
+						<AuxBus Name="Reverb" ID="{A60018B3-C644-4121-B88C-288CEF207094}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{9E8FD312-CB63-44FF-85E5-2DE07CC9F906}" ShortID="771495243">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Matrix Reverb (Custom)" ID="{242D76CD-0B4A-4809-A483-315CB6229EC1}" ShortID="362563408" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+																<PropertyList>
+																	<Property Name="ReverbTime" Type="Real32" Value="3.2"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">

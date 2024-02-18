@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8cb61922633e4f45abef376dc83af8a7
     GuidInternal: 
-    m_lastTime: -8584934290609781077
+    m_lastTime: -8584934346097604605
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 457ff181b915e949a13f362102a81aa3
     GuidInternal: 
-    m_lastTime: -8584934164865291015
+    m_lastTime: -8584933932520085593
     List:
     - name: Ambiance
       guid: 2a2c2924ece1114b810e2df7118f4969
@@ -157,7 +157,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5a64f6870470f2429e7517d4e173fa48
     GuidInternal: 
-    m_lastTime: -8584934290609816456
+    m_lastTime: -8584934346097529543
     List:
     - name: General
       guid: 84287eb77840ee4b8ae08610a4941e16
@@ -185,7 +185,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ccce76b7b8d9254480ac8b31ee6a0223
     GuidInternal: 
-    m_lastTime: -8584934164871595026
+    m_lastTime: -8584934020461315472
     List:
     - name: Audio Capture
       guid: a2677cd8741247429693657fdb996267
@@ -204,6 +204,43 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Character
+      guid: 93faffad124c1d4aa0f63af8b0e9567f
+      id: 436743010
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Character
+        ObjectType: 4
+        guid: 93faffad124c1d4aa0f63af8b0e9567f
+      Path: Events\Default Work Unit\Character
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Hits
+      guid: 807e34e4a79cbf49996d8de88209155a
+      id: 3232033907
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Character
+        ObjectType: 4
+        guid: 93faffad124c1d4aa0f63af8b0e9567f
+      - ElementName: Hits
+        ObjectType: 3
+        guid: 807e34e4a79cbf49996d8de88209155a
+      Path: Events\Default Work Unit\Character\Hits
+      maxAttenuation: 0
+      maxDuration: 0.6
+      minDuration: 0.2016875
     - name: Music
       guid: b290a98ad427164b94b47dcde3d2d207
       id: 3991942870
@@ -258,9 +295,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 123.41669
       minDuration: 123.41669
-    - name: StartAudioCapture_01
+    - name: StartAudioCapture_1
       guid: 12af968318e78b488cc9e82fc569795b
-      id: 573871067
+      id: 1102558895
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -271,16 +308,16 @@ MonoBehaviour:
       - ElementName: Audio Capture
         ObjectType: 4
         guid: a2677cd8741247429693657fdb996267
-      - ElementName: StartAudioCapture_01
+      - ElementName: StartAudioCapture_1
         ObjectType: 3
         guid: 12af968318e78b488cc9e82fc569795b
-      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_01
+      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_1
       maxAttenuation: 0
-      maxDuration: 3
-      minDuration: 3
-    - name: StartAudioCapture_02
+      maxDuration: 1
+      minDuration: 1
+    - name: StartAudioCapture_2
       guid: 1f70fe546f942741add27d1697101eba
-      id: 573871064
+      id: 1102558892
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -291,16 +328,16 @@ MonoBehaviour:
       - ElementName: Audio Capture
         ObjectType: 4
         guid: a2677cd8741247429693657fdb996267
-      - ElementName: StartAudioCapture_02
+      - ElementName: StartAudioCapture_2
         ObjectType: 3
         guid: 1f70fe546f942741add27d1697101eba
-      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_02
+      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_2
       maxAttenuation: 0
       maxDuration: 3
       minDuration: 3
-    - name: StartAudioCapture_03
+    - name: StartAudioCapture_3
       guid: 3edcff889a91f74f9e05618bc79d0bdd
-      id: 573871065
+      id: 1102558893
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -311,16 +348,16 @@ MonoBehaviour:
       - ElementName: Audio Capture
         ObjectType: 4
         guid: a2677cd8741247429693657fdb996267
-      - ElementName: StartAudioCapture_03
+      - ElementName: StartAudioCapture_3
         ObjectType: 3
         guid: 3edcff889a91f74f9e05618bc79d0bdd
-      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_03
+      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_3
       maxAttenuation: 0
       maxDuration: 3
       minDuration: 3
-    - name: StartAudioCapture_04
+    - name: StartAudioCapture_4
       guid: db92253a274c1b4f96fa38e5d9f204d3
-      id: 573871070
+      id: 1102558890
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -331,10 +368,10 @@ MonoBehaviour:
       - ElementName: Audio Capture
         ObjectType: 4
         guid: a2677cd8741247429693657fdb996267
-      - ElementName: StartAudioCapture_04
+      - ElementName: StartAudioCapture_4
         ObjectType: 3
         guid: db92253a274c1b4f96fa38e5d9f204d3
-      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_04
+      Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_4
       maxAttenuation: 0
       maxDuration: 3
       minDuration: 3
@@ -395,6 +432,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Swing
+      guid: 399cbd688b28d54cba39dad91c38f59d
+      id: 2386519981
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccce76b7b8d9254480ac8b31ee6a0223
+      - ElementName: Character
+        ObjectType: 4
+        guid: 93faffad124c1d4aa0f63af8b0e9567f
+      - ElementName: Swing
+        ObjectType: 3
+        guid: 399cbd688b28d54cba39dad91c38f59d
+      Path: Events\Default Work Unit\Character\Swing
+      maxAttenuation: 0
+      maxDuration: 0.3747892
+      minDuration: 0.20318317
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -407,8 +464,36 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ec7e71d9afa3ae4f81017d073b0169ca
     GuidInternal: 
-    m_lastTime: -8584934290617429856
-    List: []
+    m_lastTime: -8584934061209166313
+    List:
+    - name: Distance
+      guid: c271d91c1479034c917c3c54daf12293
+      id: 1240670792
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ec7e71d9afa3ae4f81017d073b0169ca
+      - ElementName: Distance
+        ObjectType: 13
+        guid: c271d91c1479034c917c3c54daf12293
+      Path: Game Parameters\Default Work Unit\Distance
+    - name: Panning
+      guid: ca383b905a3a6140a422cc642d21be1a
+      id: 1820302072
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ec7e71d9afa3ae4f81017d073b0169ca
+      - ElementName: Panning
+        ObjectType: 13
+        guid: ca383b905a3a6140a422cc642d21be1a
+      Path: Game Parameters\Default Work Unit\Panning
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -421,7 +506,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c2d706362f82cb4ab974331ff2f0d773
     GuidInternal: 
-    m_lastTime: -8584934164865107642
+    m_lastTime: -8584934201628426879
     List:
     - name: Screaming
       guid: d560d94b49895449b4b3025419c20a73
@@ -501,8 +586,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: c48fb9d90600a74584644b0ff9f7307b
     GuidInternal: 
-    m_lastTime: -8584934290609791179
-    List: []
+    m_lastTime: -8584934103711695893
+    List:
+    - name: Weapon
+      guid: 269c5d0b6598a942b179cb9e25ee864a
+      id: 3893417221
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c48fb9d90600a74584644b0ff9f7307b
+      - ElementName: Weapon
+        ObjectType: 11
+        guid: 269c5d0b6598a942b179cb9e25ee864a
+      Path: Switches\Default Work Unit\Weapon
+      values:
+      - name: Knife
+        guid: 5ccc6ab1fa145e48b0d335b275975b79
+        id: 3312069844
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c48fb9d90600a74584644b0ff9f7307b
+        - ElementName: Weapon
+          ObjectType: 11
+          guid: 269c5d0b6598a942b179cb9e25ee864a
+        - ElementName: Knife
+          ObjectType: 10
+          guid: 5ccc6ab1fa145e48b0d335b275975b79
+      - name: Spoon
+        guid: ee15001ccfa95a49a94071b682f8ce01
+        id: 4230374780
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: c48fb9d90600a74584644b0ff9f7307b
+        - ElementName: Weapon
+          ObjectType: 11
+          guid: 269c5d0b6598a942b179cb9e25ee864a
+        - ElementName: Spoon
+          ObjectType: 10
+          guid: ee15001ccfa95a49a94071b682f8ce01
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -515,10 +650,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: de98667be87b7042bfa87d616af01e0d
     GuidInternal: 
-    m_lastTime: -8584934290609781077
+    m_lastTime: -8584934346097274326
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 050000000600000008000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

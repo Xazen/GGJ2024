@@ -13,9 +13,16 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{A60018B3-C644-4121-B88C-288CEF207094}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Audio Capture_1" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" ShortID="644282044">
+									<PropertyList>
+										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+										<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -25,9 +32,9 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Sine" ID="{ED7E1C1A-D953-4574-BCB3-D41D28007FDA}" ShortID="557973414" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+										<SourcePlugin Name="Audio Input" ID="{2B0F0208-48C8-434F-A107-5FDCB8755E14}" ShortID="434790655" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
 											<PropertyList>
-												<Property Name="SineDuration" Type="Real32" Value="3"/>
+												<Property Name="AudioInputGain" Type="Real32" Value="0"/>
 											</PropertyList>
 											<Language>SFX</Language>
 										</SourcePlugin>
@@ -55,7 +62,7 @@
 										</ObjectList>
 									</ObjectLists>
 									<ActiveSourceList>
-										<ActiveSource Name="Sine" ID="{ED7E1C1A-D953-4574-BCB3-D41D28007FDA}" Platform="Linked"/>
+										<ActiveSource Name="Audio Input" ID="{2B0F0208-48C8-434F-A107-5FDCB8755E14}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Audio Capture_2" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" ShortID="836687970">
@@ -188,6 +195,21 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{CDDB0FA1-6763-47EB-B5A6-7DB4655D1E41}" ShortID="546958047">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+														<ObjectRef Name="Scream_Compressor" ID="{6A27CAB5-A661-4186-BB10-3F4A8FDD3239}" WorkUnitID="{8013FAAD-4374-4D59-AED7-BD25930CF043}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</ActorMixer>
 						<Sound Name="Audio Input" ID="{8978A246-D75B-4DC3-8512-E8BD233458D3}" ShortID="750053930">
 							<ReferenceList>
@@ -1785,6 +1807,21 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{83E8D1D3-91B3-4E1A-B959-D5CCC5C358B1}" ShortID="945049337">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+														<ObjectRef Name="New_Recorder" ID="{EC1BDA9B-2B13-4F53-8272-4A1ED8B47557}" WorkUnitID="{8013FAAD-4374-4D59-AED7-BD25930CF043}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>

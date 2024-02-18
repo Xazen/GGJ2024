@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{2C35EC96-C9E5-A9FF-8703-E7A9F2C98B2E}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{268D63FD-9E22-B63B-0C9C-C06D8AE257E7}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -295,10 +295,13 @@
 					<Plugin Id="261580113" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 					<Plugin Id="283309472" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="372414170" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="557973414" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+					<Plugin Id="434790655" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
 					<Plugin Id="717672928" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 					<Plugin Id="776625351" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
 				</Custom>
+				<ShareSets>
+					<Plugin Id="3791362174" Name="Scream_Compressor" LibName="Wwise Compressor" LibId="7077891"/>
+				</ShareSets>
 			</Plugins>
 			<Events>
 				<Event Id="3232033907" Name="Hits" DurationType="OneShot" DurationMin="0.2016875" DurationMax="0.6">
@@ -380,33 +383,57 @@
 						<MediaRef Id="860232383"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="573871067" Name="StartAudioCapture_01" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1102558895" Name="StartAudioCapture_1" DurationType="Unknown">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="557973414"/>
+							<PluginRef Id="434790655"/>
 						</Custom>
+						<ShareSets>
+							<PluginRef Id="3791362174"/>
+						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="573871064" Name="StartAudioCapture_02" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1102558892" Name="StartAudioCapture_2" DurationType="OneShot" DurationMin="3" DurationMax="3">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="776625351"/>
 						</Custom>
+						<ShareSets>
+							<PluginRef Id="3791362174"/>
+						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="573871065" Name="StartAudioCapture_03" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1102558893" Name="StartAudioCapture_3" DurationType="OneShot" DurationMin="3" DurationMax="3">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="261580113"/>
 						</Custom>
+						<ShareSets>
+							<PluginRef Id="3791362174"/>
+						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
-				<Event Id="573871070" Name="StartAudioCapture_04" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1102558890" Name="StartAudioCapture_4" DurationType="OneShot" DurationMin="3" DurationMax="3">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="717672928"/>
 						</Custom>
+						<ShareSets>
+							<PluginRef Id="3791362174"/>
+						</ShareSets>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1416616592" Name="Stop_EnvironmentSound" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="764565769" Name="StopAudioCapture" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
@@ -631,11 +658,12 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{61D64825-8A38-4906-8FB4-1ECE39731878}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B399B541-FF80-8F66-957C-BBEA9322DCB7}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
+					<Plugin Id="362563408" Name="Matrix Reverb (Custom)" LibName="Wwise Matrix Reverb" LibId="7536643"/>
 					<Plugin Id="424296318" Name="Peak Limiter (Custom)" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</Custom>
 				<AudioDevices>
@@ -657,6 +685,15 @@
 				</Bus>
 				<Bus Id="3991942870" Name="Music"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="348963605" Name="Reverb">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="362563408"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1240670792" Name="Distance"/>
 				<GameParameter Id="1820302072" Name="Panning"/>
@@ -680,5 +717,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D45A975E-9C3B-48F1-4D8C-8BC725968A14}</FileHash>
+	<FileHash>{20BB4801-8C7A-BD94-A04F-2994D8A9726F}</FileHash>
 </SoundBanksInfo>

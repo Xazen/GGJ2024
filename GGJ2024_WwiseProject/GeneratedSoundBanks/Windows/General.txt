@@ -1,10 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	417627684	PlayMusic			\Default Work Unit\Music\PlayMusic	
-	573871064	StartAudioCapture_02			\Default Work Unit\Audio Capture\StartAudioCapture_02	
-	573871065	StartAudioCapture_03			\Default Work Unit\Audio Capture\StartAudioCapture_03	
-	573871067	StartAudioCapture_01			\Default Work Unit\Audio Capture\StartAudioCapture_01	
-	573871070	StartAudioCapture_04			\Default Work Unit\Audio Capture\StartAudioCapture_04	
 	764565769	StopAudioCapture			\Default Work Unit\Audio Capture\StopAudioCapture	
+	1102558890	StartAudioCapture_4			\Default Work Unit\Audio Capture\StartAudioCapture_4	
+	1102558892	StartAudioCapture_2			\Default Work Unit\Audio Capture\StartAudioCapture_2	
+	1102558893	StartAudioCapture_3			\Default Work Unit\Audio Capture\StartAudioCapture_3	
+	1102558895	StartAudioCapture_1			\Default Work Unit\Audio Capture\StartAudioCapture_1	
 	1121580774	Play_EnvironmentSound			\Default Work Unit\Play_EnvironmentSound	
 	1416616592	Stop_EnvironmentSound			\Default Work Unit\Stop_EnvironmentSound	
 	1917263390	StopMusic			\Default Work Unit\Music\StopMusic	
@@ -33,11 +33,14 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	667956875	Modulator LFO (Custom)				
 
+Effect plug-ins	ID	Name	Type				Notes
+	3791362174	Scream_Compressor	Wwise Compressor			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	261580113	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_3\Sine	
 	283309472	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\z_Gory Spoon Hits\Silence\Silence	
 	372414170	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\z_Gory Knife Hits\Silence\Silence	
-	557973414	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_1\Sine	
+	434790655	Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_1\Audio Input	
 	717672928	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_4\Sine	
 	776625351	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_2\Sine	
 

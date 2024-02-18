@@ -35,7 +35,7 @@
 				</Folder>
 				<Folder Name="Audio Capture" ID="{D87C67A2-1274-4247-9693-657FDB996267}" ShortID="624657421">
 					<ChildrenList>
-						<Event Name="StartAudioCapture_04" ID="{3A2592DB-4C27-4F1B-96FA-38E5D9F204D3}">
+						<Event Name="StartAudioCapture_4" ID="{3A2592DB-4C27-4F1B-96FA-38E5D9F204D3}">
 							<ChildrenList>
 								<Action Name="" ID="{DA8AC5B7-E5B4-4C45-A590-9D3CF3A5185F}" ShortID="37452437">
 									<ReferenceList>
@@ -46,7 +46,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="StartAudioCapture_01" ID="{8396AF12-E718-488B-8CC9-E82FC569795B}">
+						<Event Name="StartAudioCapture_1" ID="{8396AF12-E718-488B-8CC9-E82FC569795B}">
 							<ChildrenList>
 								<Action Name="" ID="{0E668C49-E955-4AAF-A2B5-97EDCD545FAB}" ShortID="814205690">
 									<ReferenceList>
@@ -57,7 +57,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="StartAudioCapture_02" ID="{54FE701F-946F-4127-ADD2-7D1697101EBA}">
+						<Event Name="StartAudioCapture_2" ID="{54FE701F-946F-4127-ADD2-7D1697101EBA}">
 							<ChildrenList>
 								<Action Name="" ID="{B235DD20-9540-413D-B6E4-B1B519289C52}" ShortID="948456572">
 									<ReferenceList>
@@ -68,7 +68,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="StartAudioCapture_03" ID="{88FFDC3E-919A-4FF7-9E05-618BC79D0BDD}">
+						<Event Name="StartAudioCapture_3" ID="{88FFDC3E-919A-4FF7-9E05-618BC79D0BDD}">
 							<ChildrenList>
 								<Action Name="" ID="{02F597BF-19BA-441A-9B48-2B6E2DCFD807}" ShortID="917989716">
 									<ReferenceList>
