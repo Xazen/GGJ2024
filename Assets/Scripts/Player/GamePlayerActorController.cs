@@ -33,6 +33,9 @@ public class GamePlayerActorController : MonoBehaviour
     [SerializeField]
     private GamePlayerInput gamePlayerInput;
 
+    [SerializeField]
+    private Animator vfxAnimator;
+
     private BalancingConfig _balancingConfig;
     private Vector3 _moveVector;
 
@@ -91,6 +94,7 @@ public class GamePlayerActorController : MonoBehaviour
     private void OnScream()
     {
         _animator.SetTrigger(_screamAnimHash);
+        vfxAnimator.SetTrigger(_screamAnimHash);
         StartCoroutine(Scream());
         GetComponent<PlayerAudio>().PlayScream();
         Debug.Log("Scream");
