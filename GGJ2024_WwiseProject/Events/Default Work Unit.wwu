@@ -10,7 +10,7 @@
 								<Action Name="" ID="{7C10A999-2BAA-440B-A900-AC8124F814F6}" ShortID="308331644">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Level_Music" ID="{08F255AD-6CB1-4B0E-BB5B-8E0C9B5617F2}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
+											<ObjectRef Name="Music Master" ID="{1FC5D1FE-A0B0-4CD5-AE36-9E78D3AE7AA9}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -25,7 +25,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Level_Music" ID="{08F255AD-6CB1-4B0E-BB5B-8E0C9B5617F2}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
+											<ObjectRef Name="Music Master" ID="{1FC5D1FE-A0B0-4CD5-AE36-9E78D3AE7AA9}" WorkUnitID="{CB44CAD1-0DDF-4ED7-9F6F-97C99D0B4289}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

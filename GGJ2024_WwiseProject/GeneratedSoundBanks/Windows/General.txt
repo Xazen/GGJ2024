@@ -34,6 +34,7 @@ State	ID	Name	State Group			Notes
 	1874288895	Idle	Screaming			
 	748895195	None	Music_State			
 	1125500713	Intro	Music_State			
+	1521118571	WaitForPlayers	Music_State			
 	2782712965	Level	Music_State			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -47,12 +48,16 @@ Modulator LFO	ID	Name			Wwise Object Path	Notes
 Modulator Envelope	ID	Name			Wwise Object Path	Notes
 	745339221	Modulator Envelope (Custom)				
 
+Effect plug-ins	ID	Name	Type				Notes
+	896075497	Compressor (Custom)	Wwise Compressor			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	283309472	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\z_Gory Spoon Hits\Silence\Silence	
 	372414170	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\z_Gory Knife Hits\Silence\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	6189032	BasicSwing 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\BasicSwing 2_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\02\BasicSwing 2		3858
+	10177227	Music_Intro	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_Intro_D8A0D580.wem		\Interactive Music Hierarchy\Default Work Unit\Music Master\Intro Music\Intro Music\Music_Intro		453008
 	14980148	Wood_Step 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Wood_Step 4_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Wood\Wood_Step 4		3891
 	24123608	Kitchen Work_POS_ 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 1_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Working\Kitchen Work_POS_ 1		7975
 	63126065	Kitchen Fluid_1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Fluid_1_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Fluid\Kitchen Fluid_1		167205
@@ -137,6 +142,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	912427310	BasicSwing 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\BasicSwing 4_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\04\BasicSwing 4		3568
 	914262038	Slice Gore 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Slice Gore 1_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\z_Gory Knife Hits\Samples\Slice Gore 1		6441
 	937493976	Kitchen Work_POS_ 10	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 10_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Working\Kitchen Work_POS_ 10		25668
+	973092837	Music_WaitForPlayers-02	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_WaitForPlayers-02_D8A0D580.wem		\Interactive Music Hierarchy\Default Work Unit\Music Master\Intro Music\Intro Music\Music_WaitForPlayers-02		320846
 	1001677442	Knife Swings 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Swings 2_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Knife Swings\Knife Swings 2		5028
 	1003410841	Scream Player rot	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Scream_Player 2_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Screams\Scream Player rot		10548
 	1004986158	Hit Gore 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Hit Gore 1_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\z_Gory Spoon Hits\Samples\Hit Gore 1		8918

@@ -18,6 +18,7 @@
 						<State Name="None" ID="{14DE0D47-6EE8-42B5-A9E1-7951CF63357D}"/>
 						<State Name="Intro" ID="{8CC9202C-B39C-4706-95B1-5005C701A177}"/>
 						<State Name="Level" ID="{EBC27508-48A3-4121-9C12-0EC34FE26EAE}"/>
+						<State Name="WaitForPlayers" ID="{6CEA7D9E-7CC1-459B-AD38-1F9829112046}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
