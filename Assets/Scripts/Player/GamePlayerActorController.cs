@@ -12,6 +12,8 @@ public class GamePlayerActorController : MonoBehaviour
 {
     private int _attackKnifeAnimHash = Animator.StringToHash("attackknife");
     private int _movementAnimHash = Animator.StringToHash("movement");
+    private int _screamAnimHash = Animator.StringToHash("scream");
+    private int _hurtAnimHash = Animator.StringToHash("hurt");
 
     [SerializeField]
     private GameObject stuffingPrefab;
@@ -88,6 +90,7 @@ public class GamePlayerActorController : MonoBehaviour
 
     private void OnScream()
     {
+        _animator.SetTrigger(_screamAnimHash);
         StartCoroutine(Scream());
         GetComponent<PlayerAudio>().PlayScream();
         _moveVector = Vector3.zero;
@@ -105,9 +108,9 @@ public class GamePlayerActorController : MonoBehaviour
 
     public void OnAttack()
     {
+        _animator.SetTrigger(_attackKnifeAnimHash);
         StartCoroutine(Attack());
         _moveVector = Vector3.zero;
-        _animator.SetTrigger(_attackKnifeAnimHash);
         Debug.Log("Attack");
     }
 
