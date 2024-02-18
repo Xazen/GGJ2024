@@ -1,5 +1,4 @@
-﻿using System;
-using DefaultNamespace;
+﻿using DefaultNamespace;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
@@ -9,7 +8,12 @@ namespace UI
 {
     public class SetupPanel : UIMonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI infoText;
+        [SerializeField]
+        private TextMeshProUGUI infoText;
+
+        [SerializeField]
+        private GameObject mainMenu;
+
         private GameService _gameService;
         private BalancingConfig _balancingConfig;
 
@@ -30,6 +34,11 @@ namespace UI
             else
             {
                 infoText.text = "Press start / enter to start the game!";
+            }
+
+            if (Input.anyKeyDown && mainMenu.activeSelf)
+            {
+                mainMenu.SetActive(false);
             }
         }
     }
