@@ -14,6 +14,7 @@ public class BalancingConfig : ScriptableObject
     public float HitboxDuration = 0.2f;
     public float HitCooldown = 0.5f;
     public float ScreamboxDuration = 0.2f;
+    public float ScreamDuration = 1.2f;
     public float ScreamCooldown = 1.2f;
     public float ScreamFlyMin = 1.2f;
     public float ScreamFlyMax = 1.2f;

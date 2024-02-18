@@ -103,6 +103,7 @@ public class GamePlayerActorController : MonoBehaviour
         screamHitbox.gameObject.SetActive(true);
         yield return new WaitForSeconds(_balancingConfig.ScreamboxDuration);
         screamHitbox.gameObject.SetActive(false);
+        yield return new WaitForSeconds(_balancingConfig.ScreamDuration - _balancingConfig.ScreamboxDuration);
         _playerModel.IsScreaming = false;
     }
 
@@ -128,7 +129,7 @@ public class GamePlayerActorController : MonoBehaviour
     {
         Debug.Log(gameObject.name +  " got Hit by " + attacker.gameObject.name);
         _playerModel.CurrentStaggeredDuration = _balancingConfig.StaggeredDuration;
-
+        _animator.SetTrigger(_hurtAnimHash);
         _moveVector = Vector3.zero;
         Knockback(attacker);
         LookTowards(attacker.transform.position);
