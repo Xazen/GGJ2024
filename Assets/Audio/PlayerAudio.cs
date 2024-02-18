@@ -92,26 +92,16 @@ public class PlayerAudio : MonoBehaviour
     {
         AkSoundEngine.SetRTPCValue("Panning", transform.position.x, gameObject);
         AkSoundEngine.SetRTPCValue("Distance", transform.position.z, gameObject);
+
+        float x = transform.position.x / 11.6f;
+        float z = transform.position.z / (transform.position.z < 0 ? 3.1f : 5.2f);
+        AkSoundEngine.SetRTPCValue("WoodPitchMod", Mathf.Abs(x) * (Mathf.Abs(z) * 0.5f + 0.5f), gameObject);
+        Debug.Log(x + "\t" + z + "\t" + Mathf.Abs(x) * (Mathf.Abs(z) * 0.5f + 0.5f));
     }
 
     public void SetWeapon(WEAPON weapon)
     {
         AkSoundEngine.SetSwitch("Weapon", weapon.ToString(), gameObject);
-    }
-
-    public void PlayStep()
-    {
-
-    }
-
-    public void PlayAttack()
-    {
-        AkSoundEngine.PostEvent("Swing", gameObject);
-    }
-
-    public void PlayHit()
-    {
-        AkSoundEngine.PostEvent("Hits", gameObject);
     }
 
     bool firsttime = true;

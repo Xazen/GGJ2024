@@ -146,6 +146,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Steps" ID="{677815E6-01B6-454D-A1D2-85158842C748}">
+							<ChildrenList>
+								<Action Name="" ID="{584C8348-6F42-41E6-A899-F3895A13C084}" ShortID="553327819">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps" ID="{ED261A72-3B4E-4C31-8CAB-2CAAF9DC7C2F}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

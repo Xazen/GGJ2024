@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{A637BAD8-C815-1E50-14BD-5EF9129CCF49}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{AF4F864C-F341-E7F5-10CC-595FDE240EBB}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
 				<File Id="6189032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 2.wav</ShortName>
 					<CachePath>SFX/BasicSwing 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="14980148" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood_Step 4.wav</ShortName>
+					<CachePath>SFX/Wood_Step 4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="24123608" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 1.wav</ShortName>
@@ -37,6 +41,14 @@
 					<ShortName>Kitchen Work_POS_ 2.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="100876381" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Foley_Step 4.wav</ShortName>
+					<CachePath>SFX/Foley_Step 4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="132177277" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Foley_Step 3.wav</ShortName>
+					<CachePath>SFX/Foley_Step 3_DAE3A832.wem</CachePath>
+				</File>
 				<File Id="137229546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Punch 3.wav</ShortName>
 					<CachePath>SFX/Slice Punch 3_818F3B66.wem</CachePath>
@@ -53,6 +65,10 @@
 					<ShortName>Slice Punch 1.wav</ShortName>
 					<CachePath>SFX/Slice Punch 1_818F3B66.wem</CachePath>
 				</File>
+				<File Id="160633402" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Foley_Step 2.wav</ShortName>
+					<CachePath>SFX/Foley_Step 2_8BEC87F4.wem</CachePath>
+				</File>
 				<File Id="166057783" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Veggie Hits 1.wav</ShortName>
 					<CachePath>SFX/Veggie Hits 1_818F3B66.wem</CachePath>
@@ -64,6 +80,10 @@
 				<File Id="215770798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 5.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 5_818F3B66.wem</CachePath>
+				</File>
+				<File Id="222229079" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Noise_Step 1.wav</ShortName>
+					<CachePath>SFX/Noise_Step 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="227408532" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 1.wav</ShortName>
@@ -145,6 +165,10 @@
 					<ShortName>Slice Punch 2.wav</ShortName>
 					<CachePath>SFX/Slice Punch 2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="462655402" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood_Step 3.wav</ShortName>
+					<CachePath>SFX/Wood_Step 3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="465637869" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 5.wav</ShortName>
 					<CachePath>SFX/Knife Slice 5_818F3B66.wem</CachePath>
@@ -157,6 +181,10 @@
 					<ShortName>VeggieSlices 5.wav</ShortName>
 					<CachePath>SFX/VeggieSlices 5_818F3B66.wem</CachePath>
 				</File>
+				<File Id="527624200" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood_Step 2.wav</ShortName>
+					<CachePath>SFX/Wood_Step 2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="551918523" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit Gore 3.wav</ShortName>
 					<CachePath>SFX/Hit Gore 3_818F3B66.wem</CachePath>
@@ -164,6 +192,10 @@
 				<File Id="581836822" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VeggieSlices 2.wav</ShortName>
 					<CachePath>SFX/VeggieSlices 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="585538199" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Wood_Step 1.wav</ShortName>
+					<CachePath>SFX/Wood_Step 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="589887342" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hits 3.wav</ShortName>
@@ -224,6 +256,10 @@
 				<File Id="800814977" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 4.wav</ShortName>
 					<CachePath>SFX/SpoonSwingLayer 4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="819100976" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Foley_Step 1.wav</ShortName>
+					<CachePath>SFX/Foley_Step 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="828196758" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 6.wav</ShortName>
@@ -304,7 +340,7 @@
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="3232033907" Name="Hits" DurationType="OneShot" DurationMin="0.2016875" DurationMax="0.6">
+				<Event Id="3232033907" Name="Hits" DurationType="OneShot" DurationMin="0.1695983" DurationMax="0.7135243">
 					<AuxBusRefs>
 						<AuxBusRef Id="2077253480" Name="Room"/>
 					</AuxBusRefs>
@@ -438,10 +474,26 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
+				<Event Id="1718617278" Name="Steps" DurationType="OneShot" DurationMin="0.32888117" DurationMax="0.44031617">
+					<MediaRefs>
+						<MediaRef Id="14980148"/>
+						<MediaRef Id="100876381"/>
+						<MediaRef Id="132177277"/>
+						<MediaRef Id="160633402"/>
+						<MediaRef Id="222229079"/>
+						<MediaRef Id="462655402"/>
+						<MediaRef Id="527624200"/>
+						<MediaRef Id="585538199"/>
+						<MediaRef Id="819100976"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="2077253480" Name="Room"/>
+					</AuxBusRefs>
+				</Event>
 				<Event Id="1416616592" Name="Stop_EnvironmentSound" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="968829419" Name="StopAudioInput" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1917263390" Name="StopMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2386519981" Name="Swing" DurationType="OneShot" DurationMin="0.20318317" DurationMax="0.3747892">
+				<Event Id="2386519981" Name="Swing" DurationType="OneShot" DurationMin="0.17135017" DurationMax="0.4444166">
 					<AuxBusRefs>
 						<AuxBusRef Id="2077253480" Name="Room"/>
 					</AuxBusRefs>
@@ -652,6 +704,7 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="512678656" Name="WoodPitchMod"/>
 				<GameParameter Id="1240670792" Name="Distance"/>
 				<GameParameter Id="1820302072" Name="Panning"/>
 			</GameParameters>
@@ -664,7 +717,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{695C39C0-9413-C0AA-1234-3C717BA0A322}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8E2EAC49-8ACF-264C-BDB6-37565E836BF3}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -709,6 +762,7 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="512678656" Name="WoodPitchMod"/>
 				<GameParameter Id="1240670792" Name="Distance"/>
 				<GameParameter Id="1820302072" Name="Panning"/>
 			</GameParameters>
@@ -731,5 +785,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1DE2E664-D19C-8FAC-4F8E-8B6A8867087E}</FileHash>
+	<FileHash>{ACC59923-59FD-20F8-1AA3-218BFD25B3E1}</FileHash>
 </SoundBanksInfo>

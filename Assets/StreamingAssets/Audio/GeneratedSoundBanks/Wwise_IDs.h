@@ -20,6 +20,7 @@ namespace AK
         static const AkUniqueID SCREAM_PLAYER_2 = 1163358385U;
         static const AkUniqueID SCREAM_PLAYER_3 = 1163358384U;
         static const AkUniqueID SCREAM_PLAYER_4 = 1163358391U;
+        static const AkUniqueID STEPS = 1718617278U;
         static const AkUniqueID STOP_ENVIRONMENTSOUND = 1416616592U;
         static const AkUniqueID STOPAUDIOINPUT = 968829419U;
         static const AkUniqueID STOPMUSIC = 1917263390U;
@@ -61,6 +62,7 @@ namespace AK
     {
         static const AkUniqueID DISTANCE = 1240670792U;
         static const AkUniqueID PANNING = 1820302072U;
+        static const AkUniqueID WOODPITCHMOD = 512678656U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

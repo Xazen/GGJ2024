@@ -686,8 +686,8 @@
 											<Modifier Name="" ID="{A970D9FB-24E0-4191-904C-38ACED6DB8F1}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="5"/>
-													<Property Name="Min" Type="Real64" Value="-5"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -1624,6 +1624,21 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Hits" ID="{AD379FCA-A0C3-4236-9F89-9D4F1176F412}" ShortID="737711952">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0524F14F-EB97-4634-BD6B-07902C1D8C87}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -1772,6 +1787,15 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Knife Hits" ID="{BBDBF579-AB96-4213-84F1-E91E9486C995}" ShortID="483609779">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A9AA36C5-7554-4F1C-BF6E-CF05F8C83726}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -2107,6 +2131,15 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="Spoon Hits" ID="{14B3DE0F-1454-4CFB-A354-87F5D366CE05}" ShortID="705678381">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9258DFF8-BA82-4A88-ABEA-95EF51424445}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -2647,6 +2680,530 @@
 								</ObjectList>
 							</ObjectLists>
 						</ActorMixer>
+						<BlendContainer Name="Steps" ID="{ED261A72-3B4E-4C31-8CAB-2CAAF9DC7C2F}" ShortID="821023754">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FB29B811-9587-49BF-B495-20EC18687553}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Foley" ID="{AD645CA9-A196-4795-8E62-470B2F09D492}" ShortID="365054377">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{88BE4942-8960-4F10-B22D-D5295DE66875}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Foley_Step 1" ID="{E62D8971-E951-4FBE-B13D-EB1CE74A707C}" ShortID="307449942">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8CC695F2-5110-4277-BCD1-5D71682D6F84}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Foley_Step 1" ID="{6A9FAADB-D58E-4A51-ABE8-9E82309CAC44}">
+													<Language>SFX</Language>
+													<AudioFile>Foley_Step 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="819100976"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Foley_Step 1" ID="{6A9FAADB-D58E-4A51-ABE8-9E82309CAC44}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Foley_Step 2" ID="{457F925D-CD05-44DD-8601-5DDE5F1545B9}" ShortID="14386385">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{564B948E-516F-4F2E-BCED-D95E1AD9279A}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Foley_Step 2" ID="{39810FC0-CF54-4517-974A-2806526A06E2}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0315511632133769"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.169159850963286"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Foley_Step 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="160633402"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Foley_Step 2" ID="{39810FC0-CF54-4517-974A-2806526A06E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Foley_Step 3" ID="{C993576A-9C7F-4D43-9427-E15839093D4F}" ShortID="439226132">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B453FF84-59E4-459B-B5B1-5E1717CD95E3}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Foley_Step 3" ID="{20342C55-BF2B-4095-9602-B09F661E2C04}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0246984051254089"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.168709105779716"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Foley_Step 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="132177277"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Foley_Step 3" ID="{20342C55-BF2B-4095-9602-B09F661E2C04}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Foley_Step 4" ID="{FDEBFA9E-0958-4E7E-BE9A-E8DD0B06F5A9}" ShortID="764389027">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3833EE02-911D-4170-BCAC-7DF8AD4C4A5F}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Foley_Step 4" ID="{ACF01297-5E8F-4934-BC71-E1062D5CE954}">
+													<Language>SFX</Language>
+													<AudioFile>Foley_Step 4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="100876381"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Foley_Step 4" ID="{ACF01297-5E8F-4934-BC71-E1062D5CE954}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wood" ID="{AFDE3E55-7426-4FDB-AAF7-C7552686A9A2}" ShortID="953428590">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Wood_Step 1" ID="{CF5C6CEC-3E2E-4D5D-83DC-FA574551E561}" ShortID="194793448">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wood_Step 1" ID="{98401E39-9EF0-40CF-A6F2-5B987E643CC7}">
+													<Language>SFX</Language>
+													<AudioFile>Wood_Step 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="585538199"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wood_Step 1" ID="{98401E39-9EF0-40CF-A6F2-5B987E643CC7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Wood_Step 2" ID="{AD568EE0-67BA-40CD-9373-D2004D676AE3}" ShortID="312037161">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wood_Step 2" ID="{0697F484-FDFB-4D2F-B986-EB0091A56826}">
+													<Language>SFX</Language>
+													<AudioFile>Wood_Step 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="527624200"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wood_Step 2" ID="{0697F484-FDFB-4D2F-B986-EB0091A56826}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Wood_Step 3" ID="{7756F0AE-BA87-4808-8B6D-237F22991836}" ShortID="434371252">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wood_Step 3" ID="{E77665E8-F721-4E48-8D45-ACD3F796963C}">
+													<Language>SFX</Language>
+													<AudioFile>Wood_Step 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="462655402"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wood_Step 3" ID="{E77665E8-F721-4E48-8D45-ACD3F796963C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Wood_Step 4" ID="{5E80236A-4058-49FF-90F3-E6A1FB848949}" ShortID="51392325">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Wood_Step 4" ID="{F6DFE298-496A-4CB4-8FA2-D6F58633643D}">
+													<Language>SFX</Language>
+													<AudioFile>Wood_Step 4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="14980148"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wood_Step 4" ID="{F6DFE298-496A-4CB4-8FA2-D6F58633643D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{A2A7EF39-864D-4B78-9C9F-FFD518760F68}" ShortID="207711072">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="WoodPitchMod" ID="{D35FE085-0802-440A-B8A1-A4FA7710B11C}" WorkUnitID="{D9717EEC-A3AF-4FAE-8101-7D073B0169CA}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{A2786B5B-95EA-4E17-BC35-DAFF79E6FA66}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-82</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>950</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{F34DA78F-246E-4BFC-8DD7-4063DF60A4E0}" ShortID="986099130">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<Custom>
+																	<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{EDCE5A90-7AB4-4C28-8BA4-FF506A11A6DA}" ShortID="745339221">
+																		<PropertyList>
+																			<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																			<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.3"/>
+																			<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.1"/>
+																			<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																			<Property Name="ModulatorScope" Type="int32" Value="0"/>
+																		</PropertyList>
+																		<ObjectLists>
+																			<ObjectList Name="RTPC">
+																				<Reference>
+																					<Local>
+																						<RTPC Name="" ID="{8D27A8A5-7345-4104-97D0-2905AF3EA4F7}" ShortID="155890142">
+																							<PropertyList>
+																								<Property Name="PropertyName" Type="string" Value="EnvelopeDecayTime"/>
+																							</PropertyList>
+																							<ReferenceList>
+																								<Reference Name="ControlInput">
+																									<ObjectRef Name="WoodPitchMod" ID="{D35FE085-0802-440A-B8A1-A4FA7710B11C}" WorkUnitID="{D9717EEC-A3AF-4FAE-8101-7D073B0169CA}"/>
+																								</Reference>
+																								<Reference Name="Curve">
+																									<Custom>
+																										<Curve Name="" ID="{C5D74D76-CFBC-436B-A6BB-F19902EA7583}">
+																											<PropertyList>
+																												<Property Name="Flags" Type="int32" Value="1"/>
+																											</PropertyList>
+																											<PointList>
+																												<Point>
+																													<XPos>0</XPos>
+																													<YPos>0.3</YPos>
+																													<Flags>5</Flags>
+																												</Point>
+																												<Point>
+																													<XPos>1</XPos>
+																													<YPos>0.05</YPos>
+																													<Flags>37</Flags>
+																												</Point>
+																											</PointList>
+																										</Curve>
+																									</Custom>
+																								</Reference>
+																							</ReferenceList>
+																						</RTPC>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</ModulatorEnvelope>
+																</Custom>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{09D447BA-5C84-42E5-A456-48C4331DB867}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>21</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>53</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<Sound Name="Noise_Step" ID="{D04ACE00-27FB-4AE0-A080-5C722D338C8A}" ShortID="988682362">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2C9EC438-FB6C-400B-B9DC-6B0B267DB41B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="500"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Character" ID="{DE2DAE4D-BDA0-4A2A-9246-6871A37362AD}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Room" ID="{8F84A183-0512-49F3-8F67-D50AE6DD141B}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Noise_Step 1" ID="{34210DE5-6644-437F-BACB-DB2150080EB0}">
+											<Language>SFX</Language>
+											<AudioFile>Noise_Step 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="222229079"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{28D4EA45-A77B-4E87-92CF-8C164F1C55AC}">
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{B56D5388-9B41-4EE7-9556-6B7FE53E6CF5}" ShortID="335378793">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="PanX"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Panning" ID="{903B38CA-3A5A-4061-A422-CC642D21BE1A}" WorkUnitID="{D9717EEC-A3AF-4FAE-8101-7D073B0169CA}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{60982909-37AB-4302-9E2C-68FD5921B5B4}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-11.6</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>11.6</XPos>
+																						<YPos>200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</Panner>
+									</PositioningInfo>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{EDE2CF26-FF3E-4904-B254-3442102BE18A}" ShortID="537352937">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Pitch Shifter (Custom)" ID="{C593D678-D4E6-4ADC-9394-540F468484EE}" ShortID="925915663" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+																		<PropertyList>
+																			<Property Name="Pitch" Type="Real32" Value="400"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Noise_Step 1" ID="{34210DE5-6644-437F-BACB-DB2150080EB0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 					<PositioningInfo>
 						<Panner Name="" ID="{F7420D5E-AAEE-4776-B2ED-78495DB4F734}">
@@ -2670,12 +3227,12 @@
 																</PropertyList>
 																<PointList>
 																	<Point>
-																		<XPos>-14</XPos>
+																		<XPos>-11.6</XPos>
 																		<YPos>-200</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>14</XPos>
+																		<XPos>11.6</XPos>
 																		<YPos>200</YPos>
 																		<Flags>37</Flags>
 																	</Point>
@@ -2711,12 +3268,12 @@
 														</PropertyList>
 														<PointList>
 															<Point>
-																<XPos>-5</XPos>
+																<XPos>-3</XPos>
 																<YPos>0</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>9</XPos>
+																<XPos>5.2</XPos>
 																<YPos>-6</YPos>
 																<Flags>37</Flags>
 															</Point>
