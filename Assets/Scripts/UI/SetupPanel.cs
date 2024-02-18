@@ -16,11 +16,13 @@ namespace UI
 
         private GameService _gameService;
         private BalancingConfig _balancingConfig;
+        private AudioService _audioService;
 
         [Inject]
         [UsedImplicitly]
-        private void Inject(GameService gameService, BalancingConfig balancingConfig)
+        private void Inject(GameService gameService, BalancingConfig balancingConfig, AudioService audioService)
         {
+            _audioService = audioService;
             _balancingConfig = balancingConfig;
             _gameService = gameService;
         }
@@ -38,6 +40,7 @@ namespace UI
 
             if (Input.anyKeyDown && mainMenu.activeSelf)
             {
+                _audioService.EndStartingScreen();
                 mainMenu.SetActive(false);
             }
         }
