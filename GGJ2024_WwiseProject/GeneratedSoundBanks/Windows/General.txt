@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1163358386	Scream_Player_1			\Default Work Unit\Character\Screams\Scream_Player_1	
 	1163358391	Scream_Player_4			\Default Work Unit\Character\Screams\Scream_Player_4	
 	1416616592	Stop_EnvironmentSound			\Default Work Unit\Stop_EnvironmentSound	
+	1718617278	Steps			\Default Work Unit\Character\Steps	
 	1917263390	StopMusic			\Default Work Unit\Music\StopMusic	
 	2386519981	Swing			\Default Work Unit\Character\Swing	
 	3232033907	Hits			\Default Work Unit\Character\Hits	
@@ -27,11 +28,15 @@ State	ID	Name	State Group			Notes
 	1874288895	Idle	Screaming			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	512678656	WoodPitchMod			\Default Work Unit\WoodPitchMod	
 	1240670792	Distance			\Default Work Unit\Distance	
 	1820302072	Panning			\Default Work Unit\Panning	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	667956875	Modulator LFO (Custom)				
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	745339221	Modulator Envelope (Custom)				
 
 Effect plug-ins	ID	Name	Type				Notes
 	3791362174	Scream_Compressor	Wwise Compressor			
@@ -46,18 +51,23 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	6189032	BasicSwing 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\BasicSwing 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\02\BasicSwing 2		48620
+	14980148	Wood_Step 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Wood_Step 4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Wood\Wood_Step 4		67012
 	24123608	Kitchen Work_POS_ 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 1		64184
 	63126065	Kitchen Fluid_1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Fluid_1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Fluid\Kitchen Fluid_1		1420820
 	76012042	Kitchen Work_POS_ 12	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 12_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 12		417012
 	88214754	Hits 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Hits 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\Hits\Hits 2		23980
 	100806986	Kitchen Work_POS_ 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 2		136788
+	100876381	Foley_Step 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Foley_Step 4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Foley\Foley_Step 4		67012
+	132177277	Foley_Step 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Foley_Step 3_DAE3A832.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Foley\Foley_Step 3		32488
 	137229546	Slice Punch 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Slice Punch 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Slice Punch\Slice Punch 3		54476
 	142182528	Kitchen Work_POS_ 11	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 11_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 11		327560
 	145278452	Music_Metal	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_Metal_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Level_Music\Music_Metal		23693672
 	150116584	Slice Punch 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Slice Punch 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Slice Punch\Slice Punch 1		59780
+	160633402	Foley_Step 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Foley_Step 2_8BEC87F4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Foley\Foley_Step 2		32576
 	166057783	Veggie Hits 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Veggie Hits 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\Veggie Hits\Veggie Hits 1		64328
 	209115331	Knife Slice 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Slice 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Knife Hits\Knife Slice 2		21188
 	215770798	Kitchen Work_POS_ 5	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 5		147324
+	222229079	Noise_Step	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Noise_Step 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Noise_Step		67196
 	227408532	SpoonSwingLayer 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\SpoonSwingLayer 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\01\SpoonSwingLayer 1		50388
 	230836363	Knife Swings 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Swings 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Knife Swings\Knife Swings 3		71844
 	261915536	Slice Gore 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Slice Gore 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\z_Gory Knife Hits\Samples\Slice Gore 3		53676
@@ -78,11 +88,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	416771849	Kitchen Fluid_2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Fluid_2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Fluid\Kitchen Fluid_2		2318984
 	434679761	Kitchen Work_POS_ 6	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Kitchen Work_POS_ 6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Working\Kitchen Work_POS_ 6		130156
 	446948816	Slice Punch 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Slice Punch 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Slice Punch\Slice Punch 2		78524
+	462655402	Wood_Step 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Wood_Step 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Wood\Wood_Step 3		66996
 	465637869	Knife Slice 5	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Slice 5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Knife Hits\Knife Slice 5		21188
 	481650952	VeggieSlices 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\VeggieSlices 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Slicing Veggies\VeggieSlices 1		40872
 	526958082	VeggieSlices 5	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\VeggieSlices 5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Slicing Veggies\VeggieSlices 5		39792
+	527624200	Wood_Step 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Wood_Step 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Wood\Wood_Step 2		67024
 	551918523	Hit Gore 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Hit Gore 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\z_Gory Spoon Hits\Samples\Hit Gore 3		38624
 	581836822	VeggieSlices 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\VeggieSlices 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Slicing Veggies\VeggieSlices 2		41644
+	585538199	Wood_Step 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Wood_Step 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Wood\Wood_Step 1		67196
 	589887342	Hits 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Hits 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\Hits\Hits 3		18264
 	607401170	Veggie Hits 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Veggie Hits 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\Veggie Hits\Veggie Hits 2		38820
 	614381106	Knife Slice 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Slice 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\Knife Hits\Knife Slice 3		21188
@@ -98,6 +111,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	769556448	Knife Swings 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Swings 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Knife Swings\Knife Swings 1		71848
 	771124036	BasicSwing 3	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\BasicSwing 3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\03\BasicSwing 3		39220
 	800814977	SpoonSwingLayer 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\SpoonSwingLayer 4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\04\SpoonSwingLayer 4		44872
+	819100976	Foley_Step 1	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Foley_Step 1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Steps\Foley\Foley_Step 1		67196
 	828196758	Knife Swings 6	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Swings 6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Knife Swings\Knife Swings 6		71840
 	830696659	Knife Swings 7	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Swings 7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Knife Swings\Knife Swings 7		71840
 	833185748	Slice Gore 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Slice Gore 4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\z_Gory Knife Hits\Samples\Slice Gore 4		40802

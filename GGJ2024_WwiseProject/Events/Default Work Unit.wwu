@@ -90,7 +90,7 @@
 										<Action Name="" ID="{DA8AC5B7-E5B4-4C45-A590-9D3CF3A5185F}" ShortID="37452437">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Scream Player 4" ID="{392B8AE9-25D6-4CED-9580-C8B49F12CA4C}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+													<ObjectRef Name="Scream Player rot" ID="{392B8AE9-25D6-4CED-9580-C8B49F12CA4C}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -101,7 +101,7 @@
 										<Action Name="" ID="{0E668C49-E955-4AAF-A2B5-97EDCD545FAB}" ShortID="814205690">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Scream Player 1" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+													<ObjectRef Name="Scream Player braun" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -112,7 +112,7 @@
 										<Action Name="" ID="{B235DD20-9540-413D-B6E4-B1B519289C52}" ShortID="948456572">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Scream Player 2" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+													<ObjectRef Name="Scream Player blau" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -123,22 +123,7 @@
 										<Action Name="" ID="{02F597BF-19BA-441A-9B48-2B6E2DCFD807}" ShortID="917989716">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Scream Player 3" ID="{C160C64B-8BD0-4169-8D38-729AC4A53B6A}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="StopAudioInput" ID="{64777E67-8767-429B-BC41-075D8A770241}">
-									<ChildrenList>
-										<Action Name="" ID="{B11F96B6-BEA6-4371-8996-10A6AF573D51}" ShortID="121468706">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="Scope" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Screams" ID="{8360B29F-C4C2-4069-A8A4-3EAA8B540119}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+													<ObjectRef Name="Scream Player grün" ID="{C160C64B-8BD0-4169-8D38-729AC4A53B6A}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -146,6 +131,17 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="Steps" ID="{677815E6-01B6-454D-A1D2-85158842C748}">
+							<ChildrenList>
+								<Action Name="" ID="{584C8348-6F42-41E6-A899-F3895A13C084}" ShortID="553327819">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Steps" ID="{ED261A72-3B4E-4C31-8CAB-2CAAF9DC7C2F}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

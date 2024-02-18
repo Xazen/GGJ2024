@@ -17,11 +17,15 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Panning" ID="{903B38CA-3A5A-4061-A422-CC642D21BE1A}"/>
-							<Value>0</Value>
+							<Value>1.388606350316E-311</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="WoodPitchMod" ID="{D35FE085-0802-440A-B8A1-A4FA7710B11C}"/>
+							<Value>0.892410341951626</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Distance" ID="{1CD971C2-7914-4C03-917C-3C54DAF12293}"/>
-							<Value>-5</Value>
+							<Value>1.3886063473279E-311</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

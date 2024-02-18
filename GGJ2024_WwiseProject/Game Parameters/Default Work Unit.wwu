@@ -6,15 +6,21 @@
 				<GameParameter Name="Panning" ID="{903B38CA-3A5A-4061-A422-CC642D21BE1A}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="14"/>
-						<Property Name="Min" Type="Real64" Value="-14"/>
+						<Property Name="Max" Type="Real64" Value="11.6"/>
+						<Property Name="Min" Type="Real64" Value="-11.6"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Distance" ID="{1CD971C2-7914-4C03-917C-3C54DAF12293}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="-5"/>
-						<Property Name="Max" Type="Real64" Value="9"/>
-						<Property Name="Min" Type="Real64" Value="-5"/>
+						<Property Name="InitialValue" Type="Real64" Value="-3"/>
+						<Property Name="Max" Type="Real64" Value="5.2"/>
+						<Property Name="Min" Type="Real64" Value="-3"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="WoodPitchMod" ID="{D35FE085-0802-440A-B8A1-A4FA7710B11C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

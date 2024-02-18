@@ -58,7 +58,27 @@
 												<ReferenceList>
 													<Reference Name="Effect">
 														<Custom>
-															<Effect Name="RoomVerb (Custom)" ID="{6FB62871-06C6-4A30-8669-D1DBFC124ABF}" ShortID="347023664" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+															<Effect Name="RoomVerb (Custom)" ID="{6FB62871-06C6-4A30-8669-D1DBFC124ABF}" ShortID="347023664" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<PropertyList>
+																	<Property Name="DecayTime" Type="Real32" Value="0.6"/>
+																	<Property Name="Density" Type="Real32" Value="100"/>
+																	<Property Name="Diffusion" Type="Real32" Value="55"/>
+																	<Property Name="ERLevel" Type="Real32" Value="-35"/>
+																	<Property Name="ERPattern" Type="int32" Value="26"/>
+																	<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																	<Property Name="Filter1InsertPos" Type="int32" Value="0"/>
+																	<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																	<Property Name="Filter3Freq" Type="Real32" Value="7030"/>
+																	<Property Name="Filter3Gain" Type="Real32" Value="-12"/>
+																	<Property Name="Filter3InsertPos" Type="int32" Value="2"/>
+																	<Property Name="HFDamping" Type="Real32" Value="5.85"/>
+																	<Property Name="PreDelay" Type="Real32" Value="1"/>
+																	<Property Name="Quality" Type="int32" Value="16"/>
+																	<Property Name="ReverbLevel" Type="Real32" Value="-29"/>
+																	<Property Name="RoomShape" Type="Real32" Value="28"/>
+																	<Property Name="StereoWidth" Type="Real32" Value="115"/>
+																</PropertyList>
+															</Effect>
 														</Custom>
 													</Reference>
 												</ReferenceList>
