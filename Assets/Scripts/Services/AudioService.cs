@@ -22,7 +22,7 @@ namespace DefaultNamespace
         [SerializeField] private AK.Wwise.Event playAmbience;
         [SerializeField] private AK.Wwise.Event stopAmbience;
 
-        private float ScreamTimer = 1.2f;
+        private float ScreamTimer = 1f;
         private Coroutine TIMER;
 
         private void Start()
