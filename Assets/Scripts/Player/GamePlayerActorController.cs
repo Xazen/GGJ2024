@@ -230,6 +230,7 @@ public class GamePlayerActorController : MonoBehaviour
     private IEnumerator Attack()
     {
         _playerModel.IsAttacking = true;
+        yield return new WaitForSeconds(7f/30f);
         hitBox.gameObject.SetActive(true);
         yield return new WaitForSeconds(_balancingConfig.HitboxDuration);
         hitBox.gameObject.SetActive(false);
