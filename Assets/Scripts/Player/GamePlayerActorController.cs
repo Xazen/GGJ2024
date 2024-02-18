@@ -39,6 +39,8 @@ public class GamePlayerActorController : MonoBehaviour
     private PlayerModelConfig _playerModelConfig;
     private Animator _animator;
 
+    public int PlayerIndex => _inputUser.index;
+
     [Inject]
     [UsedImplicitly]
     public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService,
@@ -96,7 +98,6 @@ public class GamePlayerActorController : MonoBehaviour
 
     private void OnAttackHit(GamePlayerActorController gamePlayerActorController)
     {
-        _scoreService.AddScore(_inputUser.index, 1);
         gamePlayerActorController.OnGotHit(this);
     }
 
@@ -126,6 +127,7 @@ public class GamePlayerActorController : MonoBehaviour
 
 
             var stuffing = _diContainer.InstantiatePrefab(stuffingPrefab);
+            stuffing.GetComponent<Stuffing>().PlayerIndex = attacker.PlayerIndex;
             stuffing.transform.position = transform.position + stuffingDirection * 1.1f;
             stuffing.transform.localScale = Vector3.one * Random.Range(_balancingConfig.StuffingScaleMin, _balancingConfig.StuffingScaleMax);
 
