@@ -24,12 +24,9 @@ namespace DefaultNamespace
         [SerializeField] private AK.Wwise.Event stopAmbience;
 
         [Header("Debug")]
-        [SerializeField] private bool Screaming = false;
         [SerializeField] private bool RecordScreamButton = false;
 
-        private bool previousScreaming = false;                         //DEBUG
-
-        private float timer = 1.2f;
+        private float ScreamTimer = 1.2f;
         private Coroutine TIMER;
 
         public AudioMixerGroup mixer;
@@ -91,46 +88,13 @@ namespace DefaultNamespace
             src.ignoreListenerVolume = true;
 
             //StartCoroutine(WaitForRecord());
-
-            //IsCapturing = true;
-
-            // start Wwise “consumer thread“
-            //AkAudioInputManager.PostAudioInputEvent("StartAudioCapture_1", gameObject, AudioSamplesDelegate, AudioFormatDelegate);
         }
 
-        //private IEnumerator WaitForRecord()
-        //{
-        //    yield return new WaitForSecondsRealtime(2);
-        //    recordMode = false;
-        //    scream = AudioClip.Create("Scream", 96000, 1, 48000, false);
-        //    scream.SetData(buffer.ToArray(), 0);
-        //}
-
-        // Wwise callback that sends buffered samples to Wwise (“consumer thread“)
-        bool AudioSamplesDelegate(uint playingID, uint channelIndex, float[] samples)
+        private IEnumerator WaitForRecord()
         {
-            mutex.WaitOne();
-
-            // copy samples from buffer to temporary block
-            int blockSize = Math.Min(buffer.Count, samples.Length);
-            List<float> block = buffer.GetRange(0, blockSize);
-            buffer.RemoveRange(0, blockSize);
-
-            // release ownership of mutex and buffer (release mutex as quickly as possible)
-            mutex.ReleaseMutex();
-
-            // copy samples from temporary block to output array
-            block.CopyTo(samples);
-
-            //// Return false to indicate that there is no more data to provide. This will also stop the associated event.
-            return AudioInputEnabled;
-        }
-
-        // Wwise callback that specifies format of samples
-        void AudioFormatDelegate(uint playingID, AkAudioFormat audioFormat)
-        {
-            audioFormat.channelConfig.uNumChannels = 1;
-            audioFormat.uSampleRate = SampleRate;
+            yield return new WaitForSecondsRealtime(2);
+            scream = AudioClip.Create("Scream", 96000, 1, 48000, false);
+            scream.SetData(buffer.ToArray(), 0);
         }
 
         //Unity callback on microphone input(“producer thread“)
@@ -155,61 +119,27 @@ namespace DefaultNamespace
             AudioInputEnabled = false;
             src.Stop();
             Microphone.End(null);
-            AkSoundEngine.PostEvent("StopAudioCapture", gameObject);
         }
 
-        bool firstplay = false;
         /// <summary>
         /// Call this on the player script, that wants to scream
         /// </summary>
         public void Scream()
         {
-            if(!firstplay)
-            {
-                AudioInputEnabled = true;
-                audioState = AudioState.Play;
-                AkAudioInputManager.PostAudioInputEvent("StartAudioCapture_1", gameObject, AudioSamplesDelegate, AudioFormatDelegate);
-                src.loop = false;
-                src.mute = false;
-                src.ignoreListenerVolume = true;
-                firstplay = true;
-            }            
-
-            src.Play();
             AkSoundEngine.SetState("Screaming", "Scream");
-            Screaming = true;
             if (TIMER != null) StopCoroutine(TIMER);
             TIMER = StartCoroutine(Timer());
         }
 
         private IEnumerator Timer()
         {
-            yield return new WaitForSecondsRealtime(timer);
-            StopScream();
-        }
-
-        public void StopScream()
-        {
+            yield return new WaitForSecondsRealtime(ScreamTimer);
             AkSoundEngine.SetState("Screaming", "Idle");
-            Screaming = false;
-            //AudioInputEnabled = false;
         }
 
 #if UNITY_EDITOR
         private void Update()
         {
-            if (previousScreaming != Screaming)
-            {
-                if (Screaming)
-                {
-                    Scream();
-                }
-                else
-                {
-                    StopScream();
-                }
-            }
-            previousScreaming = Screaming;
             if (RecordScreamButton)
             {
                 RecordScream();

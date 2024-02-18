@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{268D63FD-9E22-B63B-0C9C-C06D8AE257E7}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{A637BAD8-C815-1E50-14BD-5EF9129CCF49}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -292,12 +292,12 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="261580113" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+					<Plugin Id="270166481" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
 					<Plugin Id="283309472" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="372414170" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="434790655" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
-					<Plugin Id="717672928" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
-					<Plugin Id="776625351" Name="Sine" LibName="Wwise Sine" LibId="6553602"/>
+					<Plugin Id="544784949" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
+					<Plugin Id="740326041" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="3791362174" Name="Scream_Compressor" LibName="Wwise Compressor" LibId="7077891"/>
@@ -305,6 +305,9 @@
 			</Plugins>
 			<Events>
 				<Event Id="3232033907" Name="Hits" DurationType="OneShot" DurationMin="0.2016875" DurationMax="0.6">
+					<AuxBusRefs>
+						<AuxBusRef Id="2077253480" Name="Room"/>
+					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
@@ -383,7 +386,7 @@
 						<MediaRef Id="860232383"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1102558895" Name="StartAudioCapture_1" DurationType="Unknown">
+				<Event Id="1163358386" Name="Scream_Player_1" DurationType="Unknown">
 					<PluginRefs>
 						<Custom>
 							<PluginRef Id="434790655"/>
@@ -396,10 +399,10 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1102558892" Name="StartAudioCapture_2" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1163358385" Name="Scream_Player_2" DurationType="Unknown">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="776625351"/>
+							<PluginRef Id="270166481"/>
 						</Custom>
 						<ShareSets>
 							<PluginRef Id="3791362174"/>
@@ -409,10 +412,10 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1102558893" Name="StartAudioCapture_3" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1163358384" Name="Scream_Player_3" DurationType="Unknown">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="261580113"/>
+							<PluginRef Id="544784949"/>
 						</Custom>
 						<ShareSets>
 							<PluginRef Id="3791362174"/>
@@ -422,10 +425,10 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1102558890" Name="StartAudioCapture_4" DurationType="OneShot" DurationMin="3" DurationMax="3">
+				<Event Id="1163358391" Name="Scream_Player_4" DurationType="Unknown">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="717672928"/>
+							<PluginRef Id="740326041"/>
 						</Custom>
 						<ShareSets>
 							<PluginRef Id="3791362174"/>
@@ -436,9 +439,12 @@
 					</AuxBusRefs>
 				</Event>
 				<Event Id="1416616592" Name="Stop_EnvironmentSound" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="764565769" Name="StopAudioCapture" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="968829419" Name="StopAudioInput" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1917263390" Name="StopMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2386519981" Name="Swing" DurationType="OneShot" DurationMin="0.20318317" DurationMax="0.3747892">
+					<AuxBusRefs>
+						<AuxBusRef Id="2077253480" Name="Room"/>
+					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
@@ -658,11 +664,12 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B399B541-FF80-8F66-957C-BBEA9322DCB7}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{695C39C0-9413-C0AA-1234-3C717BA0A322}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
+					<Plugin Id="347023664" Name="RoomVerb (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="362563408" Name="Matrix Reverb (Custom)" LibName="Wwise Matrix Reverb" LibId="7536643"/>
 					<Plugin Id="424296318" Name="Peak Limiter (Custom)" LibName="Wwise Peak Limiter" LibId="7208963"/>
 				</Custom>
@@ -693,6 +700,13 @@
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
+				<AuxBus Id="2077253480" Name="Room">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="347023664"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="1240670792" Name="Distance"/>
@@ -717,5 +731,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{20BB4801-8C7A-BD94-A04F-2994D8A9726F}</FileHash>
+	<FileHash>{1DE2E664-D19C-8FAC-4F8E-8B6A8867087E}</FileHash>
 </SoundBanksInfo>
