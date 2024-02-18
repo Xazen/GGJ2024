@@ -6,6 +6,8 @@ public class BalancingConfig : ScriptableObject
     [Header("Game")]
     public float GameDuration = 120;
     public int MinPlayerCount = 2;
+    public float HideScoreAtTotalSeconds = 30;
+    public float FadeScoreTime = 5;
 
     [Header("Player")]
     public float PlayerMovementSpeed = 5;
@@ -36,4 +38,5 @@ public class BalancingConfig : ScriptableObject
     public float StuffingFlyDurationMax = 0.5f;
     public float StuffingScaleMin = 0.8f;
     public float StuffingScaleMax = 1.2f;
+
 }

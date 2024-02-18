@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b962322b3ae75cd4a80cbdd6a10d2c25, type: 3}
   m_Name: Balancing
   m_EditorClassIdentifier: 
-  GameDuration: 120
+  GameDuration: 120.737
   MinPlayerCount: 2
+  HideScoreAtTotalSeconds: 30
+  FadeScoreTime: 5
   PlayerMovementSpeed: 15
   HitboxDuration: 0.1
   HitCooldown: 0.5

@@ -45,6 +45,7 @@ public class GamePlayerActorController : MonoBehaviour
     private DiContainer _diContainer;
     private PlayerModelConfig _playerModelConfig;
     private Animator _animator;
+    private BattlefieldService _battlefieldService;
 
     public int PlayerIndex => _inputUser.index;
 
@@ -53,16 +54,25 @@ public class GamePlayerActorController : MonoBehaviour
     public void Inject(BalancingConfig balancingConfig, GamePlayerService gamePlayerService,
         BattlefieldService battlefieldService, GameService gameService, DiContainer diContainer, PlayerModelConfig playerModelConfig)
     {
+        _battlefieldService = battlefieldService;
         _playerModelConfig = playerModelConfig;
         _diContainer = diContainer;
         _gameService = gameService;
         _balancingConfig = balancingConfig;
 
+        _gameService.OnRestart += OnGameRestart;
         _playerModel = gamePlayerService.GetPlayerModel(_inputUser.index);
         var location = battlefieldService.GetAndRegisterFreeSpawnLocation(_inputUser.index);
         gameObject.transform.position = location;
         var character = diContainer.InstantiatePrefab(_playerModelConfig.PlayerModelByIndex[_inputUser.index], model.transform);
         _animator = character.GetComponent<Animator>();
+        LookTowards(new Vector3(0, location.y, 0));
+    }
+
+    private void OnGameRestart()
+    {
+        _moveVector = Vector3.zero;
+        var location = _battlefieldService.GetAndRegisterFreeSpawnLocation(_inputUser.index);
         LookTowards(new Vector3(0, location.y, 0));
     }
 

@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using DefaultNamespace;
+using DG.Tweening;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
@@ -16,15 +17,20 @@ namespace UI
         private TextMeshProUGUI[] playerScores;
 
         [SerializeField]
+        private CanvasGroup scoreCanvas;
+
+        [SerializeField]
         private GameObject[] playerContainers;
 
         private TimerService _timerService;
         private ScoreService _scoreService;
+        private BalancingConfig _balancingConfig;
 
         [Inject]
         [UsedImplicitly]
-        private void Inject(TimerService timerService, ScoreService scoreService)
+        private void Inject(TimerService timerService, ScoreService scoreService, BalancingConfig balancingConfig)
         {
+            _balancingConfig = balancingConfig;
             _scoreService = scoreService;
             _timerService = timerService;
         }
@@ -39,6 +45,11 @@ namespace UI
         {
             var timeSpan = _timerService.GetTime();
             timerCount.text = timeSpan.Minutes + ":" + timeSpan.Seconds.ToString("D2");
+
+            if (timeSpan.TotalSeconds < _balancingConfig.HideScoreAtTotalSeconds)
+            {
+                scoreCanvas.DOFade(0, _balancingConfig.FadeScoreTime);
+            }
         }
 
         private void UpdateScore()

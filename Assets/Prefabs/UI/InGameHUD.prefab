@@ -121,6 +121,7 @@ MonoBehaviour:
   - {fileID: 4902073234576155128}
   - {fileID: 3840582549065429209}
   - {fileID: 8082361836971155403}
+  scoreCanvas: {fileID: 6194301258153755768}
   playerContainers:
   - {fileID: 1633681002253580242}
   - {fileID: 6474841692091496108}
@@ -1023,6 +1024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3850925231130376200}
   - component: {fileID: 6452754131013695635}
+  - component: {fileID: 6194301258153755768}
   m_Layer: 5
   m_Name: Scores
   m_TagString: Untagged
@@ -1079,6 +1081,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!225 &6194301258153755768
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6798100891491138775}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7721924899679376031
 GameObject:
   m_ObjectHideFlags: 0
