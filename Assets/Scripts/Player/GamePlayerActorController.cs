@@ -70,6 +70,7 @@ public class GamePlayerActorController : MonoBehaviour
 
     private void OnScream()
     {
+        GetComponent<PlayerAudio>().PlayScream();
         Debug.Log("Scream");
     }
 

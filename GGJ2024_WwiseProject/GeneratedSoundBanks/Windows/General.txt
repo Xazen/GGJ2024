@@ -1,11 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	417627684	PlayMusic			\Default Work Unit\Music\PlayMusic	
-	764565769	StopAudioCapture			\Default Work Unit\Audio Capture\StopAudioCapture	
-	1102558890	StartAudioCapture_4			\Default Work Unit\Audio Capture\StartAudioCapture_4	
-	1102558892	StartAudioCapture_2			\Default Work Unit\Audio Capture\StartAudioCapture_2	
-	1102558893	StartAudioCapture_3			\Default Work Unit\Audio Capture\StartAudioCapture_3	
-	1102558895	StartAudioCapture_1			\Default Work Unit\Audio Capture\StartAudioCapture_1	
+	968829419	StopAudioInput			\Default Work Unit\Character\Screams\StopAudioInput	
 	1121580774	Play_EnvironmentSound			\Default Work Unit\Play_EnvironmentSound	
+	1163358384	Scream_Player_3			\Default Work Unit\Character\Screams\Scream_Player_3	
+	1163358385	Scream_Player_2			\Default Work Unit\Character\Screams\Scream_Player_2	
+	1163358386	Scream_Player_1			\Default Work Unit\Character\Screams\Scream_Player_1	
+	1163358391	Scream_Player_4			\Default Work Unit\Character\Screams\Scream_Player_4	
 	1416616592	Stop_EnvironmentSound			\Default Work Unit\Stop_EnvironmentSound	
 	1917263390	StopMusic			\Default Work Unit\Music\StopMusic	
 	2386519981	Swing			\Default Work Unit\Character\Swing	
@@ -37,12 +37,12 @@ Effect plug-ins	ID	Name	Type				Notes
 	3791362174	Scream_Compressor	Wwise Compressor			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
-	261580113	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_3\Sine	
+	270166481	Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\Character\Screams\Scream Player 2\Audio Input	
 	283309472	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\z_Gory Spoon Hits\Silence\Silence	
 	372414170	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\z_Gory Knife Hits\Silence\Silence	
-	434790655	Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_1\Audio Input	
-	717672928	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_4\Sine	
-	776625351	Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Capturing\Capturing\Audio Capture_2\Sine	
+	434790655	Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\Character\Screams\Scream Player 1\Audio Input	
+	544784949	Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\Character\Screams\Scream Player 3\Audio Input	
+	740326041	Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\Character\Screams\Scream Player 4\Audio Input	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	6189032	BasicSwing 2	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\BasicSwing 2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\02\BasicSwing 2		48620

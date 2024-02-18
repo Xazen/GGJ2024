@@ -49,6 +49,25 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
+						<AuxBus Name="Room" ID="{8F84A183-0512-49F3-8F67-D50AE6DD141B}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{D25B1C5D-9643-4986-8703-8D8498169F8B}" ShortID="705979306">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="RoomVerb (Custom)" ID="{6FB62871-06C6-4A30-8669-D1DBFC124ABF}" ShortID="347023664" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Effects">

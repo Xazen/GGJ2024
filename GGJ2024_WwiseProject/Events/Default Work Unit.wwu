@@ -33,69 +33,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Audio Capture" ID="{D87C67A2-1274-4247-9693-657FDB996267}" ShortID="624657421">
-					<ChildrenList>
-						<Event Name="StartAudioCapture_4" ID="{3A2592DB-4C27-4F1B-96FA-38E5D9F204D3}">
-							<ChildrenList>
-								<Action Name="" ID="{DA8AC5B7-E5B4-4C45-A590-9D3CF3A5185F}" ShortID="37452437">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Audio Capture_4" ID="{392B8AE9-25D6-4CED-9580-C8B49F12CA4C}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="StartAudioCapture_1" ID="{8396AF12-E718-488B-8CC9-E82FC569795B}">
-							<ChildrenList>
-								<Action Name="" ID="{0E668C49-E955-4AAF-A2B5-97EDCD545FAB}" ShortID="814205690">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Audio Capture_1" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="StartAudioCapture_2" ID="{54FE701F-946F-4127-ADD2-7D1697101EBA}">
-							<ChildrenList>
-								<Action Name="" ID="{B235DD20-9540-413D-B6E4-B1B519289C52}" ShortID="948456572">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Audio Capture_2" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="StartAudioCapture_3" ID="{88FFDC3E-919A-4FF7-9E05-618BC79D0BDD}">
-							<ChildrenList>
-								<Action Name="" ID="{02F597BF-19BA-441A-9B48-2B6E2DCFD807}" ShortID="917989716">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Audio Capture_3" ID="{C160C64B-8BD0-4169-8D38-729AC4A53B6A}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="StopAudioCapture" ID="{64777E67-8767-429B-BC41-075D8A770241}">
-							<ChildrenList>
-								<Action Name="" ID="{B11F96B6-BEA6-4371-8996-10A6AF573D51}" ShortID="121468706">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Capturing" ID="{8360B29F-C4C2-4069-A8A4-3EAA8B540119}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Event Name="Play_EnvironmentSound" ID="{903A71F1-5036-417D-9BFC-2544098E3385}">
 					<ChildrenList>
 						<Action Name="" ID="{97C4CE88-6396-44A5-A545-0B8C6A73FE09}" ShortID="934700453">
@@ -146,6 +83,69 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Screams" ID="{D87C67A2-1274-4247-9693-657FDB996267}" ShortID="624657421">
+							<ChildrenList>
+								<Event Name="Scream_Player_4" ID="{3A2592DB-4C27-4F1B-96FA-38E5D9F204D3}">
+									<ChildrenList>
+										<Action Name="" ID="{DA8AC5B7-E5B4-4C45-A590-9D3CF3A5185F}" ShortID="37452437">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Scream Player 4" ID="{392B8AE9-25D6-4CED-9580-C8B49F12CA4C}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Scream_Player_1" ID="{8396AF12-E718-488B-8CC9-E82FC569795B}">
+									<ChildrenList>
+										<Action Name="" ID="{0E668C49-E955-4AAF-A2B5-97EDCD545FAB}" ShortID="814205690">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Scream Player 1" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Scream_Player_2" ID="{54FE701F-946F-4127-ADD2-7D1697101EBA}">
+									<ChildrenList>
+										<Action Name="" ID="{B235DD20-9540-413D-B6E4-B1B519289C52}" ShortID="948456572">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Scream Player 2" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Scream_Player_3" ID="{88FFDC3E-919A-4FF7-9E05-618BC79D0BDD}">
+									<ChildrenList>
+										<Action Name="" ID="{02F597BF-19BA-441A-9B48-2B6E2DCFD807}" ShortID="917989716">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Scream Player 3" ID="{C160C64B-8BD0-4169-8D38-729AC4A53B6A}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StopAudioInput" ID="{64777E67-8767-429B-BC41-075D8A770241}">
+									<ChildrenList>
+										<Action Name="" ID="{B11F96B6-BEA6-4371-8996-10A6AF573D51}" ShortID="121468706">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Screams" ID="{8360B29F-C4C2-4069-A8A4-3EAA8B540119}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -16,12 +16,12 @@ namespace AK
         static const AkUniqueID HITS = 3232033907U;
         static const AkUniqueID PLAY_ENVIRONMENTSOUND = 1121580774U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
-        static const AkUniqueID STARTAUDIOCAPTURE_1 = 1102558895U;
-        static const AkUniqueID STARTAUDIOCAPTURE_2 = 1102558892U;
-        static const AkUniqueID STARTAUDIOCAPTURE_3 = 1102558893U;
-        static const AkUniqueID STARTAUDIOCAPTURE_4 = 1102558890U;
+        static const AkUniqueID SCREAM_PLAYER_1 = 1163358386U;
+        static const AkUniqueID SCREAM_PLAYER_2 = 1163358385U;
+        static const AkUniqueID SCREAM_PLAYER_3 = 1163358384U;
+        static const AkUniqueID SCREAM_PLAYER_4 = 1163358391U;
         static const AkUniqueID STOP_ENVIRONMENTSOUND = 1416616592U;
-        static const AkUniqueID STOPAUDIOCAPTURE = 764565769U;
+        static const AkUniqueID STOPAUDIOINPUT = 968829419U;
         static const AkUniqueID STOPMUSIC = 1917263390U;
         static const AkUniqueID SWING = 2386519981U;
     } // namespace EVENTS
@@ -82,6 +82,7 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID REVERB = 348963605U;
+        static const AkUniqueID ROOM = 2077253480U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

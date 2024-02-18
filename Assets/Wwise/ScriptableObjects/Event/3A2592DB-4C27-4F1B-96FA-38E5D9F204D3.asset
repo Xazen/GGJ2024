@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 222736348fc514143be43438e3099871, type: 3}
   m_Name: 3A2592DB-4C27-4F1B-96FA-38E5D9F204D3
   m_EditorClassIdentifier: 
-  objectName: StartAudioCapture_4
-  id: 1102558890
+  objectName: Scream_Player_4
+  id: 1163358391
   guid: 3A2592DB-4C27-4F1B-96FA-38E5D9F204D3
