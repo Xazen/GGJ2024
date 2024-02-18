@@ -16,12 +16,12 @@ MonoBehaviour:
   MinPlayerCount: 2
   HideScoreAtTotalSeconds: 30
   FadeScoreTime: 5
-  PlayerMovementSpeed: 15
+  PlayerMovementSpeed: 8
   HitboxDuration: 0.1
-  HitCooldown: 0.5
+  HitCooldown: 0.7
   ScreamboxDuration: 0.2
-  ScreamDuration: 0.6
-  ScreamCooldown: 1.2
+  ScreamDuration: 0.8
+  ScreamCooldown: 1.4
   ScreamFlyMin: 9
   ScreamFlyMax: 13
   ScreamDistanceMultiplier: 1
@@ -38,3 +38,11 @@ MonoBehaviour:
   StuffingFlyDurationMax: 0.45
   StuffingScaleMin: 0.8
   StuffingScaleMax: 1.2
+  MidGameThreshold: 80
+  MidGameMoveSpeedMultiplier: 1.5
+  MidGameAnimationMultiplier: 0.8
+  MidGameStuffSpawnMultiplier: 1.5
+  LateGameThreshold: 30
+  LateGameMoveSpeedMultiplier: 2
+  LateGameAnimationMultiplier: 0.6
+  LateGameStuffMultiplier: 2

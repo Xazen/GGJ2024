@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "Balancing", menuName = "Configs/Balancing")]
 public class BalancingConfig : ScriptableObject
@@ -39,4 +40,14 @@ public class BalancingConfig : ScriptableObject
     public float StuffingScaleMin = 0.8f;
     public float StuffingScaleMax = 1.2f;
 
+    [Header("Flow")]
+    public float MidGameThreshold = 80;
+    public float MidGameMoveSpeedMultiplier = 1.2f;
+    public float MidGameAnimationMultiplier = .9f;
+    public float MidGameStuffSpawnMultiplier = 2f;
+
+    public float LateGameThreshold = 30;
+    public float LateGameMoveSpeedMultiplier = 1.5f;
+    public float LateGameAnimationMultiplier = .75f;
+    public float LateGameStuffMultiplier = 3f;
 }

@@ -6,6 +6,7 @@ using JetBrains.Annotations;
 using Player;
 using UnityEngine;
 using UnityEngine.InputSystem.Users;
+using UnityEngine.SocialPlatforms;
 using Zenject;
 
 public class GamePlayerActorController : MonoBehaviour
@@ -46,14 +47,20 @@ public class GamePlayerActorController : MonoBehaviour
     private PlayerModelConfig _playerModelConfig;
     private Animator _animator;
     private BattlefieldService _battlefieldService;
+    private TimerService _timerService;
 
     public int PlayerIndex => _inputUser.index;
+    public float moveSpeedMultiplier = 1.0f;
+    public float animationSpeedMultiplier = 1.0f;
+    public float stuffMultiplier = 1.0f;
 
     [Inject]
     [UsedImplicitly]
     public void Inject(BalancingConfig balancingConfig, GamePlayerService gamePlayerService,
-        BattlefieldService battlefieldService, GameService gameService, DiContainer diContainer, PlayerModelConfig playerModelConfig)
+        BattlefieldService battlefieldService, GameService gameService, DiContainer diContainer,
+        PlayerModelConfig playerModelConfig, TimerService timerService)
     {
+        _timerService = timerService;
         _battlefieldService = battlefieldService;
         _playerModelConfig = playerModelConfig;
         _diContainer = diContainer;
@@ -71,7 +78,11 @@ public class GamePlayerActorController : MonoBehaviour
 
     private void OnGameRestart()
     {
+        Debug.Log("Restart Game");
         _moveVector = Vector3.zero;
+        moveSpeedMultiplier = 1.0f;
+        animationSpeedMultiplier = 1.0f;
+        stuffMultiplier = 1.0f;
         var location = _battlefieldService.GetAndRegisterFreeSpawnLocation(_inputUser.index);
         LookTowards(new Vector3(0, location.y, 0));
     }
@@ -117,7 +128,8 @@ public class GamePlayerActorController : MonoBehaviour
         screamHitbox.gameObject.SetActive(true);
         yield return new WaitForSeconds(_balancingConfig.ScreamboxDuration);
         screamHitbox.gameObject.SetActive(false);
-        yield return new WaitForSeconds(_balancingConfig.ScreamDuration - _balancingConfig.ScreamboxDuration);
+        yield return new WaitForSeconds((_balancingConfig.ScreamDuration - _balancingConfig.ScreamboxDuration) * animationSpeedMultiplier);
+        Debug.Log("Wait for scream: " + (_balancingConfig.ScreamDuration - _balancingConfig.ScreamboxDuration) * animationSpeedMultiplier);
         _playerModel.IsScreaming = false;
     }
 
@@ -145,7 +157,7 @@ public class GamePlayerActorController : MonoBehaviour
     private void OnGotHit(GamePlayerActorController attacker)
     {
         Debug.Log(gameObject.name +  " got Hit by " + attacker.gameObject.name);
-        _playerModel.CurrentStaggeredDuration = _balancingConfig.StaggeredDuration;
+        _playerModel.CurrentStaggeredDuration = _balancingConfig.StaggeredDuration * animationSpeedMultiplier;
         _animator.SetTrigger(_hurtAnimHash);
 
         GetComponent<PlayerAudio>().PlayHurt();
@@ -159,7 +171,7 @@ public class GamePlayerActorController : MonoBehaviour
 
     private void SpawnStuffing(GamePlayerActorController attacker)
     {
-        float stuffingCount = Random.Range(_balancingConfig.StuffingCountMin, _balancingConfig.StuffingCountMax);
+        float stuffingCount = Random.Range(_balancingConfig.StuffingCountMin, _balancingConfig.StuffingCountMax) * stuffMultiplier;
         for (int i = 0; i < stuffingCount; i++)
         {
             var stuffingDirection = GetStuffDirection(attacker.transform.position, false);
@@ -223,6 +235,26 @@ public class GamePlayerActorController : MonoBehaviour
 
     private void Update()
     {
+        if (!_gameService.IsGameRunning())
+        {
+            return;
+        }
+
+        if (_timerService.GetTime().TotalSeconds < _balancingConfig.LateGameThreshold)
+        {
+            Debug.Log("Late Game");
+            moveSpeedMultiplier = _balancingConfig.LateGameMoveSpeedMultiplier;
+            animationSpeedMultiplier = _balancingConfig.LateGameAnimationMultiplier;
+            stuffMultiplier = _balancingConfig.LateGameStuffMultiplier;
+        }
+        else if (_timerService.GetTime().TotalSeconds < _balancingConfig.MidGameThreshold)
+        {
+            Debug.Log("Mid Game");
+            moveSpeedMultiplier = _balancingConfig.MidGameMoveSpeedMultiplier;
+            animationSpeedMultiplier = _balancingConfig.MidGameAnimationMultiplier;
+            stuffMultiplier = _balancingConfig.MidGameStuffSpawnMultiplier;
+        }
+
         _playerModel.CurrentStaggeredDuration -= Time.deltaTime;
         Move();
         _animator.SetFloat(_movementAnimHash, _moveVector.magnitude);
@@ -242,7 +274,8 @@ public class GamePlayerActorController : MonoBehaviour
 
         if (!IsBlocked(_moveVector))
         {
-            var newPosition = rigidBody.position + _moveVector * Time.deltaTime * _balancingConfig.PlayerMovementSpeed;
+            var newPosition = rigidBody.position + _moveVector * Time.deltaTime * _balancingConfig.PlayerMovementSpeed * moveSpeedMultiplier;
+            Debug.Log("moveSpeedMultiplier: " + moveSpeedMultiplier);
             rigidBody.MovePosition(newPosition);
         }
 
@@ -258,9 +291,9 @@ public class GamePlayerActorController : MonoBehaviour
     {
         _playerModel.IsAttacking = true;
         _moveVector = Vector3.zero;
-        yield return new WaitForSeconds(7f/30f);
+        yield return new WaitForSeconds(7f/30f * animationSpeedMultiplier);
         hitBox.gameObject.SetActive(true);
-        yield return new WaitForSeconds(_balancingConfig.HitboxDuration);
+        yield return new WaitForSeconds(_balancingConfig.HitboxDuration * animationSpeedMultiplier);
         hitBox.gameObject.SetActive(false);
         _playerModel.IsAttacking = false;
     }

@@ -22,13 +22,22 @@ namespace Player
 
         private BalancingConfig _balancingConfig;
         private PlayerModel _playerModel;
+        private TimerService _timerService;
+        private float animationSpeedMultiplier;
 
         [Inject]
         [UsedImplicitly]
-        public void Inject(BalancingConfig balancingConfig, GamePlayerService gamePlayerService)
+        public void Inject(BalancingConfig balancingConfig, GamePlayerService gamePlayerService, TimerService timerService, GameService gameService)
         {
+            _timerService = timerService;
             _balancingConfig = balancingConfig;
             _playerModel = gamePlayerService.GetPlayerModel(playerInput.user.index);
+            gameService.OnRestart += OnRestart;
+        }
+
+        private void OnRestart()
+        {
+            animationSpeedMultiplier = 1;
         }
 
         private void Start()
@@ -43,7 +52,6 @@ namespace Player
 
         private void OnAction(InputAction.CallbackContext context)
         {
-
             if (context.action.name == "Movement")
             {
                 OnMovement(context.ReadValue<Vector2>());
@@ -77,7 +85,8 @@ namespace Player
                 return;
             }
 
-            _currentScreamCooldown = _balancingConfig.ScreamCooldown;
+            _currentScreamCooldown = _balancingConfig.ScreamCooldown * animationSpeedMultiplier;
+            Debug.Log("currentScreamCooldown: " + _currentScreamCooldown);
             OnScreamInput?.Invoke();
         }
 
@@ -88,6 +97,15 @@ namespace Player
 
         private void Update()
         {
+            if (_timerService.GetTime().TotalSeconds < _balancingConfig.LateGameThreshold)
+            {
+                animationSpeedMultiplier = _balancingConfig.LateGameAnimationMultiplier;
+            }
+            else if (_timerService.GetTime().TotalSeconds < _balancingConfig.MidGameThreshold)
+            {
+                animationSpeedMultiplier = _balancingConfig.MidGameAnimationMultiplier;
+            }
+
             _currentHitCooldown -= Time.deltaTime;
             _currentScreamCooldown -= Time.deltaTime;
         }
@@ -99,7 +117,8 @@ namespace Player
                 return;
             }
 
-            _currentHitCooldown = _balancingConfig.HitCooldown;
+            _currentHitCooldown = _balancingConfig.HitCooldown * animationSpeedMultiplier;
+            Debug.Log("currentHitCooldown: " + _currentHitCooldown);
             OnAttackInput?.Invoke();
         }
 
