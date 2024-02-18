@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{84683BBB-6E8E-8D5A-053C-3EC481F7FA60}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{EB1C6099-F97B-39B1-3486-4B54F515DE91}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -536,7 +536,7 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1718617278" Name="Steps" DurationType="OneShot" DurationMin="0.32888117" DurationMax="0.44031617">
+				<Event Id="1718617278" Name="Steps" DurationType="OneShot" DurationMin="0.24711908" DurationMax="0.44031617">
 					<MediaRefs>
 						<MediaRef Id="14980148"/>
 						<MediaRef Id="100876381"/>
@@ -772,7 +772,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CDE954DF-579E-6337-6B85-ECE20B8A7592}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{737F9A72-CAA4-C293-7128-AA81BE437466}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -844,5 +844,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6DB14BEE-6105-3183-0B79-0F92A8D8EC33}</FileHash>
+	<FileHash>{99D4A547-DFC5-916A-CEAC-5ADBDA787C8A}</FileHash>
 </SoundBanksInfo>
