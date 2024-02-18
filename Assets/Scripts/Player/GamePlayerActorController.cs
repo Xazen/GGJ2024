@@ -10,6 +10,9 @@ using Zenject;
 
 public class GamePlayerActorController : MonoBehaviour
 {
+    private int _attackKnifeAnimHash = Animator.StringToHash("attackknife");
+    private int _movementAnimHash = Animator.StringToHash("movement");
+
     [SerializeField]
     private GameObject stuffingPrefab;
 
@@ -34,6 +37,7 @@ public class GamePlayerActorController : MonoBehaviour
     private GameService _gameService;
     private DiContainer _diContainer;
     private PlayerModelConfig _playerModelConfig;
+    private Animator _animator;
 
     [Inject]
     [UsedImplicitly]
@@ -49,7 +53,8 @@ public class GamePlayerActorController : MonoBehaviour
         _playerModel = gamePlayerService.GetPlayerModel(_inputUser.index);
         var location = battlefieldService.GetAndRegisterFreeSpawnLocation(_inputUser.index);
         gameObject.transform.position = location;
-        diContainer.InstantiatePrefab(_playerModelConfig.PlayerModelByIndex[_inputUser.index], model.transform);
+        var character = diContainer.InstantiatePrefab(_playerModelConfig.PlayerModelByIndex[_inputUser.index], model.transform);
+        _animator = character.GetComponent<Animator>();
         LookTowards(new Vector3(0, location.y, 0));
     }
 
@@ -71,12 +76,15 @@ public class GamePlayerActorController : MonoBehaviour
     private void OnScream()
     {
         GetComponent<PlayerAudio>().PlayScream();
+        _moveVector = Vector3.zero;
         Debug.Log("Scream");
     }
 
     public void OnAttack()
     {
         StartCoroutine(Attack());
+        _moveVector = Vector3.zero;
+        _animator.SetTrigger(_attackKnifeAnimHash);
         GetComponent<PlayerAudio>().PlayAttack();
         Debug.Log("Attack");
     }
@@ -97,6 +105,7 @@ public class GamePlayerActorController : MonoBehaviour
         Debug.Log(gameObject.name +  " got Hit by " + attacker.gameObject.name);
         _playerModel.CurrentStaggeredDuration = _balancingConfig.StaggeredDuration;
 
+        _moveVector = Vector3.zero;
         Knockback(attacker);
         LookTowards(attacker.transform.position);
         SpawnStuffing(attacker);
@@ -149,6 +158,7 @@ public class GamePlayerActorController : MonoBehaviour
     {
         _playerModel.CurrentStaggeredDuration -= Time.deltaTime;
         Move();
+        _animator.SetFloat(_movementAnimHash, _moveVector.magnitude);
     }
 
     private void Move()
