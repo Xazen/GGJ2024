@@ -36,12 +36,11 @@ namespace DefaultNamespace
         public void PlayMusic()
         {
             AkSoundEngine.SetState("Music_State", "Level");
-            AkSoundEngine.PostEvent("Play_CookingPot", gameObject);
         }
 
         public void EndStartingScreen()
         {
-
+            AkSoundEngine.PostEvent("Play_CookingPot", gameObject);
         }
 
         /// <summary>
