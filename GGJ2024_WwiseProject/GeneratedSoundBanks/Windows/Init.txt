@@ -8,6 +8,7 @@ State	ID	Name	State Group			Notes
 	1874288895	Idle	Screaming			
 	748895195	None	Music_State			
 	1125500713	Intro	Music_State			
+	1521118571	WaitForPlayers	Music_State			
 	2782712965	Level	Music_State			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes

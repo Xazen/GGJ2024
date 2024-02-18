@@ -1815,6 +1815,18 @@
 						<ActorMixer Name="Screams" ID="{8360B29F-C4C2-4069-A8A4-3EAA8B540119}" ShortID="382267323">
 							<PropertyList>
 								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B4881096-D017-43C9-95C2-7CD823A761F3}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="UserAuxSendVolume0" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -1842,6 +1854,22 @@
 									<PropertyList>
 										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 										<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C4BD792B-EE3D-4F04-ADFF-6CD284B0E179}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>5</Value>
@@ -1893,10 +1921,22 @@
 								</Sound>
 								<Sound Name="Scream Player blau" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" ShortID="836687970">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>-1</Value>
+												<Value>-100</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{92EC141D-7104-418B-8824-22A1538B6E83}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1909,6 +1949,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Scream_Player 4" ID="{58AF69C5-ED55-4E3A-84FE-7A5E568F270D}">
+											<PropertyList>
+												<Property Name="FadeInShape" Type="int16" Value="6"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0933332878953108"/>
+												<Property Name="FadeOutShape" Type="int16" Value="6"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.74320951472192"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Scream_Player 4.wav</AudioFile>
 											<MediaIDList>
@@ -1920,14 +1967,22 @@
 										<ObjectList Name="Effects">
 											<Reference>
 												<Local>
-													<EffectSlot Name="" ID="{394A1FC9-5665-4228-AA89-4F707B2BB50F}" ShortID="77956824">
+													<EffectSlot Name="" ID="{5E191436-252F-4724-B9B6-7168E6A8A17A}" ShortID="95120493">
+														<PropertyList>
+															<Property Name="Render" Type="bool">
+																<ValueList>
+																	<Value>True</Value>
+																</ValueList>
+															</Property>
+														</PropertyList>
 														<ReferenceList>
 															<Reference Name="Effect">
 																<Custom>
-																	<Effect Name="Recorder (Custom)" ID="{A8FCF2F0-2FF9-4229-B3C4-1D196412D2DD}" ShortID="390270984" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
+																	<Effect Name="Guitar Distortion (Custom)" ID="{BA1415EB-D771-4DDB-A573-CAEA2CF00246}" ShortID="1004524204" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
 																		<PropertyList>
-																			<Property Name="AuthoringFilename" Type="string" Value=""/>
-																			<Property Name="GameFilename" Type="string" Value="ScreamRecording_2.wav"/>
+																			<Property Name="DistortionType" Type="int32" Value="2"/>
+																			<Property Name="OutputLevel" Type="Real32" Value="-7"/>
+																			<Property Name="WetDryMix" Type="Real32" Value="74"/>
 																		</PropertyList>
 																	</Effect>
 																</Custom>
@@ -1943,6 +1998,21 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Scream Player grün" ID="{C160C64B-8BD0-4169-8D38-729AC4A53B6A}" ShortID="779150027">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F87100E5-EC2E-43FC-8397-661075438AC7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -1988,6 +2058,19 @@
 								</Sound>
 								<Sound Name="Scream Player rot" ID="{392B8AE9-25D6-4CED-9580-C8B49F12CA4C}" ShortID="609582141">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{424A4F70-28E1-4746-BB9A-D9BE0B353A85}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>1</Value>
@@ -3441,6 +3524,31 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Music_State" ID="{A64990FD-CA37-468E-88B5-0CDD0CDFB920}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Level" ID="{EBC27508-48A3-4121-9C12-0EC34FE26EAE}"/>
+								<CustomState Name="" ID="{927FB71E-3CF6-4CFE-BE39-C24FE96B8227}" ShortID="580796788"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="WaitForPlayers" ID="{6CEA7D9E-7CC1-459B-AD38-1F9829112046}"/>
+								<CustomState Name="" ID="{49704299-9C06-4932-98AB-32B994B2F498}" ShortID="643590985">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="4"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Intro" ID="{8CC9202C-B39C-4706-95B1-5005C701A177}"/>
+								<CustomState Name="" ID="{C9F883BE-B4D4-4994-A2A9-4A0A989C1294}" ShortID="187131906"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</BlendContainer>
 				<BlendContainer Name="Ambience" ID="{FDD9CD96-042A-4FFC-BD68-6D74F9B678C1}" ShortID="557389769">
 					<PropertyList>

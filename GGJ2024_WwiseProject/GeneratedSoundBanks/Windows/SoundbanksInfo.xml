@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{7964D720-4757-FBBE-BD5D-D247FA9EA5D7}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{02EA6964-9C22-E6AE-E57E-ACCCB1B03E4E}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -335,7 +335,7 @@
 				</File>
 				<File Id="882780577" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scream_Player 4.wav</ShortName>
-					<CachePath>SFX/Scream_Player 4_EDCD4836.wem</CachePath>
+					<CachePath>SFX/Scream_Player 4_9CD849F3.wem</CachePath>
 				</File>
 				<File Id="889746308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scream_Player 1.wav</ShortName>
@@ -555,7 +555,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1163358386" Name="Scream_Player_1" DurationType="OneShot" DurationMin="0.78375" DurationMax="0.78375">
+				<Event Id="1163358386" Name="Scream_Player_1" DurationType="OneShot" DurationMin="0.65905255" DurationMax="0.7397614">
 					<MediaRefs>
 						<MediaRef Id="889746308"/>
 					</MediaRefs>
@@ -563,7 +563,7 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1163358385" Name="Scream_Player_2" DurationType="OneShot" DurationMin="1.056625" DurationMax="1.056625">
+				<Event Id="1163358385" Name="Scream_Player_2" DurationType="OneShot" DurationMin="0.74320954" DurationMax="0.8342245">
 					<MediaRefs>
 						<MediaRef Id="882780577"/>
 					</MediaRefs>
@@ -571,7 +571,7 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1163358384" Name="Scream_Player_3" DurationType="OneShot" DurationMin="1.0522916" DurationMax="1.0522916">
+				<Event Id="1163358384" Name="Scream_Player_3" DurationType="OneShot" DurationMin="0.99323094" DurationMax="1.1148642">
 					<MediaRefs>
 						<MediaRef Id="340008253"/>
 					</MediaRefs>
@@ -579,7 +579,7 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1163358391" Name="Scream_Player_4" DurationType="OneShot" DurationMin="0.7535833" DurationMax="0.7535833">
+				<Event Id="1163358391" Name="Scream_Player_4" DurationType="OneShot" DurationMin="0.71128786" DurationMax="0.7983937">
 					<MediaRefs>
 						<MediaRef Id="1003410841"/>
 					</MediaRefs>
@@ -834,7 +834,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BA358EC5-954D-4CB5-5905-CCCE20D47E9E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C5F635CB-9EA2-B3A1-1D44-57908672A642}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -914,5 +914,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9D183722-1EBA-45BF-47BF-18C568EEDA13}</FileHash>
+	<FileHash>{2DFEF224-41EE-4E60-E705-61F49D4E5718}</FileHash>
 </SoundBanksInfo>

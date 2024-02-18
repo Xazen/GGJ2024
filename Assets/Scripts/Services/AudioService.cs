@@ -35,7 +35,9 @@ namespace DefaultNamespace
 
         public void PlayMusic()
         {
+            stopMusic.Post(gameObject);
             AkSoundEngine.SetState("Music_State", "Level");
+            playMusic.Post(gameObject);
         }
 
         public void EndStartingScreen()
