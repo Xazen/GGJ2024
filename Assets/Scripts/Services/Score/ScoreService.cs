@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -32,6 +33,12 @@ namespace DefaultNamespace
         public void ResetScores()
         {
             scoreModel.ScoreByPlayerIndex.Clear();
+        }
+
+        public List<int> GetWinningPlayerIndex()
+        {
+            var maxScore = scoreModel.ScoreByPlayerIndex.Values.Max();
+            return scoreModel.ScoreByPlayerIndex.Where(x => x.Value == maxScore).Select(x => x.Key).ToList();
         }
     }
 }
