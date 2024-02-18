@@ -13,6 +13,7 @@ public class BalancingConfig : ScriptableObject
     [Header("Attack")]
     public float HitboxDuration = 0.2f;
     public float HitCooldown = 0.5f;
+    public float ScreamCooldown = 1.2f;
 
     [Header("Knockback")]
     public float StaggeredDuration = 0.3f;

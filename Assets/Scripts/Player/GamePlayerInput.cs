@@ -14,9 +14,11 @@ namespace Player
 
         public Action OnAttackInput;
         public Action OnStartInput;
+        public Action OnScreamInput;
         public Action<Vector2> OnMovementInput;
 
         private float _currentHitCooldown;
+        private float _currentScreamCooldown;
 
         private BalancingConfig _balancingConfig;
         private PlayerModel _playerModel;
@@ -61,6 +63,22 @@ namespace Player
             {
                 OnStart();
             }
+
+            if (context.action.name == "Scream")
+            {
+                OnScream();
+            }
+        }
+
+        private void OnScream()
+        {
+            if (IsAttackBlocked())
+            {
+                return;
+            }
+
+            _currentScreamCooldown = _balancingConfig.ScreamCooldown;
+            OnScreamInput?.Invoke();
         }
 
         private void OnStart()
@@ -71,17 +89,23 @@ namespace Player
         private void Update()
         {
             _currentHitCooldown -= Time.deltaTime;
+            _currentScreamCooldown -= Time.deltaTime;
         }
 
         public void OnAttack()
         {
-            if (_currentHitCooldown > 0 || _playerModel.IsStaggered)
+            if (IsAttackBlocked())
             {
                 return;
             }
 
             _currentHitCooldown = _balancingConfig.HitCooldown;
             OnAttackInput?.Invoke();
+        }
+
+        private bool IsAttackBlocked()
+        {
+            return _currentHitCooldown > 0 || _playerModel.IsStaggered || _currentScreamCooldown > 0;
         }
 
         public void OnMovement(Vector2 movement)

@@ -53,6 +53,7 @@ public class GamePlayerActorController : MonoBehaviour
     {
         hitBox.OnAttackHit += OnAttackHit;
         gamePlayerInput.OnAttackInput += OnAttack;
+        gamePlayerInput.OnScreamInput += OnScream;
         gamePlayerInput.OnMovementInput += OnMovement;
     }
 
@@ -61,6 +62,11 @@ public class GamePlayerActorController : MonoBehaviour
         hitBox.OnAttackHit -= OnAttackHit;
         gamePlayerInput.OnAttackInput -= OnAttack;
         gamePlayerInput.OnMovementInput -= OnMovement;
+    }
+
+    private void OnScream()
+    {
+        Debug.Log("Scream");
     }
 
     public void OnAttack()
@@ -182,11 +188,6 @@ public class GamePlayerActorController : MonoBehaviour
 
     private bool IsBlocked(Vector3 direction)
     {
-        if (Physics.Raycast(rigidBody.position, direction, out _, _balancingConfig.CollisionThreshold))
-        {
-            return true;
-        }
-
-        return false;
+        return Physics.Raycast(rigidBody.position, direction, out _, _balancingConfig.CollisionThreshold);
     }
 }
