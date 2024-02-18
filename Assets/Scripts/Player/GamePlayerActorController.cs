@@ -33,6 +33,9 @@ public class GamePlayerActorController : MonoBehaviour
     [SerializeField]
     private GamePlayerInput gamePlayerInput;
 
+    [SerializeField]
+    private Animator vfxAnimator;
+
     private BalancingConfig _balancingConfig;
     private Vector3 _moveVector;
 
@@ -91,15 +94,16 @@ public class GamePlayerActorController : MonoBehaviour
     private void OnScream()
     {
         _animator.SetTrigger(_screamAnimHash);
+        vfxAnimator.SetTrigger(_screamAnimHash);
         StartCoroutine(Scream());
         GetComponent<PlayerAudio>().PlayScream();
-        _moveVector = Vector3.zero;
         Debug.Log("Scream");
     }
 
     private IEnumerator Scream()
     {
         _playerModel.IsScreaming = true;
+        _moveVector = Vector3.zero;
         screamHitbox.gameObject.SetActive(true);
         yield return new WaitForSeconds(_balancingConfig.ScreamboxDuration);
         screamHitbox.gameObject.SetActive(false);
@@ -111,12 +115,15 @@ public class GamePlayerActorController : MonoBehaviour
     {
         _animator.SetTrigger(_attackKnifeAnimHash);
         StartCoroutine(Attack());
-        _moveVector = Vector3.zero;
         Debug.Log("Attack");
     }
 
     public void OnMovement(Vector2 movement)
     {
+        if (_playerModel.IsStaggered || _playerModel.IsAttacking || !_gameService.IsGameRunning() || _playerModel.IsScreaming)
+        {
+            return;
+        }
         _moveVector = new Vector3(movement.x, 0, movement.y);
     }
 
@@ -179,7 +186,9 @@ public class GamePlayerActorController : MonoBehaviour
     private GameObject CreateStuff(GamePlayerActorController attacker, Vector3 stuffingDirection)
     {
         var stuffing = _diContainer.InstantiatePrefab(stuffingPrefab);
-        stuffing.GetComponent<Stuffing>().PlayerIndex = attacker.PlayerIndex;
+        var stuffingComp = stuffing.GetComponent<Stuffing>();
+        stuffingComp.InitWithPlayerIndex(PlayerIndex);
+        stuffingComp.PlayerIndex = attacker.PlayerIndex;
         stuffing.transform.position = transform.position + stuffingDirection * 1.1f;
         stuffing.transform.localScale = Vector3.one * Random.Range(_balancingConfig.StuffingScaleMin, _balancingConfig.StuffingScaleMax);
         return stuffing;
@@ -238,6 +247,7 @@ public class GamePlayerActorController : MonoBehaviour
     private IEnumerator Attack()
     {
         _playerModel.IsAttacking = true;
+        _moveVector = Vector3.zero;
         yield return new WaitForSeconds(7f/30f);
         hitBox.gameObject.SetActive(true);
         yield return new WaitForSeconds(_balancingConfig.HitboxDuration);

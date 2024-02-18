@@ -15,6 +15,9 @@ namespace UI
         [SerializeField]
         private TextMeshProUGUI[] playerScores;
 
+        [SerializeField]
+        private GameObject[] playerContainers;
+
         private TimerService _timerService;
         private ScoreService _scoreService;
 
@@ -49,6 +52,7 @@ namespace UI
                 }
                 else
                 {
+                    playerContainers[i].SetActive(false);
                     playerScores[i].gameObject.SetActive(false);
                 }
             }

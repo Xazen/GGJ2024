@@ -121,6 +121,11 @@ MonoBehaviour:
   - {fileID: 4902073234576155128}
   - {fileID: 3840582549065429209}
   - {fileID: 8082361836971155403}
+  playerContainers:
+  - {fileID: 1633681002253580242}
+  - {fileID: 6474841692091496108}
+  - {fileID: 2091128832334888348}
+  - {fileID: 3111040320426251563}
 --- !u!1 &1287524534496627151
 GameObject:
   m_ObjectHideFlags: 0
