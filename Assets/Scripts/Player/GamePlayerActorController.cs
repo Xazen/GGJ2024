@@ -130,6 +130,10 @@ public class GamePlayerActorController : MonoBehaviour
         Debug.Log(gameObject.name +  " got Hit by " + attacker.gameObject.name);
         _playerModel.CurrentStaggeredDuration = _balancingConfig.StaggeredDuration;
         _animator.SetTrigger(_hurtAnimHash);
+
+        GetComponent<PlayerAudio>().PlayHurt();
+        attacker.GetComponentInChildren<PlayerAudio>().PlayHit();
+
         _moveVector = Vector3.zero;
         Knockback(attacker);
         LookTowards(attacker.transform.position);

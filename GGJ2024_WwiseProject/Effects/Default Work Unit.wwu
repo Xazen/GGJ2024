@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8013FAAD-4374-4D59-AED7-BD25930CF043}" SchemaVersion="119">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{8013FAAD-4374-4D59-AED7-BD25930CF043}" PersistMode="Standalone">
-			<ChildrenList>
-				<Effect Name="New_Recorder" ID="{EC1BDA9B-2B13-4F53-8272-4A1ED8B47557}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
-					<PropertyList>
-						<Property Name="AuthoringFilename" Type="string" Value="e:\Users\Julian\Desktop\Record%s.wav"/>
-					</PropertyList>
-				</Effect>
-				<Effect Name="Scream_Compressor" ID="{6A27CAB5-A661-4186-BB10-3F4A8FDD3239}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
-					<PropertyList>
-						<Property Name="AttackTime" Type="Real32" Value="0.5"/>
-						<Property Name="Ratio" Type="Real32" Value="10.5"/>
-						<Property Name="ReleaseTime" Type="Real32" Value="2"/>
-						<Property Name="Threshold" Type="Real32" Value="-20"/>
-					</PropertyList>
-				</Effect>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{8013FAAD-4374-4D59-AED7-BD25930CF043}" PersistMode="Standalone"/>
 	</Effects>
 </WwiseDocument>

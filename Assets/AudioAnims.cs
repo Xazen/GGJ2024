@@ -20,9 +20,4 @@ public class AudioAnims : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Swing", playerAudio.gameObject);
     }
-
-    public void PlayHit()
-    {
-        AkSoundEngine.PostEvent("Hits", playerAudio.gameObject);
-    }
 }

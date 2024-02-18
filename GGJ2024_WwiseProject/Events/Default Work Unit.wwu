@@ -142,6 +142,54 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Hurt" ID="{785D28E1-527C-423E-9054-A81281E8BD3E}" ShortID="278894535">
+							<ChildrenList>
+								<Event Name="Hit_Player_1" ID="{036FFA78-E444-41E7-A3B8-01A1487F8270}">
+									<ChildrenList>
+										<Action Name="" ID="{D68EFC1D-A85B-4EB3-A943-60021D9C2496}" ShortID="280969556">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hit_blau" ID="{B200C0DA-A139-4D72-BA77-2C8C6C5FC9E0}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Hit_Player_2" ID="{092B2D20-A03A-442B-84F2-546C875AEC9B}">
+									<ChildrenList>
+										<Action Name="" ID="{293F4CB5-A99D-4E71-9A20-584889F56173}" ShortID="564334838">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hit_braun" ID="{8C9A8D9F-11A5-45F0-A612-5A3E9AE9E50A}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Hit_Player_3" ID="{57AB21DD-E23A-4054-A4EA-6A7914AB9396}">
+									<ChildrenList>
+										<Action Name="" ID="{C3882CEF-06E0-468D-99D6-941B3901447C}" ShortID="425358291">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hit_grün" ID="{9F7AA225-B2C5-496F-89F7-CB03DA3A735A}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Hit_Player_4" ID="{C784BC1E-F671-4DA8-8574-164A82921F7E}">
+									<ChildrenList>
+										<Action Name="" ID="{A7B2B73B-2733-40FF-A4BD-32C0A343D3FF}" ShortID="729269934">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hit_rot" ID="{DCC1CF1C-6DEC-4F20-BFEF-33C147527D82}" WorkUnitID="{B3A73D29-EAE9-484A-9D98-769EBC98E097}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

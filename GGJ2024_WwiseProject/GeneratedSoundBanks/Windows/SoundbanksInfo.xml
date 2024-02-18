@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{AF4F864C-F341-E7F5-10CC-595FDE240EBB}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{84683BBB-6E8E-8D5A-053C-3EC481F7FA60}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -37,6 +37,10 @@
 					<ShortName>Hits 2.wav</ShortName>
 					<CachePath>SFX/Hits 2_818F3B66.wem</CachePath>
 				</File>
+				<File Id="97555503" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 1_Player 4.wav</ShortName>
+					<CachePath>SFX/Hit 1_Player 4_818F3B66.wem</CachePath>
+				</File>
 				<File Id="100806986" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 2.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 2_818F3B66.wem</CachePath>
@@ -47,7 +51,7 @@
 				</File>
 				<File Id="132177277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Foley_Step 3.wav</ShortName>
-					<CachePath>SFX/Foley_Step 3_DAE3A832.wem</CachePath>
+					<CachePath>SFX/Foley_Step 3_C61A1825.wem</CachePath>
 				</File>
 				<File Id="137229546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Punch 3.wav</ShortName>
@@ -61,13 +65,17 @@
 					<ShortName>Music_Metal.wav</ShortName>
 					<CachePath>SFX/Music_Metal_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="148522713" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 2_Player 2.wav</ShortName>
+					<CachePath>SFX/Hit 2_Player 2_818F3B66.wem</CachePath>
+				</File>
 				<File Id="150116584" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Punch 1.wav</ShortName>
 					<CachePath>SFX/Slice Punch 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="160633402" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Foley_Step 2.wav</ShortName>
-					<CachePath>SFX/Foley_Step 2_8BEC87F4.wem</CachePath>
+					<CachePath>SFX/Foley_Step 2_C419C4C1.wem</CachePath>
 				</File>
 				<File Id="166057783" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Veggie Hits 1.wav</ShortName>
@@ -76,6 +84,10 @@
 				<File Id="209115331" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 2.wav</ShortName>
 					<CachePath>SFX/Knife Slice 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="210537147" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 2_Player 4.wav</ShortName>
+					<CachePath>SFX/Hit 2_Player 4_A82F19BD.wem</CachePath>
 				</File>
 				<File Id="215770798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 5.wav</ShortName>
@@ -97,9 +109,17 @@
 					<ShortName>Slice Gore 3.wav</ShortName>
 					<CachePath>SFX/Slice Gore 3_818F3B66.wem</CachePath>
 				</File>
+				<File Id="262871272" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 2_Player 3.wav</ShortName>
+					<CachePath>SFX/Hit 2_Player 3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="264445141" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 2.wav</ShortName>
 					<CachePath>SFX/SpoonSwingLayer 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="267008808" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 1_Player 1.wav</ShortName>
+					<CachePath>SFX/Hit 1_Player 1_818F3B66.wem</CachePath>
 				</File>
 				<File Id="272903579" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 7.wav</ShortName>
@@ -124,6 +144,10 @@
 				<File Id="328062407" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen_Ambience.wav</ShortName>
 					<CachePath>SFX/Kitchen_Ambience_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="340008253" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scream_Player 3.wav</ShortName>
+					<CachePath>SFX/Scream_Player 3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="373249325" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 4.wav</ShortName>
@@ -152,6 +176,10 @@
 				<File Id="416225711" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 8.wav</ShortName>
 					<CachePath>SFX/Knife Swings 8_818F3B66.wem</CachePath>
+				</File>
+				<File Id="416627512" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 3_Player 3.wav</ShortName>
+					<CachePath>SFX/Hit 3_Player 3_818F3B66.wem</CachePath>
 				</File>
 				<File Id="416771849" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Fluid_2.wav</ShortName>
@@ -189,6 +217,10 @@
 					<ShortName>Hit Gore 3.wav</ShortName>
 					<CachePath>SFX/Hit Gore 3_818F3B66.wem</CachePath>
 				</File>
+				<File Id="552200882" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 2_Player 1.wav</ShortName>
+					<CachePath>SFX/Hit 2_Player 1_818F3B66.wem</CachePath>
+				</File>
 				<File Id="581836822" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VeggieSlices 2.wav</ShortName>
 					<CachePath>SFX/VeggieSlices 2_818F3B66.wem</CachePath>
@@ -225,6 +257,18 @@
 					<ShortName>Knife Swings 4.wav</ShortName>
 					<CachePath>SFX/Knife Swings 4_818F3B66.wem</CachePath>
 				</File>
+				<File Id="722803031" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 3_Player 1.wav</ShortName>
+					<CachePath>SFX/Hit 3_Player 1_818F3B66.wem</CachePath>
+				</File>
+				<File Id="729781821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 1_Player 2.wav</ShortName>
+					<CachePath>SFX/Hit 1_Player 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="741734339" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 1_Player 3.wav</ShortName>
+					<CachePath>SFX/Hit 1_Player 3_818F3B66.wem</CachePath>
+				</File>
 				<File Id="752221801" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 7.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 7_818F3B66.wem</CachePath>
@@ -236,6 +280,10 @@
 				<File Id="762068009" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 7.wav</ShortName>
 					<CachePath>SFX/SpoonSwingLayer 7_818F3B66.wem</CachePath>
+				</File>
+				<File Id="765220663" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 3_Player 2.wav</ShortName>
+					<CachePath>SFX/Hit 3_Player 2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="766967025" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 4.wav</ShortName>
@@ -252,6 +300,10 @@
 				<File Id="771124036" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 3.wav</ShortName>
 					<CachePath>SFX/BasicSwing 3_818F3B66.wem</CachePath>
+				</File>
+				<File Id="799358261" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit 3_Player 4.wav</ShortName>
+					<CachePath>SFX/Hit 3_Player 4_818F3B66.wem</CachePath>
 				</File>
 				<File Id="800814977" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 4.wav</ShortName>
@@ -277,6 +329,14 @@
 					<ShortName>Music_End Fanfare.wav</ShortName>
 					<CachePath>SFX/Music_End Fanfare_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="882780577" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scream_Player 4.wav</ShortName>
+					<CachePath>SFX/Scream_Player 4_818F3B66.wem</CachePath>
+				</File>
+				<File Id="889746308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scream_Player 1.wav</ShortName>
+					<CachePath>SFX/Scream_Player 1_35A9B771.wem</CachePath>
+				</File>
 				<File Id="899287765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 6.wav</ShortName>
 					<CachePath>SFX/BasicSwing 6_818F3B66.wem</CachePath>
@@ -296,6 +356,10 @@
 				<File Id="1001677442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 2.wav</ShortName>
 					<CachePath>SFX/Knife Swings 2_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1003410841" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scream_Player 2.wav</ShortName>
+					<CachePath>SFX/Scream_Player 2_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1004986158" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit Gore 1.wav</ShortName>
@@ -328,22 +392,40 @@
 			</Media>
 			<Plugins>
 				<Custom>
-					<Plugin Id="270166481" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
 					<Plugin Id="283309472" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="372414170" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
-					<Plugin Id="434790655" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
-					<Plugin Id="544784949" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
-					<Plugin Id="740326041" Name="Audio Input" LibName="Wwise Audio Input" LibId="13107202"/>
 				</Custom>
-				<ShareSets>
-					<Plugin Id="3791362174" Name="Scream_Compressor" LibName="Wwise Compressor" LibId="7077891"/>
-				</ShareSets>
 			</Plugins>
 			<Events>
+				<Event Id="4038917348" Name="Hit_Player_1" DurationType="OneShot" DurationMin="0.21597917" DurationMax="0.44996804">
+					<MediaRefs>
+						<MediaRef Id="97555503"/>
+						<MediaRef Id="210537147"/>
+						<MediaRef Id="799358261"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4038917351" Name="Hit_Player_2" DurationType="OneShot" DurationMin="0.13039583" DurationMax="0.29110417">
+					<MediaRefs>
+						<MediaRef Id="267008808"/>
+						<MediaRef Id="552200882"/>
+						<MediaRef Id="722803031"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4038917350" Name="Hit_Player_3" DurationType="OneShot" DurationMin="0.25075" DurationMax="0.31427082">
+					<MediaRefs>
+						<MediaRef Id="262871272"/>
+						<MediaRef Id="416627512"/>
+						<MediaRef Id="741734339"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4038917345" Name="Hit_Player_4" DurationType="OneShot" DurationMin="0.14285417" DurationMax="0.27335417">
+					<MediaRefs>
+						<MediaRef Id="148522713"/>
+						<MediaRef Id="729781821"/>
+						<MediaRef Id="765220663"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3232033907" Name="Hits" DurationType="OneShot" DurationMin="0.1695983" DurationMax="0.7135243">
-					<AuxBusRefs>
-						<AuxBusRef Id="2077253480" Name="Room"/>
-					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
@@ -422,54 +504,34 @@
 						<MediaRef Id="860232383"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1163358386" Name="Scream_Player_1" DurationType="Unknown">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="434790655"/>
-						</Custom>
-						<ShareSets>
-							<PluginRef Id="3791362174"/>
-						</ShareSets>
-					</PluginRefs>
+				<Event Id="1163358386" Name="Scream_Player_1" DurationType="OneShot" DurationMin="0.78375" DurationMax="0.78375">
+					<MediaRefs>
+						<MediaRef Id="889746308"/>
+					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1163358385" Name="Scream_Player_2" DurationType="Unknown">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="270166481"/>
-						</Custom>
-						<ShareSets>
-							<PluginRef Id="3791362174"/>
-						</ShareSets>
-					</PluginRefs>
+				<Event Id="1163358385" Name="Scream_Player_2" DurationType="OneShot" DurationMin="1.056625" DurationMax="1.056625">
+					<MediaRefs>
+						<MediaRef Id="882780577"/>
+					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1163358384" Name="Scream_Player_3" DurationType="Unknown">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="544784949"/>
-						</Custom>
-						<ShareSets>
-							<PluginRef Id="3791362174"/>
-						</ShareSets>
-					</PluginRefs>
+				<Event Id="1163358384" Name="Scream_Player_3" DurationType="OneShot" DurationMin="1.0522916" DurationMax="1.0522916">
+					<MediaRefs>
+						<MediaRef Id="340008253"/>
+					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1163358391" Name="Scream_Player_4" DurationType="Unknown">
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="740326041"/>
-						</Custom>
-						<ShareSets>
-							<PluginRef Id="3791362174"/>
-						</ShareSets>
-					</PluginRefs>
+				<Event Id="1163358391" Name="Scream_Player_4" DurationType="OneShot" DurationMin="0.7535833" DurationMax="0.7535833">
+					<MediaRefs>
+						<MediaRef Id="1003410841"/>
+					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
@@ -486,17 +548,10 @@
 						<MediaRef Id="585538199"/>
 						<MediaRef Id="819100976"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="2077253480" Name="Room"/>
-					</AuxBusRefs>
 				</Event>
 				<Event Id="1416616592" Name="Stop_EnvironmentSound" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="968829419" Name="StopAudioInput" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1917263390" Name="StopMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2386519981" Name="Swing" DurationType="OneShot" DurationMin="0.17135017" DurationMax="0.4444166">
-					<AuxBusRefs>
-						<AuxBusRef Id="2077253480" Name="Room"/>
-					</AuxBusRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3893417221" Id="3312069844" Default="true"/>
@@ -717,7 +772,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8E2EAC49-8ACF-264C-BDB6-37565E836BF3}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CDE954DF-579E-6337-6B85-ECE20B8A7592}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -732,7 +787,11 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="436743010" Name="Character"/>
+				<Bus Id="436743010" Name="Character">
+					<AuxBusRefs>
+						<AuxBusRef Id="2077253480" Name="Room"/>
+					</AuxBusRefs>
+				</Bus>
 				<Bus Id="2981377429" Name="Ambiance"/>
 				<Bus Id="3081396824" Name="Sounddesign"/>
 				<Bus Id="3170124113" Name="Voice"/>
@@ -785,5 +844,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ACC59923-59FD-20F8-1AA3-218BFD25B3E1}</FileHash>
+	<FileHash>{6DB14BEE-6105-3183-0B79-0F92A8D8EC33}</FileHash>
 </SoundBanksInfo>
