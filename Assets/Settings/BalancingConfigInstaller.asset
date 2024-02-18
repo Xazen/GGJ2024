@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: BalancingConfigInstaller
   m_EditorClassIdentifier: 
   BalancingConfig: {fileID: 11400000, guid: 83e3c5de3c2dada4180acb604b0d052b, type: 2}
+  PlayerModelConfig: {fileID: 11400000, guid: f815ed50f992d21438ed70b041e6fc4e, type: 2}

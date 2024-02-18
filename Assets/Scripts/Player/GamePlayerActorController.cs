@@ -1,4 +1,5 @@
 using System.Collections;
+using Configs;
 using DefaultNamespace;
 using DG.Tweening;
 using JetBrains.Annotations;
@@ -32,12 +33,14 @@ public class GamePlayerActorController : MonoBehaviour
     private InputUser _inputUser;
     private GameService _gameService;
     private DiContainer _diContainer;
+    private PlayerModelConfig _playerModelConfig;
 
     [Inject]
     [UsedImplicitly]
     public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService,
-        BattlefieldService battlefieldService, GameService gameService, DiContainer diContainer)
+        BattlefieldService battlefieldService, GameService gameService, DiContainer diContainer, PlayerModelConfig playerModelConfig)
     {
+        _playerModelConfig = playerModelConfig;
         _diContainer = diContainer;
         _gameService = gameService;
         _scoreService = scoreService;
@@ -46,7 +49,8 @@ public class GamePlayerActorController : MonoBehaviour
         _playerModel = gamePlayerService.GetPlayerModel(_inputUser.index);
         var location = battlefieldService.GetAndRegisterFreeSpawnLocation(_inputUser.index);
         gameObject.transform.position = location;
-        LookTowards(Vector3.zero);
+        diContainer.InstantiatePrefab(_playerModelConfig.PlayerModelByIndex[_inputUser.index], model.transform);
+        LookTowards(new Vector3(0, location.y, 0));
     }
 
     private void Start()

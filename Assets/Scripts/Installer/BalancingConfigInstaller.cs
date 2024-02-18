@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Configs;
+using UnityEngine;
 using Zenject;
 
 namespace Installer
@@ -7,10 +8,12 @@ namespace Installer
     public class BalancingConfigInstaller : ScriptableObjectInstaller<BalancingConfigInstaller>
     {
        public BalancingConfig BalancingConfig;
+       public PlayerModelConfig PlayerModelConfig;
 
        public override void InstallBindings()
        {
-           Container.BindInstance(BalancingConfig);
+           Container.BindInstance(BalancingConfig).AsSingle();
+           Container.BindInstance(PlayerModelConfig).AsSingle();
        }
     }
 }
