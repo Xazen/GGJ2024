@@ -26,12 +26,14 @@ public class GamePlayerActorController : MonoBehaviour
     private GamePlayerHitbox hitBox;
 
     [SerializeField]
+    private ScreamHitbox screamHitbox;
+
+    [SerializeField]
     private GamePlayerInput gamePlayerInput;
 
     private BalancingConfig _balancingConfig;
     private Vector3 _moveVector;
 
-    private ScoreService _scoreService;
     private PlayerModel _playerModel;
     private InputUser _inputUser;
     private GameService _gameService;
@@ -43,13 +45,12 @@ public class GamePlayerActorController : MonoBehaviour
 
     [Inject]
     [UsedImplicitly]
-    public void Inject(BalancingConfig balancingConfig, ScoreService scoreService, GamePlayerService gamePlayerService,
+    public void Inject(BalancingConfig balancingConfig, GamePlayerService gamePlayerService,
         BattlefieldService battlefieldService, GameService gameService, DiContainer diContainer, PlayerModelConfig playerModelConfig)
     {
         _playerModelConfig = playerModelConfig;
         _diContainer = diContainer;
         _gameService = gameService;
-        _scoreService = scoreService;
         _balancingConfig = balancingConfig;
 
         _playerModel = gamePlayerService.GetPlayerModel(_inputUser.index);
@@ -63,23 +64,43 @@ public class GamePlayerActorController : MonoBehaviour
     private void Start()
     {
         hitBox.OnAttackHit += OnAttackHit;
+        screamHitbox.OnStuffHit += OnStuffHit;
         gamePlayerInput.OnAttackInput += OnAttack;
         gamePlayerInput.OnScreamInput += OnScream;
         gamePlayerInput.OnMovementInput += OnMovement;
     }
 
+    private void OnStuffHit(Stuffing stuffing)
+    {
+        stuffing.PlayerIndex = PlayerIndex;
+        var stuffingDirection = GetStuffDirection(stuffing.transform.position, true);
+        var distance = Vector3.Distance(transform.position, stuffing.transform.position) * _balancingConfig.ScreamDistanceMultiplier;
+        SendOffStuff(stuffing.gameObject, stuffingDirection, _balancingConfig.ScreamFlyMin-distance, _balancingConfig.ScreamFlyMax-distance);
+    }
+
     private void OnDestroy()
     {
         hitBox.OnAttackHit -= OnAttackHit;
+        screamHitbox.OnStuffHit -= OnStuffHit;
         gamePlayerInput.OnAttackInput -= OnAttack;
         gamePlayerInput.OnMovementInput -= OnMovement;
     }
 
     private void OnScream()
     {
+        StartCoroutine(Scream());
         GetComponent<PlayerAudio>().PlayScream();
         _moveVector = Vector3.zero;
         Debug.Log("Scream");
+    }
+
+    private IEnumerator Scream()
+    {
+        _playerModel.IsScreaming = true;
+        screamHitbox.gameObject.SetActive(true);
+        yield return new WaitForSeconds(_balancingConfig.ScreamboxDuration);
+        screamHitbox.gameObject.SetActive(false);
+        _playerModel.IsScreaming = false;
     }
 
     public void OnAttack()
@@ -117,26 +138,44 @@ public class GamePlayerActorController : MonoBehaviour
         float stuffingCount = Random.Range(_balancingConfig.StuffingCountMin, _balancingConfig.StuffingCountMax);
         for (int i = 0; i < stuffingCount; i++)
         {
-            var stuffingDirection = transform.position - attacker.transform.position;
-            stuffingDirection.y = 0;
-            stuffingDirection.Normalize();
-
-            float randomRotationAngle = Random.Range(-_balancingConfig.StuffingDirectionVariance, _balancingConfig.StuffingDirectionVariance);
-            Quaternion randomYRotation = Quaternion.Euler(0f, randomRotationAngle, 0f);
-            stuffingDirection = randomYRotation * stuffingDirection;
-
-
-            var stuffing = _diContainer.InstantiatePrefab(stuffingPrefab);
-            stuffing.GetComponent<Stuffing>().PlayerIndex = attacker.PlayerIndex;
-            stuffing.transform.position = transform.position + stuffingDirection * 1.1f;
-            stuffing.transform.localScale = Vector3.one * Random.Range(_balancingConfig.StuffingScaleMin, _balancingConfig.StuffingScaleMax);
-
-            float stuffingFlyDistance = Random.Range(_balancingConfig.StuffingFlyDistanceMin, _balancingConfig.StuffingFlyDistanceMax);
-            float stuffingFlyDuration = Random.Range(_balancingConfig.StuffingFlyDurationMin, _balancingConfig.StuffingFlyDurationMax);
-            stuffing.transform
-                .DOMove(stuffing.transform.position + stuffingDirection * stuffingFlyDistance,
-                    stuffingFlyDuration).SetEase(Ease.OutQuint);
+            var stuffingDirection = GetStuffDirection(attacker.transform.position, false);
+            var stuffing = CreateStuff(attacker, stuffingDirection);
+            SendOffStuff(stuffing, stuffingDirection, _balancingConfig.StuffingFlyDistanceMin, _balancingConfig.StuffingFlyDistanceMax);
         }
+    }
+
+    private void SendOffStuff(GameObject stuffing, Vector3 stuffingDirection, float flyMin, float flyMax)
+    {
+        float stuffingFlyDistance = Random.Range(flyMin, flyMax);
+        float stuffingFlyDuration = Random.Range(_balancingConfig.StuffingFlyDurationMin, _balancingConfig.StuffingFlyDurationMax);
+        stuffing.transform
+            .DOMove(stuffing.transform.position + stuffingDirection * stuffingFlyDistance,
+                stuffingFlyDuration).SetEase(Ease.OutQuint);
+    }
+
+    private Vector3 GetStuffDirection(Vector3 referenceObject, bool inverse)
+    {
+        var stuffingDirection = transform.position - referenceObject;
+        if (inverse)
+        {
+            stuffingDirection *= -1;
+        }
+        stuffingDirection.y = 0;
+        stuffingDirection.Normalize();
+
+        float randomRotationAngle = Random.Range(-_balancingConfig.StuffingDirectionVariance, _balancingConfig.StuffingDirectionVariance);
+        Quaternion randomYRotation = Quaternion.Euler(0f, randomRotationAngle, 0f);
+        stuffingDirection = randomYRotation * stuffingDirection;
+        return stuffingDirection;
+    }
+
+    private GameObject CreateStuff(GamePlayerActorController attacker, Vector3 stuffingDirection)
+    {
+        var stuffing = _diContainer.InstantiatePrefab(stuffingPrefab);
+        stuffing.GetComponent<Stuffing>().PlayerIndex = attacker.PlayerIndex;
+        stuffing.transform.position = transform.position + stuffingDirection * 1.1f;
+        stuffing.transform.localScale = Vector3.one * Random.Range(_balancingConfig.StuffingScaleMin, _balancingConfig.StuffingScaleMax);
+        return stuffing;
     }
 
     private void Knockback(GamePlayerActorController attacker)
@@ -165,7 +204,7 @@ public class GamePlayerActorController : MonoBehaviour
 
     private void Move()
     {
-        if (_playerModel.IsStaggered || _playerModel.IsAttacking || !_gameService.IsGameRunning())
+        if (_playerModel.IsStaggered || _playerModel.IsAttacking || !_gameService.IsGameRunning() || _playerModel.IsScreaming)
         {
             return;
         }

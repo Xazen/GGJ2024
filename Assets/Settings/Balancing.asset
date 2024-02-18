@@ -17,6 +17,11 @@ MonoBehaviour:
   PlayerMovementSpeed: 15
   HitboxDuration: 0.1
   HitCooldown: 0.5
+  ScreamboxDuration: 0.2
+  ScreamCooldown: 1.2
+  ScreamFlyMin: 9
+  ScreamFlyMax: 13
+  ScreamDistanceMultiplier: 1
   StaggeredDuration: 0.3
   KnockbackStrength: 1
   KnockbackMoveSpeed: 0.1
@@ -28,3 +33,5 @@ MonoBehaviour:
   StuffingFlyDistanceMax: 2.5
   StuffingFlyDurationMin: 0.25
   StuffingFlyDurationMax: 0.45
+  StuffingScaleMin: 0.8
+  StuffingScaleMax: 1.2
