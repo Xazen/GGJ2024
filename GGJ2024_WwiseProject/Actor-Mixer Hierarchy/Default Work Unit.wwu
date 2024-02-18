@@ -2487,7 +2487,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Scream Player 1" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" ShortID="644282044">
+								<Sound Name="Scream Player braun" ID="{DB793D91-A86A-457C-849E-DDF0B009326D}" ShortID="644282044">
 									<PropertyList>
 										<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 										<Property Name="OverrideAnalysis" Type="bool" Value="True"/>
@@ -2500,14 +2500,6 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Audio Input" ID="{2B0F0208-48C8-434F-A107-5FDCB8755E14}" ShortID="434790655" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
-											<PropertyList>
-												<Property Name="AudioInputGain" Type="Real32" Value="0"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Effects">
 											<Reference>
@@ -2530,11 +2522,8 @@
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-									<ActiveSourceList>
-										<ActiveSource Name="Audio Input" ID="{2B0F0208-48C8-434F-A107-5FDCB8755E14}" Platform="Linked"/>
-									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Scream Player 2" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" ShortID="836687970">
+								<Sound Name="Scream Player blau" ID="{B53E2C27-C1B9-4A5E-B289-5BC3E1FEE8D7}" ShortID="836687970">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -2543,14 +2532,6 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Audio Input" ID="{6AA13378-2A91-4B41-ADF6-A06DF3290976}" ShortID="270166481" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
-											<PropertyList>
-												<Property Name="AudioInputGain" Type="Real32" Value="0"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Effects">
 											<Reference>
@@ -2573,11 +2554,8 @@
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-									<ActiveSourceList>
-										<ActiveSource Name="Audio Input" ID="{6AA13378-2A91-4B41-ADF6-A06DF3290976}" Platform="Linked"/>
-									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Scream Player 3" ID="{C160C64B-8BD0-4169-8D38-729AC4A53B6A}" ShortID="779150027">
+								<Sound Name="Scream Player grün" ID="{C160C64B-8BD0-4169-8D38-729AC4A53B6A}" ShortID="779150027">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -2586,14 +2564,6 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Audio Input" ID="{C6ED4FE6-69E5-40D5-B784-9CC3795DD378}" ShortID="544784949" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
-											<PropertyList>
-												<Property Name="AudioInputGain" Type="Real32" Value="0"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Effects">
 											<Reference>
@@ -2616,11 +2586,8 @@
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-									<ActiveSourceList>
-										<ActiveSource Name="Audio Input" ID="{C6ED4FE6-69E5-40D5-B784-9CC3795DD378}" Platform="Linked"/>
-									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Scream Player 4" ID="{392B8AE9-25D6-4CED-9580-C8B49F12CA4C}" ShortID="609582141">
+								<Sound Name="Scream Player rot" ID="{392B8AE9-25D6-4CED-9580-C8B49F12CA4C}" ShortID="609582141">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>
@@ -2629,14 +2596,6 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{81F17F45-15B9-49E9-A13F-362102A81AA3}"/>
 										</Reference>
 									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Audio Input" ID="{5A48308C-AC7B-4E8C-A106-439634BFE86B}" ShortID="740326041" PluginName="Wwise Audio Input" CompanyID="0" PluginID="200">
-											<PropertyList>
-												<Property Name="AudioInputGain" Type="Real32" Value="0"/>
-											</PropertyList>
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Effects">
 											<Reference>
@@ -2659,9 +2618,6 @@
 											</Reference>
 										</ObjectList>
 									</ObjectLists>
-									<ActiveSourceList>
-										<ActiveSource Name="Audio Input" ID="{5A48308C-AC7B-4E8C-A106-439634BFE86B}" Platform="Linked"/>
-									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists>

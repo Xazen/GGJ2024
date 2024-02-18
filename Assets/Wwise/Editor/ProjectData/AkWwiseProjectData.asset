@@ -219,7 +219,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ccce76b7b8d9254480ac8b31ee6a0223
     GuidInternal: 
-    m_lastTime: -8584933471556578599
+    m_lastTime: -8584933435267596509
     List:
     - name: Character
       guid: 93faffad124c1d4aa0f63af8b0e9567f
@@ -461,29 +461,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: StopAudioInput
-      guid: 677e776467879b42bc41075d8a770241
-      id: 968829419
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: ccce76b7b8d9254480ac8b31ee6a0223
-      - ElementName: Character
-        ObjectType: 4
-        guid: 93faffad124c1d4aa0f63af8b0e9567f
-      - ElementName: Screams
-        ObjectType: 4
-        guid: a2677cd8741247429693657fdb996267
-      - ElementName: StopAudioInput
-        ObjectType: 3
-        guid: 677e776467879b42bc41075d8a770241
-      Path: Events\Default Work Unit\Character\Screams\StopAudioInput
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: StopMusic
       guid: 4f75792c24d77d46824545a093d8830e
       id: 1917263390
@@ -536,7 +513,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ec7e71d9afa3ae4f81017d073b0169ca
     GuidInternal: 
-    m_lastTime: -8584933449273794328
+    m_lastTime: -8584933440141141882
     List:
     - name: Distance
       guid: c271d91c1479034c917c3c54daf12293
