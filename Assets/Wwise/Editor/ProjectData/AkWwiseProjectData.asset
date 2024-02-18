@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8cb61922633e4f45abef376dc83af8a7
     GuidInternal: 
-    m_lastTime: -8584934346097604605
+    m_lastTime: -8584934000913495569
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 457ff181b915e949a13f362102a81aa3
     GuidInternal: 
-    m_lastTime: -8584933863496107031
+    m_lastTime: -8584933857073525667
     List:
     - name: Ambiance
       guid: 2a2c2924ece1114b810e2df7118f4969
@@ -174,7 +174,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5a64f6870470f2429e7517d4e173fa48
     GuidInternal: 
-    m_lastTime: -8584934346097529543
+    m_lastTime: -8584934000913505554
     List:
     - name: General
       guid: 84287eb77840ee4b8ae08610a4941e16
@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: ccce76b7b8d9254480ac8b31ee6a0223
     GuidInternal: 
-    m_lastTime: -8584934020461315472
+    m_lastTime: -8584933857078353803
     List:
     - name: Audio Capture
       guid: a2677cd8741247429693657fdb996267
@@ -330,8 +330,8 @@ MonoBehaviour:
         guid: 12af968318e78b488cc9e82fc569795b
       Path: Events\Default Work Unit\Audio Capture\StartAudioCapture_1
       maxAttenuation: 0
-      maxDuration: 1
-      minDuration: 1
+      maxDuration: -1
+      minDuration: -1
     - name: StartAudioCapture_2
       guid: 1f70fe546f942741add27d1697101eba
       id: 1102558892
@@ -481,7 +481,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: ec7e71d9afa3ae4f81017d073b0169ca
     GuidInternal: 
-    m_lastTime: -8584934061209166313
+    m_lastTime: -8584934000919294446
     List:
     - name: Distance
       guid: c271d91c1479034c917c3c54daf12293
@@ -523,7 +523,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: c2d706362f82cb4ab974331ff2f0d773
     GuidInternal: 
-    m_lastTime: -8584934201628426879
+    m_lastTime: -8584934000913505554
     List:
     - name: Screaming
       guid: d560d94b49895449b4b3025419c20a73
@@ -603,7 +603,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: c48fb9d90600a74584644b0ff9f7307b
     GuidInternal: 
-    m_lastTime: -8584934103711695893
+    m_lastTime: -8584934000913505554
     List:
     - name: Weapon
       guid: 269c5d0b6598a942b179cb9e25ee864a
@@ -667,10 +667,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: de98667be87b7042bfa87d616af01e0d
     GuidInternal: 
-    m_lastTime: -8584934346097274326
+    m_lastTime: -8584934000913505554
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000008000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
