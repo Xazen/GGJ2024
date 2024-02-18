@@ -43,6 +43,7 @@ namespace AK
                 static const AkUniqueID INTRO = 1125500713U;
                 static const AkUniqueID LEVEL = 2782712965U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID WAITFORPLAYERS = 1521118571U;
             } // namespace STATE
         } // namespace MUSIC_STATE
 

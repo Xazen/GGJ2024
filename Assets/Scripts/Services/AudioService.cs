@@ -41,6 +41,7 @@ namespace DefaultNamespace
         public void EndStartingScreen()
         {
             AkSoundEngine.PostEvent("Play_CookingPot", gameObject);
+            AkSoundEngine.SetState("Music_State", "WaitForPlayers");
         }
 
         /// <summary>

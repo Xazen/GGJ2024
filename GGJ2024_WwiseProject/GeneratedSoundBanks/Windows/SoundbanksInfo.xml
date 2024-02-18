@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{DA6D213C-CE89-AE14-67CE-C2232F9FE67F}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{7964D720-4757-FBBE-BD5D-D247FA9EA5D7}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
 				<File Id="6189032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 2.wav</ShortName>
 					<CachePath>SFX/BasicSwing 2_EDCD4836.wem</CachePath>
+				</File>
+				<File Id="10177227" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music_Intro.wav</ShortName>
+					<CachePath>SFX/Music_Intro_D8A0D580.wem</CachePath>
 				</File>
 				<File Id="14980148" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood_Step 4.wav</ShortName>
@@ -213,10 +217,6 @@
 					<ShortName>Wood_Step 2.wav</ShortName>
 					<CachePath>SFX/Wood_Step 2_EDCD4836.wem</CachePath>
 				</File>
-				<File Id="548770353" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Intro Music_130bpm_L16.wav</ShortName>
-					<CachePath>SFX/Intro Music_130bpm_L16_D8A0D580.wem</CachePath>
-				</File>
 				<File Id="551918523" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit Gore 3.wav</ShortName>
 					<CachePath>SFX/Hit Gore 3_EDCD4836.wem</CachePath>
@@ -357,6 +357,10 @@
 					<ShortName>Kitchen Work_POS_ 10.wav</ShortName>
 					<CachePath>SFX/Kitchen Work_POS_ 10_EDCD4836.wem</CachePath>
 				</File>
+				<File Id="973092837" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Music_WaitForPlayers-02.wav</ShortName>
+					<CachePath>SFX/Music_WaitForPlayers-02_D8A0D580.wem</CachePath>
+				</File>
 				<File Id="1001677442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 2.wav</ShortName>
 					<CachePath>SFX/Knife Swings 2_EDCD4836.wem</CachePath>
@@ -398,6 +402,7 @@
 				<Custom>
 					<Plugin Id="283309472" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="372414170" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="896075497" Name="Compressor (Custom)" LibName="Wwise Compressor" LibId="7077891"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -510,19 +515,22 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3826569560" Id="0"/>
 							<MediaRefs>
-								<MediaRef Id="548770353"/>
+								<MediaRef Id="10177227"/>
+								<MediaRef Id="973092837"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3826569560" Id="748895195"/>
 							<MediaRefs>
-								<MediaRef Id="548770353"/>
+								<MediaRef Id="10177227"/>
+								<MediaRef Id="973092837"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="3826569560" Id="1125500713"/>
 							<MediaRefs>
-								<MediaRef Id="548770353"/>
+								<MediaRef Id="10177227"/>
+								<MediaRef Id="973092837"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -531,6 +539,18 @@
 								<MediaRef Id="145278452"/>
 								<MediaRef Id="638763515"/>
 								<MediaRef Id="860232383"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="896075497"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3826569560" Id="1521118571"/>
+							<MediaRefs>
+								<MediaRef Id="10177227"/>
+								<MediaRef Id="973092837"/>
 							</MediaRefs>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -800,6 +820,7 @@
 					<States>
 						<State Id="748895195" Name="None"/>
 						<State Id="1125500713" Name="Intro"/>
+						<State Id="1521118571" Name="WaitForPlayers"/>
 						<State Id="2782712965" Name="Level"/>
 					</States>
 				</StateGroup>
@@ -813,7 +834,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5FD79793-32AD-2FF1-3A3E-F942EE31CBE7}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BA358EC5-954D-4CB5-5905-CCCE20D47E9E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -878,6 +899,7 @@
 					<States>
 						<State Id="748895195" Name="None"/>
 						<State Id="1125500713" Name="Intro"/>
+						<State Id="1521118571" Name="WaitForPlayers"/>
 						<State Id="2782712965" Name="Level"/>
 					</States>
 				</StateGroup>
@@ -892,5 +914,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{556E7755-F899-BBD8-60DC-D32DC66088FE}</FileHash>
+	<FileHash>{9D183722-1EBA-45BF-47BF-18C568EEDA13}</FileHash>
 </SoundBanksInfo>
