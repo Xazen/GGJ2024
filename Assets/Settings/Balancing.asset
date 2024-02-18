@@ -18,5 +18,13 @@ MonoBehaviour:
   HitboxDuration: 0.1
   HitCooldown: 0.5
   StaggeredDuration: 0.3
-  KnockbackStrength: 2
+  KnockbackStrength: 1
   KnockbackMoveSpeed: 0.1
+  CollisionThreshold: 1.2
+  StuffingCountMin: 1
+  StuffingCountMax: 4
+  StuffingDirectionVariance: 10
+  StuffingFlyDistanceMin: 2
+  StuffingFlyDistanceMax: 2.5
+  StuffingFlyDurationMin: 0.25
+  StuffingFlyDurationMax: 0.45
