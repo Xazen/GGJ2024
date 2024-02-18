@@ -9,385 +9,385 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{84683BBB-6E8E-8D5A-053C-3EC481F7FA60}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{3B1895D3-3ACA-D7E0-4917-C771E9230030}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
 				<File Id="6189032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 2.wav</ShortName>
-					<CachePath>SFX/BasicSwing 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/BasicSwing 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="14980148" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood_Step 4.wav</ShortName>
-					<CachePath>SFX/Wood_Step 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Wood_Step 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="24123608" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 1.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="63126065" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Fluid_1.wav</ShortName>
-					<CachePath>SFX/Kitchen Fluid_1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Fluid_1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="76012042" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 12.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 12_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 12_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="88214754" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hits 2.wav</ShortName>
-					<CachePath>SFX/Hits 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hits 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="97555503" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 1_Player 4.wav</ShortName>
-					<CachePath>SFX/Hit 1_Player 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 1_Player 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="100806986" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 2.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="100876381" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Foley_Step 4.wav</ShortName>
-					<CachePath>SFX/Foley_Step 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Foley_Step 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="132177277" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Foley_Step 3.wav</ShortName>
-					<CachePath>SFX/Foley_Step 3_C61A1825.wem</CachePath>
+					<CachePath>SFX/Foley_Step 3_74B19DF5.wem</CachePath>
 				</File>
 				<File Id="137229546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Punch 3.wav</ShortName>
-					<CachePath>SFX/Slice Punch 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Slice Punch 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="142182528" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 11.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 11_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 11_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="145278452" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_Metal.wav</ShortName>
-					<CachePath>SFX/Music_Metal_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Music_Metal_D8A0D580.wem</CachePath>
 				</File>
 				<File Id="148522713" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 2_Player 2.wav</ShortName>
-					<CachePath>SFX/Hit 2_Player 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 2_Player 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="150116584" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Punch 1.wav</ShortName>
-					<CachePath>SFX/Slice Punch 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Slice Punch 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="160633402" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Foley_Step 2.wav</ShortName>
-					<CachePath>SFX/Foley_Step 2_C419C4C1.wem</CachePath>
+					<CachePath>SFX/Foley_Step 2_A2E67B31.wem</CachePath>
 				</File>
 				<File Id="166057783" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Veggie Hits 1.wav</ShortName>
-					<CachePath>SFX/Veggie Hits 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Veggie Hits 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="209115331" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 2.wav</ShortName>
-					<CachePath>SFX/Knife Slice 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Slice 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="210537147" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 2_Player 4.wav</ShortName>
-					<CachePath>SFX/Hit 2_Player 4_A82F19BD.wem</CachePath>
+					<CachePath>SFX/Hit 2_Player 4_5AA29CAD.wem</CachePath>
 				</File>
 				<File Id="215770798" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 5.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 5_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 5_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="222229079" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Noise_Step 1.wav</ShortName>
-					<CachePath>SFX/Noise_Step 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Noise_Step 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="227408532" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 1.wav</ShortName>
-					<CachePath>SFX/SpoonSwingLayer 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/SpoonSwingLayer 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="230836363" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 3.wav</ShortName>
-					<CachePath>SFX/Knife Swings 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Swings 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="261915536" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Gore 3.wav</ShortName>
-					<CachePath>SFX/Slice Gore 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Slice Gore 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="262871272" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 2_Player 3.wav</ShortName>
-					<CachePath>SFX/Hit 2_Player 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 2_Player 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="264445141" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 2.wav</ShortName>
-					<CachePath>SFX/SpoonSwingLayer 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/SpoonSwingLayer 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="267008808" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 1_Player 1.wav</ShortName>
-					<CachePath>SFX/Hit 1_Player 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 1_Player 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="272903579" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 7.wav</ShortName>
-					<CachePath>SFX/BasicSwing 7_818F3B66.wem</CachePath>
+					<CachePath>SFX/BasicSwing 7_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="282821679" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 5.wav</ShortName>
-					<CachePath>SFX/BasicSwing 5_818F3B66.wem</CachePath>
+					<CachePath>SFX/BasicSwing 5_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="305209632" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 3.wav</ShortName>
-					<CachePath>SFX/SpoonSwingLayer 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/SpoonSwingLayer 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="314805838" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cooking_Gas.wav</ShortName>
-					<CachePath>SFX/Cooking_Gas_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Cooking_Gas_D8A0D580.wem</CachePath>
 				</File>
 				<File Id="326815038" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 8.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 8_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 8_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="328062407" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen_Ambience.wav</ShortName>
-					<CachePath>SFX/Kitchen_Ambience_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Kitchen_Ambience_D8A0D580.wem</CachePath>
 				</File>
 				<File Id="340008253" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scream_Player 3.wav</ShortName>
-					<CachePath>SFX/Scream_Player 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Scream_Player 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="373249325" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 4.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="377992892" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Veggie Hits 3.wav</ShortName>
-					<CachePath>SFX/Veggie Hits 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Veggie Hits 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="381795405" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 9.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 9_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 9_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="383175845" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 5.wav</ShortName>
-					<CachePath>SFX/Knife Swings 5_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Swings 5_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="391833410" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VeggieSlices 3.wav</ShortName>
-					<CachePath>SFX/VeggieSlices 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/VeggieSlices 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="394956205" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 13.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 13_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 13_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="416225711" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 8.wav</ShortName>
-					<CachePath>SFX/Knife Swings 8_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Swings 8_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="416627512" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 3_Player 3.wav</ShortName>
-					<CachePath>SFX/Hit 3_Player 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 3_Player 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="416771849" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Fluid_2.wav</ShortName>
-					<CachePath>SFX/Kitchen Fluid_2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Fluid_2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="434679761" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 6.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 6_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 6_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="446948816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Punch 2.wav</ShortName>
-					<CachePath>SFX/Slice Punch 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Slice Punch 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="462655402" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood_Step 3.wav</ShortName>
-					<CachePath>SFX/Wood_Step 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Wood_Step 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="465637869" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 5.wav</ShortName>
-					<CachePath>SFX/Knife Slice 5_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Slice 5_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="481650952" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VeggieSlices 1.wav</ShortName>
-					<CachePath>SFX/VeggieSlices 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/VeggieSlices 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="526958082" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VeggieSlices 5.wav</ShortName>
-					<CachePath>SFX/VeggieSlices 5_818F3B66.wem</CachePath>
+					<CachePath>SFX/VeggieSlices 5_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="527624200" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood_Step 2.wav</ShortName>
-					<CachePath>SFX/Wood_Step 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Wood_Step 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="551918523" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit Gore 3.wav</ShortName>
-					<CachePath>SFX/Hit Gore 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit Gore 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="552200882" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 2_Player 1.wav</ShortName>
-					<CachePath>SFX/Hit 2_Player 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 2_Player 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="581836822" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VeggieSlices 2.wav</ShortName>
-					<CachePath>SFX/VeggieSlices 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/VeggieSlices 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="585538199" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Wood_Step 1.wav</ShortName>
-					<CachePath>SFX/Wood_Step 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Wood_Step 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="589887342" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hits 3.wav</ShortName>
-					<CachePath>SFX/Hits 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hits 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="607401170" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Veggie Hits 2.wav</ShortName>
-					<CachePath>SFX/Veggie Hits 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Veggie Hits 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="614381106" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 3.wav</ShortName>
-					<CachePath>SFX/Knife Slice 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Slice 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="638763515" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_Cute Score.wav</ShortName>
-					<CachePath>SFX/Music_Cute Score_8C7190AC.wem</CachePath>
+					<CachePath>SFX/Music_Cute Score_44640D5C.wem</CachePath>
 				</File>
 				<File Id="667684970" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 1.wav</ShortName>
-					<CachePath>SFX/Knife Slice 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Slice 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="668956226" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 3.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="711500054" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 4.wav</ShortName>
-					<CachePath>SFX/Knife Swings 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Swings 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="722803031" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 3_Player 1.wav</ShortName>
-					<CachePath>SFX/Hit 3_Player 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 3_Player 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="729781821" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 1_Player 2.wav</ShortName>
-					<CachePath>SFX/Hit 1_Player 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 1_Player 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="741734339" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 1_Player 3.wav</ShortName>
-					<CachePath>SFX/Hit 1_Player 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 1_Player 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="752221801" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 7.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 7_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 7_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="760649509" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hits 1.wav</ShortName>
-					<CachePath>SFX/Hits 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hits 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="762068009" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 7.wav</ShortName>
-					<CachePath>SFX/SpoonSwingLayer 7_818F3B66.wem</CachePath>
+					<CachePath>SFX/SpoonSwingLayer 7_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="765220663" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 3_Player 2.wav</ShortName>
-					<CachePath>SFX/Hit 3_Player 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 3_Player 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="766967025" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Slice 4.wav</ShortName>
-					<CachePath>SFX/Knife Slice 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Slice 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="768062468" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit Gore 2.wav</ShortName>
-					<CachePath>SFX/Hit Gore 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit Gore 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="769556448" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 1.wav</ShortName>
-					<CachePath>SFX/Knife Swings 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Swings 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="771124036" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 3.wav</ShortName>
-					<CachePath>SFX/BasicSwing 3_818F3B66.wem</CachePath>
+					<CachePath>SFX/BasicSwing 3_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="799358261" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit 3_Player 4.wav</ShortName>
-					<CachePath>SFX/Hit 3_Player 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit 3_Player 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="800814977" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 4.wav</ShortName>
-					<CachePath>SFX/SpoonSwingLayer 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/SpoonSwingLayer 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="819100976" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Foley_Step 1.wav</ShortName>
-					<CachePath>SFX/Foley_Step 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Foley_Step 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="828196758" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 6.wav</ShortName>
-					<CachePath>SFX/Knife Swings 6_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Swings 6_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="830696659" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 7.wav</ShortName>
-					<CachePath>SFX/Knife Swings 7_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Swings 7_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="833185748" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Gore 4.wav</ShortName>
-					<CachePath>SFX/Slice Gore 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Slice Gore 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="860232383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music_End Fanfare.wav</ShortName>
-					<CachePath>SFX/Music_End Fanfare_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Music_End Fanfare_D8A0D580.wem</CachePath>
 				</File>
 				<File Id="882780577" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scream_Player 4.wav</ShortName>
-					<CachePath>SFX/Scream_Player 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/Scream_Player 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="889746308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scream_Player 1.wav</ShortName>
-					<CachePath>SFX/Scream_Player 1_35A9B771.wem</CachePath>
+					<CachePath>SFX/Scream_Player 1_157B2D01.wem</CachePath>
 				</File>
 				<File Id="899287765" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 6.wav</ShortName>
-					<CachePath>SFX/BasicSwing 6_818F3B66.wem</CachePath>
+					<CachePath>SFX/BasicSwing 6_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="912427310" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 4.wav</ShortName>
-					<CachePath>SFX/BasicSwing 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/BasicSwing 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="914262038" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Gore 1.wav</ShortName>
-					<CachePath>SFX/Slice Gore 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Slice Gore 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="937493976" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Kitchen Work_POS_ 10.wav</ShortName>
-					<CachePath>SFX/Kitchen Work_POS_ 10_818F3B66.wem</CachePath>
+					<CachePath>SFX/Kitchen Work_POS_ 10_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="1001677442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Knife Swings 2.wav</ShortName>
-					<CachePath>SFX/Knife Swings 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Knife Swings 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="1003410841" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scream_Player 2.wav</ShortName>
-					<CachePath>SFX/Scream_Player 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Scream_Player 2_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="1004986158" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Hit Gore 1.wav</ShortName>
-					<CachePath>SFX/Hit Gore 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/Hit Gore 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="1010866600" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 6.wav</ShortName>
-					<CachePath>SFX/SpoonSwingLayer 6_818F3B66.wem</CachePath>
+					<CachePath>SFX/SpoonSwingLayer 6_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="1012106575" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>BasicSwing 1.wav</ShortName>
-					<CachePath>SFX/BasicSwing 1_818F3B66.wem</CachePath>
+					<CachePath>SFX/BasicSwing 1_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="1013995139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cooking_Pot.wav</ShortName>
-					<CachePath>SFX/Cooking_Pot_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/Cooking_Pot_D8A0D580.wem</CachePath>
 				</File>
 				<File Id="1034212319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>VeggieSlices 4.wav</ShortName>
-					<CachePath>SFX/VeggieSlices 4_818F3B66.wem</CachePath>
+					<CachePath>SFX/VeggieSlices 4_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="1046232497" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SpoonSwingLayer 5.wav</ShortName>
-					<CachePath>SFX/SpoonSwingLayer 5_818F3B66.wem</CachePath>
+					<CachePath>SFX/SpoonSwingLayer 5_EDCD4836.wem</CachePath>
 				</File>
 				<File Id="1047295760" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Slice Gore 2.wav</ShortName>
-					<CachePath>SFX/Slice Gore 2_818F3B66.wem</CachePath>
+					<CachePath>SFX/Slice Gore 2_EDCD4836.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -536,7 +536,7 @@
 						<AuxBusRef Id="348963605" Name="Reverb"/>
 					</AuxBusRefs>
 				</Event>
-				<Event Id="1718617278" Name="Steps" DurationType="OneShot" DurationMin="0.32888117" DurationMax="0.44031617">
+				<Event Id="1718617278" Name="Steps" DurationType="OneShot" DurationMin="0.24711908" DurationMax="0.44031617">
 					<MediaRefs>
 						<MediaRef Id="14980148"/>
 						<MediaRef Id="100876381"/>
@@ -772,7 +772,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CDE954DF-579E-6337-6B85-ECE20B8A7592}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{737F9A72-CAA4-C293-7128-AA81BE437466}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -844,5 +844,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6DB14BEE-6105-3183-0B79-0F92A8D8EC33}</FileHash>
+	<FileHash>{0BB1BFF1-F36B-3C50-457A-74B94290FD1A}</FileHash>
 </SoundBanksInfo>

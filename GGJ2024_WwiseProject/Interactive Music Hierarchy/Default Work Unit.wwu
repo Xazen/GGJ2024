@@ -20,11 +20,6 @@
 						<MusicTrack Name="Music_Cute Score" ID="{8A7E3AD0-14B0-457C-92D1-C0CCFE22FFF1}" ShortID="1014711551">
 							<PropertyList>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="OutputBus">
@@ -242,7 +237,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>1</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

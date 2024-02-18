@@ -17,6 +17,11 @@
 										<Value>-0.0294134590654083</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 						</Bus>
 						<Bus Name="Sounddesign" ID="{49F171CA-CFAB-48A3-8565-3A3BEA2B22F0}">
@@ -32,7 +37,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-6.10966539622469</Value>
+												<Value>-9.27475055921986</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
@@ -71,7 +76,7 @@
 															<Effect Name="Matrix Reverb (Custom)" ID="{242D76CD-0B4A-4809-A483-315CB6229EC1}" ShortID="362563408" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 																<PropertyList>
 																	<Property Name="HFRatio" Type="Real32" Value="3.1"/>
-																	<Property Name="ReverbTime" Type="Real32" Value="2.8"/>
+																	<Property Name="ReverbTime" Type="Real32" Value="3.1"/>
 																</PropertyList>
 															</Effect>
 														</Custom>
