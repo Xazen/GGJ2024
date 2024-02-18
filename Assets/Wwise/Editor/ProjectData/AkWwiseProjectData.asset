@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 457ff181b915e949a13f362102a81aa3
     GuidInternal: 
-    m_lastTime: -8584933932520085593
+    m_lastTime: -8584933863496107031
     List:
     - name: Ambiance
       guid: 2a2c2924ece1114b810e2df7118f4969
@@ -111,6 +111,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: 0a8f732f83a4954cacf0874b9f4f510e
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: Reverb
+      guid: b31800a644c62141b88c288cef207094
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 457ff181b915e949a13f362102a81aa3
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: b31800a644c62141b88c288cef207094
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb
     - name: Sounddesign
       guid: ca71f149abcfa34885653a3bea2b22f0
       id: 3081396824

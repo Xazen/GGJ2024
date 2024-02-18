@@ -6,6 +6,13 @@
 				<Folder Name="Capturing" ID="{F8A748C8-FDCF-43C4-AA0A-377D9DCE265B}" ShortID="609214112">
 					<ChildrenList>
 						<ActorMixer Name="Capturing" ID="{8360B29F-C4C2-4069-A8A4-3EAA8B540119}" ShortID="382267323">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6D4444FE-072D-4CFB-8B01-4DD4BB464C76}"/>

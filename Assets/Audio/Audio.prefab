@@ -95,9 +95,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -8381846800765679052, guid: 16c32dc80c03091489ec6d654e1e0b53,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 41e53abf0336b8542bde64e3d1fcfa02, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: ff740e823b59a6d4480b6394c5c2783b,
       type: 2}
   Screaming: 0
-  RecordButton: 0
+  RecordScreamButton: 0
   mixer: {fileID: -8381846800765679052, guid: 16c32dc80c03091489ec6d654e1e0b53, type: 2}
   SampleRate: 48000
   BufferLengthInSeconds: 2
