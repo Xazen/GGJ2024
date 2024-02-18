@@ -85,7 +85,6 @@ public class GamePlayerActorController : MonoBehaviour
         StartCoroutine(Attack());
         _moveVector = Vector3.zero;
         _animator.SetTrigger(_attackKnifeAnimHash);
-        GetComponent<PlayerAudio>().PlayAttack();
         Debug.Log("Attack");
     }
 
