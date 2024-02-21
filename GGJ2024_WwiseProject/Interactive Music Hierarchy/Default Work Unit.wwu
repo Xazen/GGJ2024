@@ -279,6 +279,7 @@
 								</MusicTrack>
 								<MusicTrack Name="Music_Metal" ID="{7349F11C-6800-4345-AFDF-7FDD6EE640DA}" ShortID="419193836">
 									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>3</Value>
@@ -331,6 +332,40 @@
 										</CustomStateList>
 									</StateInfo>
 									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{B204B28A-9528-47B0-AB6E-3970EF818C71}" ShortID="946096033">
+														<ReferenceList>
+															<Reference Name="Effect">
+																<Custom>
+																	<Effect Name="Parametric EQ (Custom)" ID="{82F0034F-867C-45B9-8EFA-24A98DA4D393}" ShortID="932326529" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																		<PropertyList>
+																			<Property Name="FrequencyBand1" Type="Real32" Value="120"/>
+																			<Property Name="GainBand1" Type="Real32" Value="-4"/>
+																			<Property Name="OnOffBand2" Type="bool" Value="False"/>
+																			<Property Name="OnOffBand3" Type="bool" Value="False"/>
+																		</PropertyList>
+																	</Effect>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+														<StateInfo>
+															<CustomStateList>
+																<CustomState>
+																	<StateRef Name="Scream" ID="{E870AA98-DD4A-4AF7-B22F-30B031A834E8}"/>
+																	<CustomState Name="" ID="{179F9FA9-7AF1-4165-B281-AFC2266399E7}" ShortID="360035000"/>
+																</CustomState>
+																<CustomState>
+																	<StateRef Name="Idle" ID="{8F843FDA-6944-4F68-AD8D-30439F6D269D}"/>
+																	<CustomState Name="" ID="{71E3BAB2-CC19-48F0-B22D-F9C90B4D0EF0}" ShortID="494827927"/>
+																</CustomState>
+															</CustomStateList>
+														</StateInfo>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
 										<ObjectList Name="Sequences">
 											<Reference>
 												<Local>

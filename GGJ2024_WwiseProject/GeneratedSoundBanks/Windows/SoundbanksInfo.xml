@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{02EA6964-9C22-E6AE-E57E-ACCCB1B03E4E}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{8EFFD5DE-7303-152A-D87F-32B0BECB7D1D}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -335,7 +335,7 @@
 				</File>
 				<File Id="882780577" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scream_Player 4.wav</ShortName>
-					<CachePath>SFX/Scream_Player 4_9CD849F3.wem</CachePath>
+					<CachePath>SFX/Scream_Player 4_A52FBFF9.wem</CachePath>
 				</File>
 				<File Id="889746308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scream_Player 1.wav</ShortName>
@@ -403,6 +403,7 @@
 					<Plugin Id="283309472" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="372414170" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="896075497" Name="Compressor (Custom)" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="932326529" Name="Parametric EQ (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</Custom>
 			</Plugins>
 			<Events>
@@ -543,6 +544,7 @@
 							<PluginRefs>
 								<Custom>
 									<PluginRef Id="896075497"/>
+									<PluginRef Id="932326529"/>
 								</Custom>
 							</PluginRefs>
 						</SwitchContainer>
@@ -834,7 +836,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C5F635CB-9EA2-B3A1-1D44-57908672A642}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D1DDAF23-4A6C-C9D3-111E-F6398D345A26}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -914,5 +916,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2DFEF224-41EE-4E60-E705-61F49D4E5718}</FileHash>
+	<FileHash>{8737570D-0D96-E84E-F5EB-895A5C50BA96}</FileHash>
 </SoundBanksInfo>

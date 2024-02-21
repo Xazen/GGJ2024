@@ -50,6 +50,7 @@ Modulator Envelope	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	896075497	Compressor (Custom)	Wwise Compressor			
+	932326529	Parametric EQ (Custom)	Wwise Parametric EQ			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	283309472	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Spoon Hits\z_Gory Spoon Hits\Silence\Silence	
@@ -136,7 +137,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	830696659	Knife Swings 7	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Knife Swings 7_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Knife Swings\Knife Swings 7		5000
 	833185748	Slice Gore 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Slice Gore 4_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Hits\Knife Hits\z_Gory Knife Hits\Samples\Slice Gore 4		6422
 	860232383	Music_End Fanfare	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Music_End Fanfare_D8A0D580.wem		\Interactive Music Hierarchy\Default Work Unit\Music Master\Level_Music\Music_End Fanfare		60703
-	882780577	Scream Player blau	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Scream_Player 4_9CD849F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Screams\Scream Player blau		11310
+	882780577	Scream Player blau	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Scream_Player 4_A52FBFF9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Screams\Scream Player blau		11310
 	889746308	Scream Player braun	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\Scream_Player 1_157B2D01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Screams\Scream Player braun		15119
 	899287765	BasicSwing 6	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\BasicSwing 6_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\06\BasicSwing 6		3677
 	912427310	BasicSwing 4	F:\GitForque\GGJ2024\GGJ2024_WwiseProject\.cache\Windows\SFX\BasicSwing 4_EDCD4836.wem		\Actor-Mixer Hierarchy\Default Work Unit\Character\Swings\Swings\04\BasicSwing 4		3568
